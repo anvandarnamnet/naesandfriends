@@ -190,6 +190,8 @@ header {
         .big-section-2 .three-photos .text-under-image .tui-links a {
           text-decoration: none;
           color: #3169ce; }
+          .big-section-2 .three-photos .text-under-image .tui-links a:hover {
+            opacity: 0.6; }
 
 .big-bar {
   background-color: #0a1b3b;
@@ -299,6 +301,8 @@ header {
           .grid-section .grid .first-row-grid .three-photos .text-under-image .tui-links a {
             text-decoration: none;
             color: #3169ce; }
+            .grid-section .grid .first-row-grid .three-photos .text-under-image .tui-links a:hover {
+              opacity: 0.6; }
   .grid-section .grid .second-row-grid {
     padding-top: 30px;
     display: -webkit-box;
@@ -400,6 +404,8 @@ header {
           .grid-section .grid .fourth-row-grid .three-photos .text-under-image .tui-links a {
             text-decoration: none;
             color: #3169ce; }
+            .grid-section .grid .fourth-row-grid .three-photos .text-under-image .tui-links a:hover {
+              opacity: 0.6; }
   .grid-section .grid .fifth-row-grid {
     padding: 30px 0 0 0;
     display: grid;
@@ -422,6 +428,8 @@ header {
           .grid-section .grid .fifth-row-grid .two-photos .text-under-image .tui-links a {
             text-decoration: none;
             color: #3169ce; }
+            .grid-section .grid .fifth-row-grid .two-photos .text-under-image .tui-links a:hover {
+              opacity: 0.6; }
   .grid-section .grid .sixth-row-grid {
     padding: 30px 0 0 0;
     display: -webkit-box;
@@ -555,6 +563,8 @@ footer {
             right: 0;
             bottom: 0;
             left: 0; }
+          footer .footer-text-box .text-2 .social-media-logos .social-media-links:hover {
+            opacity: 0.8; }
           footer .footer-text-box .text-2 .social-media-logos .social-media-links object {
             height: 40px;
             width: 40px;

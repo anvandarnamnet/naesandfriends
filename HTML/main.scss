@@ -129,6 +129,9 @@ $darker-blue: #1f2737;
                 a {
                     text-decoration: none;
                     color: $lighter-blue;
+                &:hover {
+                    opacity: 0.6;
+                }
                 }
             }
         }
@@ -436,6 +439,9 @@ header {
                     a {
                         text-decoration: none;
                         color: $lighter-blue;
+                        &:hover {
+                            opacity: 0.6;
+                        }
                     }
                 }
             }
@@ -571,6 +577,9 @@ footer {
                         right: 0; 
                         bottom: 0; 
                         left: 0;
+                    }
+                    &:hover {
+                        opacity: 0.8;
                     }
 
                     object {
