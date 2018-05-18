@@ -439,7 +439,6 @@ header {
 footer {
     background-color: #1f2737;
     height: 300px;
-    @include borders;
     padding-right: 12.5%;
     padding-left: 12.5%;
     display: flex;
