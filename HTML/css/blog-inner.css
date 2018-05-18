@@ -21,6 +21,10 @@ header {
     flex: 4;
     background-color: #fff;
     height: 100%; }
+    header .logo img {
+      background-color: #000;
+      width: 20%;
+      height: 100%; }
   header ul {
     -webkit-box-flex: 5;
     -ms-flex: 5;
