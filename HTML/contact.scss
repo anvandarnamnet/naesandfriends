@@ -3,6 +3,7 @@
     margin: 0 0 0 0;
     background-color: #fff;
     font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    overflow-x: auto;
 }
 
 $pad-side: 12%;
@@ -54,9 +55,10 @@ header {
  }
 
  .map-and-contact {
-     
+     max-height: 800px;
      display: flex;
      justify-content: space-between;
+     align-items: center;
      .map {
         max-width: 52%;
         img {

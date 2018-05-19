@@ -2,7 +2,8 @@
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   background-color: #fff;
-  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; }
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  overflow-x: auto; }
 
 header {
   background-color: #FFF;
@@ -45,12 +46,16 @@ header {
       cursor: pointer; }
 
 .map-and-contact {
+  max-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .map-and-contact .map {
     max-width: 52%; }
     .map-and-contact .map img {
