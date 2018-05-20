@@ -120,7 +120,7 @@ header {
 
 .first-section {
     min-height: 350px;
-    background: url(/img/skill/1.png) no-repeat 0 0;
+    background: url(../img/skill/1.png) no-repeat 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,7 +226,7 @@ header {
             ul {
                 margin-left: 50px;
                 line-height: 30px;
-                list-style-image: url(/img/skill/bullet.png);
+                list-style-image: url(../img/skill/bullet.png);
                li {
                    color: #89898a;
                    font-size: 20px;
@@ -368,10 +368,10 @@ header {
             height: 100%;
             width: 32.9%;
             border: 1px solid #E0E1E2;
-            background: url(/img/skill/cog-green.png) no-repeat -25% 150%;
+            background: url(../img/skill/cog-green.png) no-repeat -25% 150%;
             @include texts-in-boxes();
             &:hover {
-                background: #4da953 url(/img/skill/cog-white.png) no-repeat -25% 150%;
+                background: #4da953 url(../img/skill/cog-white.png) no-repeat -25% 150%;
                 color: white;
                 cursor: pointer;
             }   
@@ -380,10 +380,10 @@ header {
             height: 100%;
             width: 32.9%;
             border: 1px solid #E0E1E2;
-            background: url(/img/skill/brain-green.png) no-repeat -12% 120%;
+            background: url(../img/skill/brain-green.png) no-repeat -12% 120%;
             @include texts-in-boxes();
             &:hover {
-                background: #4da953 url(/img/skill/brain-white.png) no-repeat -12% 120%;
+                background: #4da953 url(../img/skill/brain-white.png) no-repeat -12% 120%;
                 color: white;
                 cursor: pointer;
             }   
@@ -392,10 +392,10 @@ header {
             height: 100%;
             width: 32.9%;
             border: 1px solid #E0E1E2;
-            background: url(/img/skill/chat-green.png) no-repeat -20% 90%;
+            background: url(../img/skill/chat-green.png) no-repeat -20% 90%;
             @include texts-in-boxes();
             &:hover {
-                background: #4da953 url(/img/skill/chat-white.png) no-repeat -20% 90%;
+                background: #4da953 url(../img/skill/chat-white.png) no-repeat -20% 90%;
                 color: white;
                 cursor: pointer;
             }   
@@ -592,7 +592,7 @@ header {
             margin-top: 39px;
             margin-left: 26%;
             margin-bottom: 90px;
-            background: #f8ce47 url(/img/skill/8.png) no-repeat 6% 20%;
+            background: #f8ce47 url(../img/skill/8.png) no-repeat 6% 20%;
             color: white; 
             letter-spacing: 1px;
             .text {
