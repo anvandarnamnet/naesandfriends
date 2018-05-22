@@ -181,11 +181,18 @@ header {
                 opacity: 0.7;
                 cursor: pointer;
             }
-            img {
+            .image {
                 background-color: inherit;
                 padding-left: 60px;
                 padding-right: 40px;
+                }
+                img {
+                    height: 30px;
+               
+                    background-color: inherit;
+                    
             }
+            
             .social-media {
                 background-color: inherit;
                 .name {

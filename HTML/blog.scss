@@ -9,6 +9,9 @@ $pad-side: 12.5%;
 $pad-topnbottom: 100px;
 $lighter-blue: #3169ce;
 $darker-blue: #1f2737;
+$link-blue: #B6CAE8;
+$lightest-blue: #C2D2ED;
+$gray-text: #3E4855;
 
 @mixin borders{
     border: 1px solid #000;
@@ -61,18 +64,26 @@ $darker-blue: #1f2737;
         text-transform: uppercase;
         text-decoration: none;
         color: $lighter-blue;
-        font-weight: 600;
+        font-weight: 700;
+        font-size: 14px;
+        img {
+            padding-left: 10px;
+        }
         &:hover {
             opacity: 0.6;
         }
     }
 }
 @mixin three-links-mall {
-    padding: 25px 0 10px 0;
     word-spacing: 10px;
     a {
+        border: 1px solid transparent;
+        border-radius: 50px;
         text-decoration: none;
-        color: $lighter-blue;
+        padding: 1px 4px 1px 4px;
+        background-color: $link-blue;
+        color: #3f4754;
+        font-size: 14px;
         &:hover {
             opacity: 0.7;
         }
@@ -85,7 +96,7 @@ $darker-blue: #1f2737;
         min-height: 350px;
         display: flex;
         .image-big-section {
-            flex: 7;
+            flex: 8.5;
             img {
                 height: 100%;
                 width: 100%;
@@ -99,6 +110,7 @@ $darker-blue: #1f2737;
                 @include ten-things-text;
             }
             .three-links {
+                padding: 25px 0 10px 0;
                 @include three-links-mall;
             }
         }
@@ -109,7 +121,7 @@ $darker-blue: #1f2737;
 @mixin three-pix {
       
     .three-photos {
-      
+        //height: 420px;
         width: 100%;
         border: 3px solid transparent;
         &:hover {
@@ -119,7 +131,7 @@ $darker-blue: #1f2737;
             transition-timing-function: ease-out;
         }
         .image-container {
-            max-height: 260px;
+            height: 260px;
             img {
                 height: 100%;
                 width: 100%;
@@ -127,7 +139,7 @@ $darker-blue: #1f2737;
         }
         
         .text-under-image {
-            
+            height: 95px;
             padding: 30px 35px 35px 35px;
             border-right: 1px solid #E0E1E2;
             border-bottom: 1px solid #E0E1E2;
@@ -141,14 +153,7 @@ $darker-blue: #1f2737;
             }
             .tui-links {
                 word-spacing: 10px;
-
-                a {
-                    text-decoration: none;
-                    color: $lighter-blue;
-                &:hover {
-                    opacity: 0.6;
-                }
-                }
+                @include three-links-mall();
             }
         }
     }
@@ -190,20 +195,14 @@ $darker-blue: #1f2737;
                 }
                 .tui-links {
                     word-spacing: 10px;
-                    a {
-                        text-decoration: none;
-                        color: $lighter-blue;
-                        &:hover {
-                            opacity: 0.6;
-                        }
-                    }
+                    @include three-links-mall();
                 }
             }
         }
 }
 
 @mixin bar-style {
-    background-color: $lighter-blue;
+    background-color: $lightest-blue;
     min-height: 60px;
     @include side-pad;
     display: flex;
@@ -261,34 +260,36 @@ header {
         flex: 3;
         background-color: transparent;
         font-size: 30px;
-        color: white;
+        color: $gray-text;
     }
     form {
         flex: 2;
-        border: 2px solid #fff;
-        height: 50px;
+        //border: 2px solid $gray-text;
+        height: 54px;
         width: 440px;
         display: flex;
         
         input[type=text]{    
             flex: 2;
             font-size: 20px;
-            height: 100%;
-            background-color: $lighter-blue;
-            @include placeholder-color(#fff);
+            height: 50px;
+            background-color: $lightest-blue;
+            @include placeholder-color($gray-text);
             padding-left: 40px;
-            border: none;
-            color: #fff;
+            border: 2px solid $gray-text;
+            border-right: none;
+            color: $gray-text;
             outline: none;
         }
         input[type=submit]{ 
             flex: 1;  
-            height: 100%; 
+            height: 54px; 
             font-size: 15px;
-            background-color: #fff;
+            background-color: $lighter-blue;
             border: none;
-            color: $lighter-blue; 
+            color: white; 
             text-transform: uppercase;
+            letter-spacing: 1px;
             &:hover{
                 opacity: 0.6;
                 cursor: pointer;
@@ -343,7 +344,7 @@ header {
         flex: 1;
         background-color: transparent;
         font-size: 23px;
-        color: white;
+        color: $gray-text;
     }
     .selectors {
         flex: 4.3;
@@ -351,21 +352,21 @@ header {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        background-color: $lighter-blue;
+        background-color: $lightest-blue;
         
         .select-box {
             
             height: 100%;
             width: 31%;
-            border: 1px solid #fff;
+            border: 1px solid $gray-text;
             display: inline-block;
          
             
             select {
                 background:
-                linear-gradient(50deg, transparent 50%, white 50%),
-                linear-gradient(-50deg, transparent 50%, white 50%),
-                linear-gradient(to right, $lighter-blue, $lighter-blue);
+                linear-gradient(50deg, transparent 50%, $gray-text 50%),
+                linear-gradient(-50deg, transparent 50%, $gray-text 50%),
+                linear-gradient(to right, $lightest-blue, $lightest-blue);
                 
                 
               background-position:
@@ -377,7 +378,7 @@ header {
                 5px 5px,
                 2.5em 2.5em;
               background-repeat: no-repeat;
-              background-color: $lighter-blue;
+              background-color: $lightest-blue;
             
               /* styling and reset */
             
@@ -403,7 +404,7 @@ header {
             height: 100%;
             width: 100%;
             font-size: 20px;
-            color: white;
+            color: $gray-text;
             font-weight: 300;
             border-radius: 0;
             outline: none;
@@ -433,7 +434,7 @@ header {
         border: 3px solid transparent;
         display: flex;
         
-        min-height: 360px;
+        min-height: 340px;
 
         
         .image-grid-two {
@@ -444,7 +445,7 @@ header {
             }
         }
         .info-box-grid {
-            padding: 35px 35px 35px 35px;
+            padding: 35px 35px 15px 35px;
             background-color: #f9fafb;
             flex: 6;
             .ten-things {
@@ -482,6 +483,8 @@ header {
             }
             .three-links {
                 background-color: #f9fafb;
+                padding-top: 30px;
+                padding-bottom: 15px;
                 @include three-links-mall()
             }
         }
@@ -516,7 +519,7 @@ header {
             }
         }
         .info-box-grid {
-            padding: 35px 35px 35px 35px;
+            padding: 35px 35px 15px 35px;
             background-color: #f9fafb;
             flex: 6;
             .ten-things {
@@ -554,6 +557,8 @@ header {
             }
             .three-links {
                 background-color: #f9fafb;
+                padding-top: 30px;
+                padding-bottom: 15px;
                 @include three-links-mall()
             }
         }

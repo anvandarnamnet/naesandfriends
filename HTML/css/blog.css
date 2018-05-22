@@ -56,9 +56,9 @@ header {
     display: -ms-flexbox;
     display: flex; }
     .big-section .content .image-big-section {
-      -webkit-box-flex: 7;
-      -ms-flex: 7;
-      flex: 7; }
+      -webkit-box-flex: 8.5;
+      -ms-flex: 8.5;
+      flex: 8.5; }
       .big-section .content .image-big-section img {
         height: 100%;
         width: 100%; }
@@ -86,20 +86,28 @@ header {
           text-transform: uppercase;
           text-decoration: none;
           color: #3169ce;
-          font-weight: 600; }
+          font-weight: 700;
+          font-size: 14px; }
+          .big-section .content .info-box .ten-things a img {
+            padding-left: 10px; }
           .big-section .content .info-box .ten-things a:hover {
             opacity: 0.6; }
       .big-section .content .info-box .three-links {
         padding: 25px 0 10px 0;
         word-spacing: 10px; }
         .big-section .content .info-box .three-links a {
+          border: 1px solid transparent;
+          border-radius: 50px;
           text-decoration: none;
-          color: #3169ce; }
+          padding: 1px 4px 1px 4px;
+          background-color: #B6CAE8;
+          color: #3f4754;
+          font-size: 14px; }
           .big-section .content .info-box .three-links a:hover {
             opacity: 0.7; }
 
 .small-bar-1 {
-  background-color: #3169ce;
+  background-color: #C2D2ED;
   min-height: 60px;
   padding-left: 12.5%;
   padding-right: 12.5%;
@@ -120,13 +128,12 @@ header {
     flex: 3;
     background-color: transparent;
     font-size: 30px;
-    color: white; }
+    color: #3E4855; }
   .small-bar-1 form {
     -webkit-box-flex: 2;
     -ms-flex: 2;
     flex: 2;
-    border: 2px solid #fff;
-    height: 50px;
+    height: 54px;
     width: 440px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -136,34 +143,36 @@ header {
       -ms-flex: 2;
       flex: 2;
       font-size: 20px;
-      height: 100%;
-      background-color: #3169ce;
+      height: 50px;
+      background-color: #C2D2ED;
       padding-left: 40px;
-      border: none;
-      color: #fff;
+      border: 2px solid #3E4855;
+      border-right: none;
+      color: #3E4855;
       outline: none; }
       .small-bar-1 form input[type=text]::-webkit-input-placeholder {
         /* WebKit browsers */
-        color: #fff; }
+        color: #3E4855; }
       .small-bar-1 form input[type=text]:-moz-placeholder {
         /* Mozilla Firefox 4 to 18 */
-        color: #fff; }
+        color: #3E4855; }
       .small-bar-1 form input[type=text]::-moz-placeholder {
         /* Mozilla Firefox 19+ */
-        color: #fff; }
+        color: #3E4855; }
       .small-bar-1 form input[type=text]:-ms-input-placeholder {
         /* Internet Explorer 10+ */
-        color: #fff; }
+        color: #3E4855; }
     .small-bar-1 form input[type=submit] {
       -webkit-box-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      height: 100%;
+      height: 54px;
       font-size: 15px;
-      background-color: #fff;
+      background-color: #3169ce;
       border: none;
-      color: #3169ce;
-      text-transform: uppercase; }
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
       .small-bar-1 form input[type=submit]:hover {
         opacity: 0.6;
         cursor: pointer; }
@@ -192,11 +201,12 @@ header {
         -o-transition-timing-function: ease-out;
         transition-timing-function: ease-out; }
       .big-section-2 .content-2 .three-photos .image-container {
-        max-height: 260px; }
+        height: 260px; }
         .big-section-2 .content-2 .three-photos .image-container img {
           height: 100%;
           width: 100%; }
       .big-section-2 .content-2 .three-photos .text-under-image {
+        height: 95px;
         padding: 30px 35px 35px 35px;
         border-right: 1px solid #E0E1E2;
         border-bottom: 1px solid #E0E1E2;
@@ -207,12 +217,18 @@ header {
           opacity: 0.7;
           padding: 5px 0 20px 0; }
         .big-section-2 .content-2 .three-photos .text-under-image .tui-links {
+          word-spacing: 10px;
           word-spacing: 10px; }
           .big-section-2 .content-2 .three-photos .text-under-image .tui-links a {
+            border: 1px solid transparent;
+            border-radius: 50px;
             text-decoration: none;
-            color: #3169ce; }
+            padding: 1px 4px 1px 4px;
+            background-color: #B6CAE8;
+            color: #3f4754;
+            font-size: 14px; }
             .big-section-2 .content-2 .three-photos .text-under-image .tui-links a:hover {
-              opacity: 0.6; }
+              opacity: 0.7; }
 
 .big-bar {
   background-color: #0a1b3b;
@@ -242,7 +258,7 @@ header {
       font-size: 20px; }
 
 .small-bar-2 {
-  background-color: #3169ce;
+  background-color: #C2D2ED;
   min-height: 60px;
   padding-left: 12.5%;
   padding-right: 12.5%;
@@ -264,7 +280,7 @@ header {
     flex: 1;
     background-color: transparent;
     font-size: 23px;
-    color: white; }
+    color: #3E4855; }
   .small-bar-2 .selectors {
     -webkit-box-flex: 4.3;
     -ms-flex: 4.3;
@@ -277,20 +293,20 @@ header {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background-color: #3169ce; }
+    background-color: #C2D2ED; }
     .small-bar-2 .selectors .select-box {
       height: 100%;
       width: 31%;
-      border: 1px solid #fff;
+      border: 1px solid #3E4855;
       display: inline-block; }
       .small-bar-2 .selectors .select-box select {
-        background: -webkit-linear-gradient(40deg, transparent 50%, white 50%), -webkit-linear-gradient(140deg, transparent 50%, white 50%), -webkit-linear-gradient(left, #3169ce, #3169ce);
-        background: -o-linear-gradient(40deg, transparent 50%, white 50%), -o-linear-gradient(140deg, transparent 50%, white 50%), -o-linear-gradient(left, #3169ce, #3169ce);
-        background: linear-gradient(50deg, transparent 50%, white 50%), linear-gradient(-50deg, transparent 50%, white 50%), linear-gradient(to right, #3169ce, #3169ce);
+        background: -webkit-linear-gradient(40deg, transparent 50%, #3E4855 50%), -webkit-linear-gradient(140deg, transparent 50%, #3E4855 50%), -webkit-linear-gradient(left, #C2D2ED, #C2D2ED);
+        background: -o-linear-gradient(40deg, transparent 50%, #3E4855 50%), -o-linear-gradient(140deg, transparent 50%, #3E4855 50%), -o-linear-gradient(left, #C2D2ED, #C2D2ED);
+        background: linear-gradient(50deg, transparent 50%, #3E4855 50%), linear-gradient(-50deg, transparent 50%, #3E4855 50%), linear-gradient(to right, #C2D2ED, #C2D2ED);
         background-position: calc(100% - 21px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), 100% 0;
         background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
         background-repeat: no-repeat;
-        background-color: #3169ce;
+        background-color: #C2D2ED;
         /* styling and reset */
         line-height: 1.5em;
         padding: 0.5em 3.5em 0.5em 1em;
@@ -306,7 +322,7 @@ header {
         height: 100%;
         width: 100%;
         font-size: 20px;
-        color: white;
+        color: #3E4855;
         font-weight: 300;
         border-radius: 0;
         outline: none; }
@@ -337,11 +353,12 @@ header {
         -o-transition-timing-function: ease-out;
         transition-timing-function: ease-out; }
       .grid-section .grid .first-row-grid .three-photos .image-container {
-        max-height: 260px; }
+        height: 260px; }
         .grid-section .grid .first-row-grid .three-photos .image-container img {
           height: 100%;
           width: 100%; }
       .grid-section .grid .first-row-grid .three-photos .text-under-image {
+        height: 95px;
         padding: 30px 35px 35px 35px;
         border-right: 1px solid #E0E1E2;
         border-bottom: 1px solid #E0E1E2;
@@ -352,19 +369,25 @@ header {
           opacity: 0.7;
           padding: 5px 0 20px 0; }
         .grid-section .grid .first-row-grid .three-photos .text-under-image .tui-links {
+          word-spacing: 10px;
           word-spacing: 10px; }
           .grid-section .grid .first-row-grid .three-photos .text-under-image .tui-links a {
+            border: 1px solid transparent;
+            border-radius: 50px;
             text-decoration: none;
-            color: #3169ce; }
+            padding: 1px 4px 1px 4px;
+            background-color: #B6CAE8;
+            color: #3f4754;
+            font-size: 14px; }
             .grid-section .grid .first-row-grid .three-photos .text-under-image .tui-links a:hover {
-              opacity: 0.6; }
+              opacity: 0.7; }
   .grid-section .grid .second-row-grid {
     padding-top: 15px;
     border: 3px solid transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-height: 360px; }
+    min-height: 340px; }
     .grid-section .grid .second-row-grid .image-grid-two {
       -webkit-box-flex: 7;
       -ms-flex: 7;
@@ -373,7 +396,7 @@ header {
         height: 100%;
         width: 100%; }
     .grid-section .grid .second-row-grid .info-box-grid {
-      padding: 35px 35px 35px 35px;
+      padding: 35px 35px 15px 35px;
       background-color: #f9fafb;
       -webkit-box-flex: 6;
       -ms-flex: 6;
@@ -407,11 +430,17 @@ header {
             opacity: 0.6; }
       .grid-section .grid .second-row-grid .info-box-grid .three-links {
         background-color: #f9fafb;
-        padding: 25px 0 10px 0;
+        padding-top: 30px;
+        padding-bottom: 15px;
         word-spacing: 10px; }
         .grid-section .grid .second-row-grid .info-box-grid .three-links a {
+          border: 1px solid transparent;
+          border-radius: 50px;
           text-decoration: none;
-          color: #3169ce; }
+          padding: 1px 4px 1px 4px;
+          background-color: #B6CAE8;
+          color: #3f4754;
+          font-size: 14px; }
           .grid-section .grid .second-row-grid .info-box-grid .three-links a:hover {
             opacity: 0.7; }
   .grid-section .grid .third-row-grid {
@@ -447,12 +476,18 @@ header {
           opacity: 0.7;
           padding: 5px 0 20px 0; }
         .grid-section .grid .third-row-grid .two-photos .text-under-image .tui-links {
+          word-spacing: 10px;
           word-spacing: 10px; }
           .grid-section .grid .third-row-grid .two-photos .text-under-image .tui-links a {
+            border: 1px solid transparent;
+            border-radius: 50px;
             text-decoration: none;
-            color: #3169ce; }
+            padding: 1px 4px 1px 4px;
+            background-color: #B6CAE8;
+            color: #3f4754;
+            font-size: 14px; }
             .grid-section .grid .third-row-grid .two-photos .text-under-image .tui-links a:hover {
-              opacity: 0.6; }
+              opacity: 0.7; }
   .grid-section .grid .fourth-row-grid {
     padding-top: 30px;
     min-height: 420px;
@@ -472,11 +507,12 @@ header {
         -o-transition-timing-function: ease-out;
         transition-timing-function: ease-out; }
       .grid-section .grid .fourth-row-grid .three-photos .image-container {
-        max-height: 260px; }
+        height: 260px; }
         .grid-section .grid .fourth-row-grid .three-photos .image-container img {
           height: 100%;
           width: 100%; }
       .grid-section .grid .fourth-row-grid .three-photos .text-under-image {
+        height: 95px;
         padding: 30px 35px 35px 35px;
         border-right: 1px solid #E0E1E2;
         border-bottom: 1px solid #E0E1E2;
@@ -487,12 +523,18 @@ header {
           opacity: 0.7;
           padding: 5px 0 20px 0; }
         .grid-section .grid .fourth-row-grid .three-photos .text-under-image .tui-links {
+          word-spacing: 10px;
           word-spacing: 10px; }
           .grid-section .grid .fourth-row-grid .three-photos .text-under-image .tui-links a {
+            border: 1px solid transparent;
+            border-radius: 50px;
             text-decoration: none;
-            color: #3169ce; }
+            padding: 1px 4px 1px 4px;
+            background-color: #B6CAE8;
+            color: #3f4754;
+            font-size: 14px; }
             .grid-section .grid .fourth-row-grid .three-photos .text-under-image .tui-links a:hover {
-              opacity: 0.6; }
+              opacity: 0.7; }
   .grid-section .grid .fifth-row-grid {
     padding: 10px 0 0 0;
     display: grid;
@@ -526,12 +568,18 @@ header {
           opacity: 0.7;
           padding: 5px 0 20px 0; }
         .grid-section .grid .fifth-row-grid .two-photos .text-under-image .tui-links {
+          word-spacing: 10px;
           word-spacing: 10px; }
           .grid-section .grid .fifth-row-grid .two-photos .text-under-image .tui-links a {
+            border: 1px solid transparent;
+            border-radius: 50px;
             text-decoration: none;
-            color: #3169ce; }
+            padding: 1px 4px 1px 4px;
+            background-color: #B6CAE8;
+            color: #3f4754;
+            font-size: 14px; }
             .grid-section .grid .fifth-row-grid .two-photos .text-under-image .tui-links a:hover {
-              opacity: 0.6; }
+              opacity: 0.7; }
   .grid-section .grid .sixth-row-grid {
     border: 3px solid transparent;
     padding: 30px 0 0 0;
@@ -547,7 +595,7 @@ header {
         height: 100%;
         width: 100%; }
     .grid-section .grid .sixth-row-grid .info-box-grid {
-      padding: 35px 35px 35px 35px;
+      padding: 35px 35px 15px 35px;
       background-color: #f9fafb;
       -webkit-box-flex: 6;
       -ms-flex: 6;
@@ -581,11 +629,17 @@ header {
             opacity: 0.6; }
       .grid-section .grid .sixth-row-grid .info-box-grid .three-links {
         background-color: #f9fafb;
-        padding: 25px 0 10px 0;
+        padding-top: 30px;
+        padding-bottom: 15px;
         word-spacing: 10px; }
         .grid-section .grid .sixth-row-grid .info-box-grid .three-links a {
+          border: 1px solid transparent;
+          border-radius: 50px;
           text-decoration: none;
-          color: #3169ce; }
+          padding: 1px 4px 1px 4px;
+          background-color: #B6CAE8;
+          color: #3f4754;
+          font-size: 14px; }
           .grid-section .grid .sixth-row-grid .info-box-grid .three-links a:hover {
             opacity: 0.7; }
 

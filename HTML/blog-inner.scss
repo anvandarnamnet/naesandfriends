@@ -9,6 +9,7 @@ $pad-side: 18.7%;
 $pad-topnbottom: 100px;
 $lighter-blue: #3169ce;
 $darker-blue: #1f2737;
+$link-blue: #B6CAE8;
 
 @mixin borders{
     border: 1px solid #000;
@@ -20,11 +21,16 @@ $darker-blue: #1f2737;
 }
 
 @mixin three-links-mall {
-    padding: 25px 0 10px 0;
+    
     word-spacing: 10px;
     a {
+        border: 1px solid transparent;
+        border-radius: 50px;
         text-decoration: none;
-        color: $lighter-blue;
+        padding: 1px 4px 1px 4px;
+        background-color: $link-blue;
+        color: white;
+        font-size: 14px;
         &:hover {
             opacity: 0.7;
         }
@@ -65,15 +71,12 @@ $darker-blue: #1f2737;
                 padding: 5px 0 20px 0;
             }
             .tui-links {
-                word-spacing: 10px;
-
+                padding-top: 5px;
+                @include three-links-mall;
                 a {
-                    text-decoration: none;
-                    color: $lighter-blue;
-                &:hover {
-                    opacity: 0.6;
+                    color: #3f4754;
                 }
-                }
+               
             }
         }
     }
@@ -271,48 +274,52 @@ header {
        .info {
            background-color: #f9fafb;
            width: 100%;
+           padding: 50px 35px 20px 35px;
+           .top {
+               display: flex;
+               background-color: inherit;
+               width: 100%;
+               padding-bottom: 25px;
+                .title-name {
+                    flex: 2;
+                    background-color: inherit;
+                        .title {
+                            background-color: inherit;
+                            padding: 0 0 10px 0;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        .name {
+                            background-color: inherit;
+                            //padding: 0 0 15px 0;
+                            font-size: 25px;
+                            font-weight: 600;
+                        }
+                }
+                .images {
+                    flex: 1;
+                    background-color: inherit;
+                    padding-bottom: 5px;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    img {
+                        background-color: inherit;
+                        &:hover {
+                            opacity: 0.7;
+                            cursor: pointer;
+                        }
+                    }
+                }
+           }
            
-           .title {
-            background-color: inherit;
-            padding: 70px 0 10px 35px;
-            text-transform: uppercase;
-            font-size: 15px;
-            font-weight: 600;
-           }
-           .name {
-            background-color: inherit;
-            padding: 0 0 10px 35px;
-            font-size: 25px;
-            font-weight: 600;
-           }
            .about {
             background-color: inherit;
-            padding: 0 0 10px 35px;
-            font-size: 15px;
+            //padding: 0 0 10px 35px;
+            font-size: 17px;
             opacity: 0.4;
             line-height: 30px;
-           }
-           .boxes {
-            background-color: inherit;
-            display: flex;
-            justify-content: space-between;
-            padding-top: 35px;
-            padding-left: 35px;
-            padding-right: 35px;
-               .box {
-                   background-color: #f8ce47;
-                   height: 50px;
-                   width: 32%;
-                   display: flex;
-                   align-items: center;
-                   justify-content: center;
-                   text-transform: uppercase;
-                   color: white;
-                   &:hover {
-                       opacity: 0.7;
-                       cursor: pointer;
-                   }
-               }
            }
        }
     }

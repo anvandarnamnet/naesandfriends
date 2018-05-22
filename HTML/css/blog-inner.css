@@ -65,12 +65,16 @@ header {
         font-weight: 600;
         padding-right: 50px; }
       #section-1 .ten-things .date-and-links .three-links {
-        padding: 25px 0 10px 0;
         word-spacing: 10px;
         padding: 0; }
         #section-1 .ten-things .date-and-links .three-links a {
+          border: 1px solid transparent;
+          border-radius: 50px;
           text-decoration: none;
-          color: #3169ce; }
+          padding: 1px 4px 1px 4px;
+          background-color: #B6CAE8;
+          color: white;
+          font-size: 14px; }
           #section-1 .ten-things .date-and-links .three-links a:hover {
             opacity: 0.7; }
   #section-1 .video {
@@ -187,53 +191,55 @@ header {
     display: flex; }
     #section-4 .profile .info {
       background-color: #f9fafb;
-      width: 100%; }
-      #section-4 .profile .info .title {
-        background-color: inherit;
-        padding: 70px 0 10px 35px;
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 600; }
-      #section-4 .profile .info .name {
-        background-color: inherit;
-        padding: 0 0 10px 35px;
-        font-size: 25px;
-        font-weight: 600; }
-      #section-4 .profile .info .about {
-        background-color: inherit;
-        padding: 0 0 10px 35px;
-        font-size: 15px;
-        opacity: 0.4;
-        line-height: 30px; }
-      #section-4 .profile .info .boxes {
-        background-color: inherit;
+      width: 100%;
+      padding: 50px 35px 20px 35px; }
+      #section-4 .profile .info .top {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        padding-top: 35px;
-        padding-left: 35px;
-        padding-right: 35px; }
-        #section-4 .profile .info .boxes .box {
-          background-color: #f8ce47;
-          height: 50px;
-          width: 32%;
+        background-color: inherit;
+        width: 100%;
+        padding-bottom: 25px; }
+        #section-4 .profile .info .top .title-name {
+          -webkit-box-flex: 2;
+          -ms-flex: 2;
+          flex: 2;
+          background-color: inherit; }
+          #section-4 .profile .info .top .title-name .title {
+            background-color: inherit;
+            padding: 0 0 10px 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600; }
+          #section-4 .profile .info .top .title-name .name {
+            background-color: inherit;
+            font-size: 25px;
+            font-weight: 600; }
+        #section-4 .profile .info .top .images {
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          background-color: inherit;
+          padding-bottom: 5px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          text-transform: uppercase;
-          color: white; }
-          #section-4 .profile .info .boxes .box:hover {
-            opacity: 0.7;
-            cursor: pointer; }
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          #section-4 .profile .info .top .images img {
+            background-color: inherit; }
+            #section-4 .profile .info .top .images img:hover {
+              opacity: 0.7;
+              cursor: pointer; }
+      #section-4 .profile .info .about {
+        background-color: inherit;
+        font-size: 17px;
+        opacity: 0.4;
+        line-height: 30px; }
 
 #section-5 {
   max-height: 530px; }
@@ -282,12 +288,20 @@ header {
           opacity: 0.7;
           padding: 5px 0 20px 0; }
         #section-5 .three-images .three-photos .text-under-image .tui-links {
+          padding-top: 5px;
           word-spacing: 10px; }
           #section-5 .three-images .three-photos .text-under-image .tui-links a {
+            border: 1px solid transparent;
+            border-radius: 50px;
             text-decoration: none;
-            color: #3169ce; }
+            padding: 1px 4px 1px 4px;
+            background-color: #B6CAE8;
+            color: white;
+            font-size: 14px; }
             #section-5 .three-images .three-photos .text-under-image .tui-links a:hover {
-              opacity: 0.6; }
+              opacity: 0.7; }
+          #section-5 .three-images .three-photos .text-under-image .tui-links a {
+            color: #3f4754; }
 
 #section-6 {
   background-color: #f9fafb;

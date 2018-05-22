@@ -1,0 +1,74 @@
+@mixin borders{
+    border: 1px solid #000;
+}
+
+@mixin side-pad ($pad-side) {
+    padding-left: $pad-side;
+    padding-right: $pad-side;
+}
+
+@mixin three-links-mall {
+    padding: 25px 0 10px 0;
+    word-spacing: 10px;
+    a {
+        text-decoration: none;
+        color: $lighter-blue;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+@mixin three-pix {
+      
+    .three-photos {
+      
+        width: 100%;
+        border: 3px solid transparent;
+        &:hover {
+            cursor: pointer;
+            border: 3px solid #4ca852;
+            transition-duration: 0.1s;
+            transition-timing-function: ease-out;
+        }
+        .image-container {
+            height: 260px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        
+        .text-under-image {
+            
+            padding: 30px 35px 35px 35px;
+            border-right: 1px solid #E0E1E2;
+            border-bottom: 1px solid #E0E1E2;
+            border-left: 1px solid #E0E1E2;
+            .tui-head {
+                font-size: 22px;
+            }
+            .tui-date {
+                opacity: 0.7;
+                padding: 5px 0 20px 0;
+            }
+            .tui-links {
+                word-spacing: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: $lighter-blue;
+                &:hover {
+                    opacity: 0.6;
+                }
+                }
+            }
+        }
+    }
+}
+
+@mixin big-container {
+    padding-top: $pad-topnbottom;
+    padding-bottom: $pad-topnbottom;
+    @include side-pad;
+}

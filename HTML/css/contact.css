@@ -187,10 +187,13 @@ header {
       .bar .bar-content .media:hover {
         opacity: 0.7;
         cursor: pointer; }
-      .bar .bar-content .media img {
+      .bar .bar-content .media .image {
         background-color: inherit;
         padding-left: 60px;
         padding-right: 40px; }
+      .bar .bar-content .media img {
+        height: 30px;
+        background-color: inherit; }
       .bar .bar-content .media .social-media {
         background-color: inherit; }
         .bar .bar-content .media .social-media .name {
