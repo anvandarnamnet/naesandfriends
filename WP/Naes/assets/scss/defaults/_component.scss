@@ -1,0 +1,41 @@
+.component{
+    padding-top: $component;
+    padding-bottom: $component;
+    background: #FFF;
+}
+#component_0{
+    margin-top: $header-margin;
+    padding-top: 0;
+} 
+.component-h{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 91px;
+
+    font-size: 40px;
+    color: $black;
+
+    &.h-text{
+        margin-bottom: 12px;
+    }
+}
+.component-sub-h{
+    margin-top: 0;
+    margin-bottom: 91px;
+    text-align: center;
+    color: $black;
+
+}
+@media (max-width: $tablet-breakpoint){
+    .component-h{
+        font-size: 35px;
+        line-height: 2rem;
+        
+    }
+}
+@media (max-width: $mobile-breakpoint){
+    .component-h{
+        font-size: 30px;
+        line-height: 2.2rem;
+    }
+}

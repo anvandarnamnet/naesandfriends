@@ -1,0 +1,88 @@
+footer {
+    background-color: #1f2737;
+    //height: 300px;
+    
+    
+    .footer-flex{
+        align-items: center;
+    }
+    object {
+        flex: 1;
+        height: 100px;
+        width: 200px;
+        background-color: #1f2737;
+    }
+    .footer-text-box {
+        padding-left: 300px;
+        flex: 5;
+        background-color: $darker-blue;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .text-1 {
+            background-color: $darker-blue;
+            line-height: 30px;
+            height: 100%;
+            color: white;
+            h1 {
+                background-color: $darker-blue;
+                padding-bottom: 10px;
+                font-size: 18px;
+                font-weight: 600;
+                color: $white;
+            }
+            p {
+                background-color: $darker-blue;
+                color: $white;
+            }
+        }
+        .text-2 {
+            background-color: $darker-blue;
+            line-height: 30px;
+            height: 100%;
+            color: white;
+            h1 {
+                background-color: $darker-blue;
+                color: $white;
+                padding-bottom: 10px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p {
+                background-color: $darker-blue;
+                padding-bottom: 4px;
+                color: $white;
+            }
+            .social-media-logos {
+                background-color: $darker-blue;
+                height: 50px;
+                width: 110px;
+                float: left;
+                
+                .social-media-links {
+                    background-color: $darker-blue;
+                    position: relative;
+                    display: inline-block;
+                    &:after {
+                        content: ""; 
+                        position: absolute; 
+                        top: 0; 
+                        right: 0; 
+                        bottom: 0; 
+                        left: 0;
+                    }
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    object {
+                        height: 40px;
+                        width: 40px; 
+                        padding: 10px 10px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

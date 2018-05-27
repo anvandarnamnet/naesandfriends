@@ -1,0 +1,35 @@
+//Colors
+$black: #333333;
+$white: #FFF;
+$pad-side: 12%;
+$pad-topnbottom: 100px;
+$lighter-blue: #3169ce;
+$darker-blue: #1f2737;
+$yellow: #f9cf01;
+$green: #4da953;
+
+//Breakpoints
+  $tablet-breakpoint: 850px;
+  $mobile-breakpoint: 500px;
+  $nav-breakpoint: 800px;
+
+//Widths
+  $main-w: 100%;
+  $main-inner-w: 1140px;
+
+  $header-inner-w: calc(100% - 80px);
+
+
+
+
+//Constant sizes
+  $component: 98px;
+  $header-margin: 0px;
+
+
+
+//Fonts
+  $font-family: 'Avenir', sans-serif;
+  $font-family-header: 'Glacial-Indifference', sans-serif;
+  $bold-weight: 400;
+  $text-weight: 400;
