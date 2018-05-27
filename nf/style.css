@@ -1,0 +1,742 @@
+/*==============================Grid-systemet=============================*/
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*För att mobilmenyn ska kunna täcka hela sidan och inte bara det som syns i fönstret*/
+html{
+    position:relative;
+}
+
+body {
+    margin: 0;
+}
+
+/*Definierar main content ytan som är 80% bred och centrerad för att lämna luft på sidorna*/
+.content {
+    width: 80%;
+    margin: auto;
+}
+
+/*Verticalcontainer och verticalalign används för att centrera objekt vertikalt i sin parent div*/
+.verticalcontainer {
+    display: table;
+}
+
+.verticalalign {
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+/*Används för att dölja saker i desktopläget*/
+.mobileonly {
+    display: none;
+}
+
+
+/*-----------header------------------------------------*/
+
+.header {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+}
+
+header img {
+    height: 50px;
+    margin: 15px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover {
+    color: rgb(0, 172, 70);
+}
+
+.nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 80%;
+}
+
+ul {
+    list-style: none;
+    text-align: right;
+}
+
+li {
+    display: inline;
+    margin: 15px;
+}
+
+
+/*-----------hero------------------------------------*/
+
+.hero {
+    background-image: url(arbete.jpg);
+    background-size: cover;
+    min-height: 500px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.svartruta {
+    background-color: rgba(0,0,0,0.8);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;  
+}
+
+h1 span {
+    font-weight: 900;
+    color: #ffce06;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 95%;
+    line-height: 1.8;
+    padding: 0 10%;
+}
+
+.knapp {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 80%;
+    border-width: 3px;
+    border-radius: 50px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.knapp:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.knappcontainer {
+    width: 250px;
+    height: 50px;
+    margin: auto;
+}
+
+
+
+
+/*-----------Can We Help You?------------------------------------*/
+
+
+
+.canwehelp {
+    background-color: rgb(41, 107, 221);
+    min-height: 100px;
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+.canwehelp .box {
+    height: 100px;
+    width: 25%;
+    float: left;
+}
+
+.canwehelp h3 {
+    font-size: 120%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.canwehelp p {
+    font-size: 60%;
+}
+
+.storre {
+    font-size: 170%;
+    line-height: 1.6;
+}
+
+.canwehelp a {
+    color: white;
+    text-decoration: none;
+}
+
+.canwehelp img {
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/*-----------What do you need?------------------------------------*/
+
+#gronlinje1 {
+    border-left: 1px solid rgb(0, 172, 70);
+    position: absolute;
+    height: 60px;
+    left: 50%;
+}
+
+.whatdoyouneed {
+    clear: left;
+    background-color: white;
+    position: relative;
+}
+
+.whatdoyouneed .box {
+    width: 32%;
+    height: 150px;
+    float: left;
+    background-color: white;
+    border: 1px solid grey;
+    margin: 0.5%;
+    margin-bottom: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.whatdoyouneed .box:hover {
+    background-color: rgb(0, 172, 70);
+}
+
+.whatdoyouneed .box:hover h5, .whatdoyouneed .box:hover p {
+    color: white;
+}
+
+.whatdoyouneed h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    z-index: 4;
+    padding-left: 40%;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.whatdoyouneed p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(102, 102, 102);
+    font-size: 70%;
+    padding-left: 40%;
+}
+    
+.whatdoyouneed h2 {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-weight: 400;
+}
+
+/*Bilden som visas från början*/
+.startbild img {
+    width: 180px;  
+}
+
+/*Bilden som visas när man hovrar över boxen*/
+.hoverbild img {
+    width: 180px;
+}
+
+.bildcontainer {
+    position: absolute;
+    float: left;
+    bottom: -10%;
+    right: 65%;
+    overflow: hidden;
+    z-index: 70;
+}
+
+.bildcontainer .hoverbild {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.whatdoyouneed .box:hover .hoverbild {
+    display: block;
+}
+
+
+
+
+
+
+/*-----------Why?------------------------------------*/
+
+.why {
+    background-color: rgb(250, 250, 250);
+    height: 650px;
+    position: relative;
+}
+
+.why .content {
+    background-color: rgb(250, 250, 250);
+    position: relative;
+}
+
+.why h2 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-weight: 400;
+}
+
+.whybild {
+    height: 350px;
+    overflow: hidden;
+    z-index: 3;
+    position: relative;
+    padding: 0;
+}
+
+.whybild img {
+    height: 100%;
+    left: -60px;
+    position: absolute;
+}
+
+.whytextcontainer {
+    margin-top: 70px;
+    right: 0;
+    z-index: 4;
+    position: absolute;
+    background-color: rgb(255, 206, 6);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.whytext {
+    font-style: italic;
+    line-height: 2;
+    font-size: 80%;
+    padding: 3% 3% 3% 14%;
+    z-index: 10;
+}
+
+.whycitat {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.showmore {
+    background-color: rgb(41, 107, 221);
+    right: 0;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70%;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#arrowleft {
+    width: 20px;
+    position: absolute;
+    top: 315px;
+    margin-left: 10px;
+}
+
+#arrowright {
+    width: 20px;
+    position: absolute;
+    top: 315px;
+    right: 0;
+    margin-right: 10px;
+}
+
+.citattecken {
+    width: 70px;
+    position: absolute;
+    left: 8%;
+    top: 20px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+
+
+/*-----------What we have done------------------------------------*/
+
+#gronlinje2 {
+    border-left: 1px solid rgb(0, 172, 70);
+    position: absolute;
+    top: -30px;
+    height: 60px;
+    left: 50%;
+}
+
+.whatwehavedone {
+    min-height: 500px;
+    background-color: white;
+    font-family: "Open Sans";
+    color: rgb(102, 102, 102);
+    line-height: 2;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.whatwehavedone h2 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-weight: 400;
+}
+
+div.ruta {
+    width: 30%;
+    border: 1px solid rgb(225, 225, 225);
+    margin: 0px 10px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.ruta img {
+    width: 100%;
+}
+
+div.behallare {
+    padding: 10px;
+}
+
+div.ruta:hover {
+    border: 1px solid rgb(0, 172, 70); 
+    box-shadow: 0px 0px 0px 4px rgb(0, 172, 70);
+    border-radius: 1px;
+}
+
+.whatwehavedone h5 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 900;
+    font-size: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.whatwehavedone h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 800;
+    margin: 0;
+    font-size: 60%;
+    margin-bottom: -3px;
+    letter-spacing: 0.3px;
+}
+
+.whatwehavedone p {
+    color: rgb(51, 51, 51);
+    margin: 0;
+    font-size: 80%;
+}
+
+
+/*-----------Siffror------------------------------------*/
+
+.sifferrad {
+    background-image: url(people.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blaruta {
+    background-color: rgba(41, 107, 221, 0.9);
+    height: 250px;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.sifferrad h2 {
+    margin: 0;
+    font-size: 200%;
+}
+
+.sifferrad p {
+    margin: 0;
+}
+
+.sifferbox {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    float: left;
+    padding: 10px;
+    width: 25%;
+}
+
+
+/*==========================================MEDIA QUERIES=============================================*/
+/*==========================================MEDIA QUERIES=============================================*/
+/*==========================================MEDIA QUERIES=============================================*/
+
+
+@media only screen and (max-width: 500px) {  
+    /*Gör att main content ytan nu är 90% bred istället för 80%*/
+    .content, .hundra {
+        width: 90%;
+    }
+    
+    /*Gör att saker försvinner i mobilvy*/
+    .collapse {
+        display: none;
+    }
+    
+    /*Gör att saker visas i mobilmenyn*/
+    .mobileonly {
+        display: block;
+    }
+    
+/*-----------Mobilmenyn------------------------------------*/    
+    .nav {
+        display: none; /*Ändra till display:block för att se mobilmenyn!*/
+        padding-top: 40px;
+        height: 100%;
+        width: 100%;
+        background-color: #3a6cd6;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }    
+    
+    .header .kryss {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 25px;
+        height: auto;
+    }
+    
+    ul {
+        padding: 0;
+    }
+    
+    li {
+        display: block;
+        text-align: center;
+        font-size: 150%;
+        padding: 20px;
+    }
+    
+    .nav a {
+        color: white;
+    }
+
+    
+    
+/*-----------Header------------------------------------*/     
+    
+    .header {
+        height: auto;
+    }
+
+    .header img {
+        height: 40px;
+    }    
+
+    .mobileonly img {
+        float: right;
+    }    
+
+    
+/*-----------Hero------------------------------------*/    
+    
+    .hero {
+        min-height: 400px;
+    }
+    
+    h3 {
+        font-size: 75%;
+}
+
+    .knapp {
+        font-size: 60%;
+        border-width: 3px;
+        border-radius: 50px;
+        width: 150px;
+        height: 40px;
+}
+
+    .knappcontainer {
+        width: 150px;
+        height: 40px;
+    }
+
+/*-----------Can we help?------------------------------------*/    
+    
+    .canwehelp {
+        height: auto;
+    }
+    
+    .canwehelp .box {
+        width: 33%;
+        text-align: left;
+        padding-bottom: 20px;
+}
+    
+    .canwehelp p {
+        font-size: 50%;
+        letter-spacing: 0.5px;
+    }
+    
+    .storre {
+        font-size:  150%;
+    }
+    
+    #canwehelprubrik {
+        width: 100%;
+        padding-bottom: 0;
+        margin-bottom: -20px;
+        text-align: center;
+}
+    
+    .canwehelp img {
+        height: 15px;
+        margin-right: 100%;
+        margin-bottom: 15px;
+    }
+      
+/*-----------What do you need?------------------------------------*/    
+    
+     .whatdoyouneed {
+        padding-bottom: 70px;;
+    }
+    
+    .whatdoyouneed .box {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+}
+    
+    .whatdoyouneed h5 {
+        font-size: 120%;
+        padding-left: 30%;
+        margin-bottom: -10px;
+    }
+
+    .whatdoyouneed p {
+        font-size: 100%;
+        padding-left: 30%;
+        padding-right: 10%;
+    }    
+    
+    .bildcontainer {
+        position: absolute;
+        float: left;
+        bottom: -10%;
+        left: -30%;
+        overflow: hidden;
+        z-index: 70;
+    }
+   
+/*-----------Why Naes & Friends?------------------------------------*/    
+    
+    .whytextcontainer {
+        margin-top: 140px;
+        width: 80%;
+}
+    .why {
+        height: 700px;
+    }
+    
+    /*Här behöver ytan vara 80% bred igen för att pilarna ska få eget utrymme i kanten*/
+    .why .content {
+        width: 80%; 
+    }
+    
+    .whybild {
+        height: 200px;
+        width: 100%;
+}
+
+    .whybild img {
+        left: 0;
+    }
+
+    .whytext {
+        font-size: 80%;
+        font-weight: 900;
+        line-height: 1.7;
+    }
+    
+    .whycitat {
+        font-weight: 900;
+    }
+    
+    #arrowright, #arrowleft {
+        z-index: 4;
+    }
+  
+    .citattecken {
+        width: 30px;
+        left: 4%;
+        top: 15%;
+}  
+    
+    
+/*-----------What we have done?------------------------------------*/    
+    
+    div.ruta {
+    width: 100%;
+    margin: 5px 0px;
+}
+    
+/*-----------Siffror------------------------------------*/     
+    .sifferbox {
+        width: 50%;
+    }
+    
+    .sifferrad h2 {
+        font-size: 170%;
+}
+
+    .sifferrad p {
+       font-size: 90%;
+}
+
+    
+}
