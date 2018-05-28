@@ -1,0 +1,39 @@
+.numbers{
+    .big-bar {
+        background-color: #0a1b3b;
+        //@include side-pad;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //padding: 0 16% 0 16%;
+
+        padding: 61px 0;
+        .flex{
+            justify-content: space-around;
+            .big-bar-text {
+                background-color: transparent;
+                text-align: center;
+                min-width: 200px;
+                margin-bottom: 15px;
+                
+                .big-text {
+                    background-color: transparent;
+                    font-size: 60px;
+                    color: $white;
+                    padding-bottom: 10px;
+
+                    margin: 0;
+                }
+                .small-text {
+                    background-color: transparent;
+                    font-size: 20px;
+                    color: $white;
+
+                    margin: 0;
+                    
+                }
+            } 
+        }
+          
+    }
+}

@@ -3,8 +3,11 @@ $logosrc = get_option_field('logo');
 ?>
 <header>
             <div class="logo">
-                <object data="img/blog/logo.svg" type="image/svg+xml">
-                </object>
+                <div class="inner-logo">
+                    <a class="overlay-link" href="<?= get_home_url(); ?>"></a>
+                    <object data="<?= get_option_field('logo'); ?> " type="image/svg+xml">
+                    </object>
+                </div>
             </div>
             <ul>
                 <li>What we do</li>

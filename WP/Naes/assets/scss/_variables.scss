@@ -3,10 +3,13 @@ $black: #333333;
 $white: #FFF;
 $pad-side: 12%;
 $pad-topnbottom: 100px;
+$lightest-blue: #C2D2ED;
 $lighter-blue: #3169ce;
 $darker-blue: #1f2737;
 $yellow: #f9cf01;
 $green: #4da953;
+$gray-text: #3E4855;
+
 
 //Breakpoints
   $tablet-breakpoint: 850px;
@@ -29,7 +32,7 @@ $green: #4da953;
 
 
 //Fonts
-  $font-family: 'Avenir', sans-serif;
-  $font-family-header: 'Glacial-Indifference', sans-serif;
+  $font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  $font-family-header: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   $bold-weight: 400;
   $text-weight: 400;

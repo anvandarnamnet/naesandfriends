@@ -1,47 +1,4 @@
-@font-face {
-font-family: 'Avenir';
-font-style: normal;
-font-weight: 900;
-src: local('Avenir LT Std 95 Black'), url('fonts/AvenirLTStd-Black.woff') format('woff');
-}
 
-
-@font-face {
-font-family: 'Avenir';
-font-style: normal;
-font-weight: 400;
-src: local('Avenir LT Std 45 Book'), url('fonts/AvenirLTStd-Book.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Avenir';
-font-style: normal;
-font-weight: 800;
-src: local('Avenir LT Std 85 Heavy'), url('fonts/AvenirLTStd-Heavy.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Avenir';
-font-style: normal;
-font-weight: 300;
-src: local('Avenir LT Std 35 Light'), url('fonts/AvenirLTStd-Light.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Avenir';
-font-style: normal;
-font-weight: 500;
-src: local('Avenir LT Std 65 Medium'), url('fonts/AvenirLTStd-Medium.woff') format('woff');
-}
-@font-face {
-    font-family: 'Glacial-Indifference';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Glacial Indifference Regular') url('fonts/GlacialIndifference-Regular.otf') format('otf');
-}
 *{
     font-family: $font-family;
     word-wrap: break-word;
@@ -52,48 +9,15 @@ h3,
 h4,
 h5,
 h6{
-    font-weight: $bold-weight;
+   // font-weight: $bold-weight;
     font-family: $font-family-header;
-    color: $black;
-
-}
-p,
-a{
-    font-weight: $text-weight;
-    color: $black;
+   // color: $black;
 
 }
 
-h1{
-    font-size: 45px;
-    line-height: 3rem;
-}
-h2{
-    font-size: 28px;
-}
-h3{
-    font-size: 24px;
-}
-h4{
-    font-size: 18px;
-}
-h5{
-    font-size: 18px;
-}
-h6{
-    font-size: 18px;
-}
-p,
-a{
-    font-size: 18px;
-    line-height: 28px;
-}
 a{
     color: inherit;
     text-decoration: none;
-}
-a:hover{
-    opacity: 0.8;
 }
 .underline{
     text-decoration: underline;
@@ -108,11 +32,4 @@ a.overlay-link{
     width: 100%;
     height: 100%;
     display: block;
-}
-@media (max-width: $tablet-breakpoint){
-    p,
-    a{
-        font-size: 13px;
-        line-height: 1.4rem;
-    }
 }

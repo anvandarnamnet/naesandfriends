@@ -6,10 +6,23 @@ header {
     align-items: center;
  
     border-bottom: 1px solid #E0E1E2;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: calc(100% - 40px);
     .logo {
          flex: 4;
          background-color: #fff;
          height: 100%;
+         display: inline;
+         width: 100px;
+         .inner-logo{
+             position: relative;
+             display: inline-block;
+             height: 100%;
+         }
          img {
              background-color: #000;
              width: 20%;
@@ -18,14 +31,23 @@ header {
              
          }
      ul {
-         flex: 5;
-         text-transform: uppercase;
-         list-style-type: none;
-         display: flex;
-         justify-content: space-between;
-         font-size: 14px;
-         font-weight: 600;
-         opacity: 0.7;
+        text-transform: uppercase;
+        list-style-type: none;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        opacity: 0.7;
+        text-align: right;
+        width: calc(100% - 100px);
+        float: right;
+        padding: 0;
+         li{
+             display: inline-block;
+             margin-right: 20px;
+             a{
+
+             }
+         }
          li:hover {
              opacity: 0.6;
              cursor: pointer;

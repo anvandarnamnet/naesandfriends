@@ -1,6 +1,6 @@
 <footer>
     <div class="flex-container footer-flex main-inner">
-            <object data="img/blog/logo-white.svg" type="image/svg+xml">
+            <object data="<?= get_option_field('logo_white'); ?>" type="image/svg+xml">
             </object>
             <div class="footer-text-box">
                 <div class="text-1">

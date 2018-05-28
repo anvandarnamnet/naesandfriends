@@ -1,0 +1,57 @@
+.newsletter{
+    .small-bar-1 {
+        background-color: $lightest-blue;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       .content {
+           display: flex;
+           width: 1140px;
+            p {
+                flex: 3;
+                background-color: $lightest-blue;
+                font-size: 30px;
+                color: $gray-text;
+
+                margin: 0;
+            }
+            form {
+                flex: 2;
+                height: 54px;
+                width: 440px;
+                display: flex;
+
+                margin: 0;
+                
+                input[type=text]{    
+                    flex: 2;
+                    font-size: 20px;
+                    height: 54px;
+                    background-color: $lightest-blue;
+                    @include placeholder-color($gray-text);
+                    padding-left: 40px;
+                    border: 2px solid $gray-text;
+                    border-right: none;
+                    color: $gray-text;
+                    outline: none;
+                }
+                input[type=submit]{ 
+                    flex: 1;  
+                    height: 54px; 
+                    font-size: 15px;
+                    background-color: $lighter-blue;
+                    border: none;
+                    color: white; 
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    &:hover{
+                        opacity: 0.6;
+                        cursor: pointer;
+                    }
+                }
+            }
+       }
+    }
+}
