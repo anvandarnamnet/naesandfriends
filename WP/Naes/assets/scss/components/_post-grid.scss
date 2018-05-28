@@ -1,0 +1,19 @@
+.post-grid{
+    .main-inner{
+        .grid{
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+            grid-auto-rows: 420px;
+            grid-gap: 6px;
+            .grid-third{
+                grid-column: span 2;
+                grid-row: span 1;                
+            }
+            .grid-half{
+                grid-column: span 3;
+                grid-row: span 1;                
+            }
+        }
+    }
+}

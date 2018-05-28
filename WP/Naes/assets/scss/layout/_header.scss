@@ -30,27 +30,32 @@ header {
              }
              
          }
-     ul {
-        text-transform: uppercase;
-        list-style-type: none;
-        display: block;
-        font-size: 14px;
-        font-weight: 600;
-        opacity: 0.7;
-        text-align: right;
-        width: calc(100% - 100px);
-        float: right;
-        padding: 0;
-         li{
-             display: inline-block;
-             margin-right: 20px;
-             a{
-
+         nav{
+           
+            display: block;
+            
+            width: calc(100% - 100px);
+            float: right;
+            ul {
+                text-transform: uppercase;
+                list-style-type: none;
+                padding: 0;
+                text-align: right;
+                
+                 li{
+                     display: inline-block;
+                     margin-left: 20px;
+                     a{
+                        font-size: 14px;
+                        font-weight: 600;
+                        opacity: 0.7;
+                     }
+                 }
+                 li:hover {
+                     opacity: 0.6;
+                     cursor: pointer;
+                 }
              }
          }
-         li:hover {
-             opacity: 0.6;
-             cursor: pointer;
-         }
-     }
+     
  }

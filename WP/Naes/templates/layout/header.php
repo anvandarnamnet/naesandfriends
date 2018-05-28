@@ -9,12 +9,9 @@ $logosrc = get_option_field('logo');
                     </object>
                 </div>
             </div>
-            <ul>
-                <li>What we do</li>
-                <li>Who we are</li>
-                <li>What people say</li>
-                <li>Blog &amp pod</li>
-                <li>Faq</li>
-                <li>Contact</li>  
-            </ul>
+            <?php echo wp_nav(array(
+                            'lang' => current_language(),
+                            'nav_id' => 'top',
+                        ));
+                        ?>
     </header>
