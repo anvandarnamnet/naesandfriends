@@ -43,7 +43,7 @@ header {
       cursor: pointer; }
 
 .pic-and-info {
-  min-height: 720px;
+  height: 720px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,31 +54,88 @@ header {
     .pic-and-info .image img {
       height: 100%;
       width: 100%; }
-  .pic-and-info .texts {
+  .pic-and-info .contact-form {
+    background-color: #f9fafb;
     width: 39%;
-    margin-top: 180px;
+    padding-top: 130px;
+    margin-top: 70px;
     margin-right: 25px;
-    margin-left: 40px; }
-    .pic-and-info .texts .title {
-      text-transform: uppercase;
-      font-size: 23px;
-      opacity: 0.8;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      letter-spacing: 0;
-      margin-bottom: 15px; }
-    .pic-and-info .texts .bread-1 {
-      line-height: 35px;
-      font-size: 20px;
-      font-weight: 400;
-      opacity: 0.5;
-      margin-bottom: 30px;
-      font-family: "Gill Sans"; }
-    .pic-and-info .texts .bread-2 {
-      line-height: 35px;
-      font-size: 20px;
-      opacity: 0.5;
-      font-family: "Gill Sans"; }
+    padding-right: 25px;
+    padding-left: 40px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700; }
+    .pic-and-info .contact-form .contact-fill {
+      width: 100%;
+      padding: 34px 0 0 0;
+      margin-right: 85px; }
+      .pic-and-info .contact-form .contact-fill .box {
+        height: 53px;
+        width: 100%;
+        background-color: #f0f1f2;
+        border: 1px solid #E0E1E2;
+        margin-bottom: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .pic-and-info .contact-form .contact-fill .box input {
+          width: 80%;
+          height: 100%;
+          margin: 0 0 0 10%;
+          font-size: 20px;
+          background-color: inherit;
+          border: none;
+          outline: none; }
+        .pic-and-info .contact-form .contact-fill .box .image-holder {
+          width: 18%;
+          background-color: inherit;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .pic-and-info .contact-form .contact-fill .box .image-holder img {
+            background-color: inherit; }
+      .pic-and-info .contact-form .contact-fill .box-big {
+        height: 163px;
+        width: 100%;
+        background-color: #f0f1f2;
+        border: 1px solid #E0E1E2;
+        margin-bottom: 18px; }
+        .pic-and-info .contact-form .contact-fill .box-big textarea {
+          height: 80%;
+          width: 89%;
+          background-color: inherit;
+          border: none;
+          outline: none;
+          font-size: 20px;
+          margin: 20px 1% 20px 10%;
+          overflow-y: scroll;
+          display: inline;
+          resize: none; }
+      .pic-and-info .contact-form .contact-fill .skicka {
+        text-transform: uppercase;
+        height: 65px;
+        width: 180px;
+        background-color: #336dd6;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px; }
+        .pic-and-info .contact-form .contact-fill .skicka:hover {
+          opacity: 0.7;
+          cursor: pointer; }
   .pic-and-info .yellow {
     height: 90px;
     width: 660px;
