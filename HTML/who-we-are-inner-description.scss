@@ -1,0 +1,366 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color:inherit;
+    //font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-family: Montserrat, sans-serif;
+}
+
+$pad-side: 12%;
+$pad-topnbottom: 100px;
+$lighter-blue: #3169ce;
+$darker-blue: #1f2737;
+$yellow: #f9cf01;
+$green: #4da953;
+$baby-blue: #a5c5d1;
+
+@mixin borders{
+    border: 1px solid #000;
+}
+
+@mixin big-container {
+    padding-top: $pad-topnbottom;
+    padding-bottom: $pad-topnbottom;
+    @include side-pad;
+}
+
+@mixin side-pad {
+    padding-left: $pad-side;
+    padding-right: $pad-side
+}
+
+@mixin three-pix {
+      
+    .three-photos {
+      
+        width: 100%;
+        border: 3px solid transparent;
+        &:hover {
+            cursor: pointer;
+            border: 3px solid #4ca852;
+            transition-duration: 0.1s;
+            transition-timing-function: ease-out;
+        }
+        .image-container {
+            max-height: 260px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        
+        .text-under-image {
+            
+            padding: 30px 35px 35px 35px;
+            border-right: 1px solid #E0E1E2;
+            border-bottom: 1px solid #E0E1E2;
+            border-left: 1px solid #E0E1E2;
+            .tui-head {
+                font-size: 22px;
+            }
+            .tui-date {
+                opacity: 0.7;
+                padding: 5px 0 20px 0;
+            }
+            .tui-links {
+                word-spacing: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: $lighter-blue;
+                &:hover {
+                    opacity: 0.6;
+                }
+                }
+            }
+        }
+    }
+}
+
+@mixin bar-style {
+    background-color: $lighter-blue;
+    min-height: 60px;
+    @include side-pad;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #FFF;
+    min-height: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E0E1E2;
+    .logo {
+        
+         background-color: #fff;
+         height: 100%;
+         img {
+             background-color: #000;
+             width: 20%;
+             height: 100%;
+             }
+         }
+     ul {
+         margin-left: auto;
+         font-family: Montserrat;
+         width: 800px;
+         text-transform: uppercase;
+         list-style-type: none;
+         display: flex;
+         justify-content: space-between;
+         font-size: 14px;
+         font-weight: 600;
+         letter-spacing: 0px;
+         opacity: 0.7;
+         li:hover {
+             opacity: 0.6;
+             cursor: pointer;
+         }
+     }
+ }
+
+ .pic-and-info {
+     min-height: 740px;
+     width: 100%;
+     display: flex;
+     position: relative;
+     .image {
+         width: 55.7%;
+         img {
+             height: 100%;
+             width: 100%;
+         }
+     }
+     .texts {
+         width: 39%;
+         margin-top: 180px;
+         margin-right: 25px;
+         margin-left: 40px;
+         .title {
+            text-transform: uppercase;
+            font-size: 23px;
+            opacity: 0.8;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0;
+            margin-bottom: 15px;
+         }
+         .bread-1 {
+             line-height: 35px;
+             font-size: 20px;
+             font-weight: 400;
+             opacity: 0.5;
+             margin-bottom: 30px;
+             font-family: "Gill Sans";
+
+         }
+         .bread-2 {
+            line-height: 35px;
+            font-size: 20px;
+            opacity: 0.5;
+            font-family: "Gill Sans";
+         }
+     }
+     .yellow {
+        height: 90px;
+        width: 660px;
+        right: 25px;
+        top: 65px;
+        position: absolute;
+        background-color: $yellow;
+        padding-left: 55px;
+        padding-right: 35px;
+        display: flex;
+        align-items: center;
+        p {
+            color: white;
+            font-size: 32px;
+            font-weight: 400;
+            margin-right: 145px;
+        }
+        img {
+            margin-left: 30px;
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+     }
+ }
+
+ .green-bar-divider {
+    .top {
+        height: 110px;
+        width: 100%;
+        background-color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .bar {
+            background-color: white;
+            height: 100%;
+            width: 50%;
+            border-right: 1px solid $green;
+        }
+    }
+}
+
+.tips {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    height: 530px;
+    margin-bottom: 5px;
+    .boxes {
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-between;
+        text-align: start;
+        .box {
+            height: 420px;
+            width: 33%;
+            border: 3px solid transparent;
+            &:hover {
+                cursor: pointer;
+                border: 3px solid #4ca852;
+                transition-duration: 0.1s;
+                transition-timing-function: ease-out;
+            }
+            .image-container {
+                 height: 255px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .text-under {
+                padding-left: 30px;
+                padding-top: 15px;
+                height: 148px;
+                border: 1px solid #E0E1E2;
+                .head {
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 0px;
+                }
+                .date {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-top: 5px;
+                }
+                .links {
+                    margin-top: 20px;
+                    a {
+                        text-decoration: none;
+                        color: $lighter-blue;
+                        font-size: 14px;
+                        font-weight: 500;
+                        padding: 5px 10px 5px 10px;
+                        letter-spacing: 0px;
+                        border: 2px solid $lighter-blue;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
+
+ footer {
+    background-color: #1f2737;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    .content {
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        object {
+            flex: 1;
+            height: 100px;
+            width: 200px;
+            background-color: #1f2737;
+        }
+        .footer-text-box {
+            padding-left: 27%;
+            flex: 5;
+            background-color: $darker-blue;
+            height: 130px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1 {
+                background-color: $darker-blue;
+                padding-bottom: 10px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+            p {
+                background-color: $darker-blue;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .text-1 {
+                background-color: $darker-blue;
+                line-height: 30px;
+                height: 100%;
+                color: white;
+                min-width: 100px;
+                
+            }
+            .text-2 {
+                background-color: $darker-blue;
+                line-height: 30px;
+                height: 100%;
+                color: white;
+                min-width: 150px;
+                
+            }
+            .text-3 {
+                background-color: $darker-blue;
+                line-height: 30px;
+                height: 100%;
+                color: white;
+                
+                
+                .social-media-logos {
+                    background-color: $darker-blue;
+                    height: 50px;
+                    width: 110px;
+                    float: left;
+                   
+                    .social-media-links {
+                        background-color: $darker-blue;
+                        position: relative;
+                        display: inline-block;
+                        &:after {
+                            content: ""; 
+                            position: absolute; 
+                            top: 0; 
+                            right: 0; 
+                            bottom: 0; 
+                            left: 0;
+                        }
+                        &:hover {
+                            opacity: 0.8;
+                        }
+    
+                        object {
+                            height: 40px;
+                            width: 40px; 
+                            padding: 10px 10px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
