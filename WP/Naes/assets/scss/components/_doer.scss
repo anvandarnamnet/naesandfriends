@@ -1,12 +1,16 @@
 .doer{
+    *{
+        margin: 0;
+    }
     .need {
         display: flex;
         flex-direction: column;
         align-items: center;
-        p {
+        h2 {
             font-size: 40px;
             font-weight: 300;
             letter-spacing: 4px;
+            text-align: center;
         }
         .boxes {
             height: 195px;
@@ -18,9 +22,9 @@
                 height: 100%;
                 width: 32.9%;
                 border: 1px solid #E0E1E2;
-                background: url(../img/skill/cog-green.png) no-repeat -25% 150%;
+                background: url(../images/cog-green.png) no-repeat -25% 150%;
                 &:hover {
-                    background: #4da953 url(../img/skill/cog-white.png) no-repeat -25% 150%;
+                    background: #4da953 url(../images/cog-white.png) no-repeat -25% 150%;
                     color: white;
                     cursor: pointer;
                 }   
@@ -29,9 +33,9 @@
                 height: 100%;
                 width: 32.9%;
                 border: 1px solid #E0E1E2;
-                background: url(../img/skill/brain-green.png) no-repeat -12% 120%;
+                background: url(../images/brain-green.png) no-repeat -12% 120%;
                 &:hover {
-                    background: #4da953 url(../img/skill/brain-white.png) no-repeat -12% 120%;
+                    background: #4da953 url(../images/brain-white.png) no-repeat -12% 120%;
                     color: white;
                     cursor: pointer;
                 }   
@@ -40,9 +44,9 @@
                 height: 100%;
                 width: 32.9%;
                 border: 1px solid #E0E1E2;
-                background: url(../img/skill/chat-green.png) no-repeat -20% 90%;
+                background: url(../images/chat-green.png) no-repeat -20% 90%;
                 &:hover {
-                    background: #4da953 url(../img/skill/chat-white.png) no-repeat -20% 90%;
+                    background: #4da953 url(../images/chat-white.png) no-repeat -20% 90%;
                     color: white;
                     cursor: pointer;
                 }   
@@ -50,6 +54,7 @@
             .box-1,
             .box-2,
             .box-3{
+                position: relative;
                 .texts {
                     padding-left: 40%;
                     padding-top: 60px;
@@ -60,7 +65,7 @@
                         font-weight: 400;
                         font-size: 20px;
                         letter-spacing: 1px;
-                        padding-bottom: 15px;
+                        margin-bottom: 15px;
                     }
                     .texts-2 {
                         background: transparent;

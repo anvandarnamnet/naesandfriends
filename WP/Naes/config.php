@@ -24,7 +24,6 @@ if(constant('PHP_VERSION') >= 7){
   //Hide admin pages from the user
   define('THEME_LANGUAGES', array(
     'sv',
-    'en',
   ));
   //Define theme languages, uppercase-codes for WPML, lowercase fo polylang
   define('REGISTER_NAVS', array(

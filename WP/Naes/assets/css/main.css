@@ -566,6 +566,9 @@ html {
           border-radius: 0;
           outline: none; }
 
+.doer * {
+  margin: 0; }
+
 .doer .need {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,10 +580,11 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .doer .need p {
+  .doer .need h2 {
     font-size: 40px;
     font-weight: 300;
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    text-align: center; }
   .doer .need .boxes {
     height: 195px;
     width: 100%;
@@ -595,52 +599,56 @@ html {
       height: 100%;
       width: 32.9%;
       border: 1px solid #E0E1E2;
-      background: url(../img/skill/cog-green.png) no-repeat -25% 150%; }
+      background: url(../images/cog-green.png) no-repeat -25% 150%; }
       .doer .need .boxes .box-1:hover {
-        background: #4da953 url(../img/skill/cog-white.png) no-repeat -25% 150%;
+        background: #4da953 url(../images/cog-white.png) no-repeat -25% 150%;
         color: white;
         cursor: pointer; }
     .doer .need .boxes .box-2 {
       height: 100%;
       width: 32.9%;
       border: 1px solid #E0E1E2;
-      background: url(../img/skill/brain-green.png) no-repeat -12% 120%; }
+      background: url(../images/brain-green.png) no-repeat -12% 120%; }
       .doer .need .boxes .box-2:hover {
-        background: #4da953 url(../img/skill/brain-white.png) no-repeat -12% 120%;
+        background: #4da953 url(../images/brain-white.png) no-repeat -12% 120%;
         color: white;
         cursor: pointer; }
     .doer .need .boxes .box-3 {
       height: 100%;
       width: 32.9%;
       border: 1px solid #E0E1E2;
-      background: url(../img/skill/chat-green.png) no-repeat -20% 90%; }
+      background: url(../images/chat-green.png) no-repeat -20% 90%; }
       .doer .need .boxes .box-3:hover {
-        background: #4da953 url(../img/skill/chat-white.png) no-repeat -20% 90%;
+        background: #4da953 url(../images/chat-white.png) no-repeat -20% 90%;
         color: white;
         cursor: pointer; }
-    .doer .need .boxes .box-1 .texts,
-    .doer .need .boxes .box-2 .texts,
-    .doer .need .boxes .box-3 .texts {
-      padding-left: 40%;
-      padding-top: 60px;
-      padding-right: 10%;
-      background: transparent; }
-      .doer .need .boxes .box-1 .texts .texts-1,
-      .doer .need .boxes .box-2 .texts .texts-1,
-      .doer .need .boxes .box-3 .texts .texts-1 {
-        background: transparent;
-        font-weight: 400;
-        font-size: 20px;
-        letter-spacing: 1px;
-        padding-bottom: 15px; }
-      .doer .need .boxes .box-1 .texts .texts-2,
-      .doer .need .boxes .box-2 .texts .texts-2,
-      .doer .need .boxes .box-3 .texts .texts-2 {
-        background: transparent;
-        font-size: 18px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        font-weight: 300; }
+    .doer .need .boxes .box-1,
+    .doer .need .boxes .box-2,
+    .doer .need .boxes .box-3 {
+      position: relative; }
+      .doer .need .boxes .box-1 .texts,
+      .doer .need .boxes .box-2 .texts,
+      .doer .need .boxes .box-3 .texts {
+        padding-left: 40%;
+        padding-top: 60px;
+        padding-right: 10%;
+        background: transparent; }
+        .doer .need .boxes .box-1 .texts .texts-1,
+        .doer .need .boxes .box-2 .texts .texts-1,
+        .doer .need .boxes .box-3 .texts .texts-1 {
+          background: transparent;
+          font-weight: 400;
+          font-size: 20px;
+          letter-spacing: 1px;
+          margin-bottom: 15px; }
+        .doer .need .boxes .box-1 .texts .texts-2,
+        .doer .need .boxes .box-2 .texts .texts-2,
+        .doer .need .boxes .box-3 .texts .texts-2 {
+          background: transparent;
+          font-size: 18px;
+          letter-spacing: 1px;
+          line-height: 25px;
+          font-weight: 300; }
 
 .full-image .full-width {
   width: 100%; }

@@ -24,6 +24,7 @@
   @import 'components/blog-posts';
   @import 'components/blog-filters';
   @import 'components/doer';
+  @import 'components/numbers-big';
     //Posts flex components
       @import 'components/posts/full-image';
       @import 'components/posts/wysiwyg';
@@ -37,3 +38,4 @@
 
 //Pages
   @import 'pages/single-blog-post';
+  @import 'pages/single-author';
