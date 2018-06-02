@@ -1,0 +1,32 @@
+.button-blue{
+    background-color: #3169ce;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    &.small{
+        padding: 12.5px 28px;
+    }
+    &.large{
+        padding: 25px 40px;
+
+    }
+}
+.button-blue:hover,
+.button-white:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.button-white{
+    border: 2px solid #3169ce;
+    color: #3169ce;
+    text-transform: uppercase;
+    display: inline-block;
+    &.small{
+        padding: 12.5px 28px;
+
+    }
+    &.large{
+        padding: 25px 40px;
+
+    }
+}
