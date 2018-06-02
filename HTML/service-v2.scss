@@ -1,6 +1,7 @@
 * {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
+    letter-spacing: 1px;
     font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     background-color:inherit;
 }
@@ -83,12 +84,36 @@ $green: #4da953;
     align-items: center;
     justify-content: space-between;
 }
+@mixin overlapping-text-box ($position) {
+    text-align: start;
+    height: 175px;
+    width: 340px;
+    background-color: white;
+    position: absolute;
+    left: $position;
+    top: 360px;
+    p {
+        margin: 10px 0 0 10px;
+        font-size: 22px;
+    }
+    ul {
+        margin: 20px 0 0 45px;
+        line-height: 30px;
+        list-style-image: url(../img/service-v2/bullet.png);
+        li {
+            color: #777777;
+            font-size: 20px;
+            font-weight: 300;
+            text-indent: 15px;
+        }
+    }
+}
 
 @import 'header';
 
 .first-section {
     min-height: 350px;
-    background: url(../img/skill/1.png) no-repeat 0 0;
+    background: url(../img/service-v2/1.png) no-repeat 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,15 +121,13 @@ $green: #4da953;
     .text-1 {
         background: transparent;
         font-size: 55px;
-        font-weight: 700;
-        color: $yellow;
-        margin-bottom: 20px;
-    }
-    .text-2 {
-        background: transparent;
-        font-size: 35px;
-        font-weight: 600;
+        font-weight: 500;
         color: white;
+        margin-bottom: 20px;
+        span {
+            color: $yellow;
+            font-weight: 700;
+        }
     }
 }
 
@@ -155,141 +178,148 @@ $green: #4da953;
                    background-color: inherit;
                    font-size: 22px;
                    font-weight: 600;
+                   letter-spacing: 0px;
                }
            }
         }
     }
 }
 
-.third-section {
-    @include side-pad();
-    margin-bottom: 130px;
+.list-123 {
+    height: 640px;
+    text-align: center;
+    position: relative;
+    margin: 0 55px 0 55px;
     .border-top {
         height: 90px;
         width: 50%;
         border-right: 1px solid $green;
     }
+    .t1 {
+        margin-top: 50px;
+        font-size: 40px;
+        font-weight: 200;
+    }
+    .t2 {
+        margin-top: 10px;
+        font-size: 28px;
+        font-weight: 400;
+        opacity: 0.7;
+    }
+    .text-list-1 {
+        @include overlapping-text-box(60px);
+    }
+    .text-list-2 {
+        @include overlapping-text-box(550px);
+    }
+    .text-list-3 {
+        @include overlapping-text-box(1020px);
+    }
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        .box {
+            width: 400px;
+            text-align: left;
+            .number {   
+                font-size: 220px;
+                font-weight: 700;
+                font-family: Montserrat;
+                color: #00ac46;
+            }
+        }
+    }
+   
+}
+
+.third-section {
+    @include side-pad();
     .content {
         min-height: 460px;
         display: flex;
-        justify-content: space-between;
-        .image {
-            flex: 1;
+        //justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+        margin-bottom: 60px;
+        p {
+            font-size: 38px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin: 0 0 60px 0;
         }
-        .text {
-            flex: 1;
-            margin-top: 80px;
-            .head {
-                font-size: 35px;
-                font-weight: 300;
-                letter-spacing: 3px;
-                margin-bottom: 30px;
+        .boxes {
+            min-height: 350px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
+            margin-bottom: 90px;
+            .box {
+                height: 300px;
+                width: 31%;
+                border: 1px solid #E0E1E2;
+                text-align: center;
+                .t1 {
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin: 90px 40px 30px 40px;
+                }
+                .t2 {
+                    font-size: 21px;
+                    font-weight: 500;
+                    opacity: 0.4;
+                    line-height: 30px;
+                    letter-spacing: 0.3px;
+                    margin: 0 40px 30px 40px;
+                }
             }
-            .subhead {
-                margin-bottom: 30px;
-                font-size: 24px;
-                letter-spacing: 3px;
-                font-weight: 500;
-            }
-            ul {
-                margin-left: 50px;
-                line-height: 30px;
-                list-style-image: url(../img/skill/bullet.png);
-               li {
-                   color: #89898a;
-                   font-size: 20px;
-                   font-weight: 300;
-                   text-indent: 15px;
-               }
-            }
-            .boxes {
+            .img-green-1 {
+                position: absolute;
+                top: 0px;
+                left: 120px;
+                height: 100px;
+                width: 100px;
+                background-color: #4da953;
+                border-radius: 50%;
                 display: flex;
-                margin-top: 30px;
-                text-transform: uppercase;
-                .box-1 {
-                    height: 45px;
-                    width: 140px;
-                    border: 2px solid transparent;
-                    background-color: $lighter-blue;
-                    color: white;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 20px;
-                    &:hover {
-                        opacity: 0.7;
-                        cursor: pointer;
-                    }
-                }
-                .box-2 {
-                    height: 45px;
-                    width: 140px;
-                    border: 2px solid $lighter-blue;
-                    color: $lighter-blue;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 20px;
-                    &:hover {
-                        opacity: 0.5;
-                        cursor: pointer;
-                    }
-                }
-                
+                justify-content: center;
+                align-items: center;
+            }
+            .img-green-2 {
+                position: absolute;
+                top: 0px;
+                left: 500px;
+                height: 100px;
+                width: 100px;
+                background-color: #4da953;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .img-green-3 {
+                position: absolute;
+                top: 0px;
+                left: 870px;
+                height: 100px;
+                width: 100px;
+                background-color: #4da953;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
 }
 
 
-.fourth-section {
-    background-color: #0a1b3b;
-    min-height: 170px;
-    @include side-pad;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 0 16% 0 16%;
-    .big-bar-text {
-        background-color: transparent;
-        color: #fff;
-        text-align: center;
-        .big-text {
-            background-color: transparent;
-            font-size: 60px;
-            padding-bottom: 10px;
-        }
-        .small-text {
-            background-color: transparent;
-            font-size: 20px;
-        }
-    }
-}
 
-.green-bar-divider {
-    .top {
-        height: 55px;
-        width: 100%;
-        background-color: #0a1b3b;
-        .bar {
-            background-color: inherit;
-            height: 100%;
-            width: 50%;
-            border-right: 1px solid $green;
-        }
-    }
-    .bottom {
-        height: 55px;
-        width: 100%;
-        background-color: white;
-        .bar {
-            background-color: inherit;
-            height: 100%;
-            width: 50%;
-            border-right: 1px solid $green;
-        }
-    }
-}
+
+
 
 @mixin texts-in-boxes {
     .texts {
@@ -314,132 +344,33 @@ $green: #4da953;
     }
 }
 
-.u-need {
-    @include side-pad;
-    height: 460px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    align-items: center;
-    p {
-        font-size: 40px;
-        font-weight: 300;
-        letter-spacing: 4px;
-    }
-    .boxes {
-        height: 195px;
+
+
+.green-bar-divider {
+    .top {
+        height: 55px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 60px;
-        .box-1 {
+        background-color: #f9fafb;
+        .bar {
+            background-color: inherit;
             height: 100%;
-            width: 32.9%;
-            border: 1px solid #E0E1E2;
-            background: url(../img/skill/cog-green.png) no-repeat -25% 150%;
-            @include texts-in-boxes();
-            &:hover {
-                background: #4da953 url(../img/skill/cog-white.png) no-repeat -25% 150%;
-                color: white;
-                cursor: pointer;
-            }   
+            width: 50%;
+            border-right: 1px solid $green;
         }
-        .box-2 {
+    }
+    .bottom {
+        height: 55px;
+        width: 100%;
+        background-color: white;
+        .bar {
+            background-color: inherit;
             height: 100%;
-            width: 32.9%;
-            border: 1px solid #E0E1E2;
-            background: url(../img/skill/brain-green.png) no-repeat -12% 120%;
-            @include texts-in-boxes();
-            &:hover {
-                background: #4da953 url(../img/skill/brain-white.png) no-repeat -12% 120%;
-                color: white;
-                cursor: pointer;
-            }   
-        }
-        .box-3 {
-            height: 100%;
-            width: 32.9%;
-            border: 1px solid #E0E1E2;
-            background: url(../img/skill/chat-green.png) no-repeat -20% 90%;
-            @include texts-in-boxes();
-            &:hover {
-                background: #4da953 url(../img/skill/chat-white.png) no-repeat -20% 90%;
-                color: white;
-                cursor: pointer;
-            }   
+            width: 50%;
+            border-right: 1px solid $green;
         }
     }
 }
 
-
-
-.take-a-class {
-    @include side-pad();
-    min-height: 600px;
-    background-color: #f9fafb;
-    padding-top: 130px;
-    .head {
-        background-color: inherit;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 300;
-        letter-spacing: 2px;   
-        margin-bottom: 50px;
-    }
-    .text-and-image {
-        background-color: inherit;
-        height: 100%;
-        display: flex;
-        .image {
-            flex: 1;
-            background-color: inherit;
-            height: 100%;
-            width: 100%;
-            &:hover {
-                opacity: 0.9;
-                cursor: pointer;
-            }
-        }
-        .text {
-            background-color: inherit;
-            flex: 1;
-            margin-right: 50px;
-            .top {
-                background-color: inherit;
-                font-size: 26px;
-            }
-            .mid {
-                background-color: inherit;
-                font-size: 20px;
-                margin-top: 35px;
-                opacity: 0.4;
-            }
-            .bottom {
-                background-color: inherit;
-                font-size: 20px;
-                margin-top: 35px;
-                opacity: 0.4;
-            }
-            .button {
-                background-color: inherit;
-                margin-top: 35px;
-                height: 70px;
-                width: 260px;
-                background-color: $lighter-blue;
-                color: white;
-                text-transform: uppercase;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                &:hover {
-                    opacity: 0.7;
-                    cursor: pointer;
-                }
-            }
-        }
-       
-    }
-}
 
 @mixin three-pix {
       display: flex;
@@ -485,25 +416,7 @@ $green: #4da953;
     }
 }
 
-#section-5 {
-    min-height: 530px;
-    margin-top: 30px;
-    margin-bottom: 95px;
-    @include side-pad();
-    .continue {
-        height: 175px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        font-weight: 300;
-    }
-    .three-images {
-        display: flex;
-        @include three-pix();
-    }
-   
-}
+
 
 .green-bar-divider-2 {
     .top {
@@ -639,6 +552,80 @@ $green: #4da953;
                     }
                 }
             }
+        }
+    }
+}
+
+#section-5 {
+    min-height: 530px;
+    margin-top: 20px;
+    padding-bottom: 150px;
+    @include side-pad();
+    background-color: white;
+    .continue {
+        height: 175px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .three-images {
+        display: flex;
+        @include three-pix();
+    }
+}
+
+.meet-employee {
+    @include side-pad();
+    padding-top: 140px;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #f9fafb;
+    .image {
+        height: 575px;
+        width: 100%;
+        img {
+            height: 100%;
+            width: 52%;
+        }
+    }
+    .yellow-box {
+        position: absolute;
+        left: 44.7%;
+        top: 345px;
+        right: $pad-side;
+        //min-height: 155px;
+        background-color: #ffce06;
+        color: white;
+        .t1 {
+            margin: 30px 70px 10px 70px;
+            font-size: 40px;
+            font-weight: 200;
+        }
+        .t2 {
+            margin: 0 70px 50px 70px;
+            font-size: 26px;
+            font-weight: 500;
+        }
+    }
+    .button {
+        //float: right;
+        height: 60px;
+        width: 235px;
+        background-color: $lighter-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: $pad-side;
+        top: 511px;
+        font-size: 17px;
+        
+        color: white;
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
         }
     }
 }

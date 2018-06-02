@@ -1,8 +1,9 @@
 * {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     background-color:inherit;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: 1px;
 }
 
 $pad-side: 12%;
@@ -11,6 +12,7 @@ $lighter-blue: #3169ce;
 $darker-blue: #1f2737;
 $yellow: #f9cf01;
 $green: #4da953;
+$baby-blue: #a5c5d1;
 
 @mixin borders{
     border: 1px solid #000;
@@ -88,7 +90,7 @@ $green: #4da953;
 
 .first-section {
     min-height: 350px;
-    background: url(../img/skill/1.png) no-repeat 0 0;
+    background: url(../img/who-we-are/1.png) no-repeat 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,15 +98,16 @@ $green: #4da953;
     .text-1 {
         background: transparent;
         font-size: 55px;
-        font-weight: 700;
-        color: $yellow;
-        margin-bottom: 20px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 3px;
     }
     .text-2 {
         background: transparent;
-        font-size: 35px;
-        font-weight: 600;
-        color: white;
+        font-size: 52px;
+        font-weight: 700;
+        color: $yellow;
+        letter-spacing: 1px;
     }
 }
 
@@ -112,10 +115,12 @@ $green: #4da953;
     background-color: $lighter-blue;
     padding-top: 30px;
     padding-bottom: 30px;
-    @include side-pad();
     .bar-content {
         background-color: inherit;
         min-height: 70px;
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         color: white;
         .connect {
@@ -155,6 +160,7 @@ $green: #4da953;
                    background-color: inherit;
                    font-size: 22px;
                    font-weight: 600;
+                   letter-spacing: 0px;
                }
            }
         }
@@ -162,106 +168,63 @@ $green: #4da953;
 }
 
 .third-section {
-    @include side-pad();
-    margin-bottom: 130px;
-    .border-top {
-        height: 90px;
-        width: 50%;
-        border-right: 1px solid $green;
-    }
-    .content {
-        min-height: 460px;
-        display: flex;
+    padding-right: 120px;
+    padding-left: 120px;
+    height: 610px;
+    background: $baby-blue url(../img/who-we-are/2.png) no-repeat;
+    background-position: 0 15.4%;
+    
+    .texts {
+        background: transparent;
+        height: 360px;
+        width: 500px;
+        color: white;
+        display: flex; 
+        flex-direction: column;
         justify-content: space-between;
-        .image {
-            flex: 1;
+        padding-top: 125px;
+        .t1 {
+            font-size: 40px;
+            font-weight: 300;
         }
-        .text {
-            flex: 1;
-            margin-top: 80px;
-            .head {
-                font-size: 35px;
-                font-weight: 300;
-                letter-spacing: 3px;
-                margin-bottom: 30px;
-            }
-            .subhead {
-                margin-bottom: 30px;
-                font-size: 24px;
-                letter-spacing: 3px;
-                font-weight: 500;
-            }
-            ul {
-                margin-left: 50px;
-                line-height: 30px;
-                list-style-image: url(../img/skill/bullet.png);
-               li {
-                   color: #89898a;
-                   font-size: 20px;
-                   font-weight: 300;
-                   text-indent: 15px;
-               }
-            }
-            .boxes {
-                display: flex;
-                margin-top: 30px;
-                text-transform: uppercase;
-                .box-1 {
-                    height: 45px;
-                    width: 140px;
-                    border: 2px solid transparent;
-                    background-color: $lighter-blue;
-                    color: white;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 20px;
-                    &:hover {
-                        opacity: 0.7;
-                        cursor: pointer;
-                    }
-                }
-                .box-2 {
-                    height: 45px;
-                    width: 140px;
-                    border: 2px solid $lighter-blue;
-                    color: $lighter-blue;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 20px;
-                    &:hover {
-                        opacity: 0.5;
-                        cursor: pointer;
-                    }
-                }
-                
-            }
+        .t2 {
+            font-size: 26px;
+            font-weight: 500;
+        }
+        .t3 {
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 30px;
         }
     }
+  
 }
 
 
 .fourth-section {
     background-color: #0a1b3b;
-    min-height: 170px;
-    @include side-pad;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 0 16% 0 16%;
-    .big-bar-text {
-        background-color: transparent;
-        color: #fff;
-        text-align: center;
-        .big-text {
+    height: 170px;
+    .content {
+        padding-top: 55px;
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        .big-bar-text {
             background-color: transparent;
-            font-size: 60px;
-            padding-bottom: 10px;
-        }
-        .small-text {
-            background-color: transparent;
-            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            .big-text {
+                background-color: transparent;
+                font-size: 60px;
+                padding-bottom: 10px;
+            }
+            .small-text {
+                background-color: transparent;
+                font-size: 20px;
+            }
         }
     }
 }
@@ -314,138 +277,112 @@ $green: #4da953;
     }
 }
 
-.u-need {
-    @include side-pad;
-    height: 460px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    align-items: center;
-    p {
-        font-size: 40px;
-        font-weight: 300;
-        letter-spacing: 4px;
-    }
+.experts {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    //height: 865px;
+    width: 1140px;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 100px;
+    margin-bottom: 125px;
     .boxes {
-        height: 195px;
-        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 60px;
-        .box-1 {
-            height: 100%;
-            width: 32.9%;
-            border: 1px solid #E0E1E2;
-            background: url(../img/skill/cog-green.png) no-repeat -25% 150%;
-            @include texts-in-boxes();
-            &:hover {
-                background: #4da953 url(../img/skill/cog-white.png) no-repeat -25% 150%;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        .expert-box {
+            height: 460px;
+            width: 31.58%;
+            position: relative;
+            .yellow {
+                height: 80px;
+                width: 75%;
+                position: absolute;
+                top: 170px;
+                background-color: #ffce06;
                 color: white;
-                cursor: pointer;
-            }   
-        }
-        .box-2 {
-            height: 100%;
-            width: 32.9%;
-            border: 1px solid #E0E1E2;
-            background: url(../img/skill/brain-green.png) no-repeat -12% 120%;
-            @include texts-in-boxes();
-            &:hover {
-                background: #4da953 url(../img/skill/brain-white.png) no-repeat -12% 120%;
-                color: white;
-                cursor: pointer;
-            }   
-        }
-        .box-3 {
-            height: 100%;
-            width: 32.9%;
-            border: 1px solid #E0E1E2;
-            background: url(../img/skill/chat-green.png) no-repeat -20% 90%;
-            @include texts-in-boxes();
-            &:hover {
-                background: #4da953 url(../img/skill/chat-white.png) no-repeat -20% 90%;
-                color: white;
-                cursor: pointer;
-            }   
-        }
-    }
-}
-
-
-
-.take-a-class {
-    @include side-pad();
-    min-height: 600px;
-    background-color: #f9fafb;
-    padding-top: 130px;
-    .head {
-        background-color: inherit;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 300;
-        letter-spacing: 2px;   
-        margin-bottom: 50px;
-    }
-    .text-and-image {
-        background-color: inherit;
-        height: 100%;
-        display: flex;
-        .image {
-            flex: 1;
-            background-color: inherit;
-            height: 100%;
-            width: 100%;
-            &:hover {
-                opacity: 0.9;
-                cursor: pointer;
+                text-align: start;
+                padding-left: 10px;
+                .name {
+                    font-size: 25px;
+                    font-weight: 500;
+                    padding-top: 10px;
+                    padding-bottom: 3px;
+                }
+                .position {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
             }
-        }
-        .text {
-            background-color: inherit;
-            flex: 1;
-            margin-right: 50px;
-            .top {
-                background-color: inherit;
-                font-size: 26px;
+            img {
+                height: 270px;
+                width: 100%;
             }
-            .mid {
-                background-color: inherit;
+            .description {
                 font-size: 20px;
-                margin-top: 35px;
-                opacity: 0.4;
+                padding: 20px 0 0 0;
+                line-height: 35px;
+                opacity: 0.7;
             }
-            .bottom {
-                background-color: inherit;
-                font-size: 20px;
-                margin-top: 35px;
-                opacity: 0.4;
-            }
-            .button {
-                background-color: inherit;
-                margin-top: 35px;
-                height: 70px;
-                width: 260px;
-                background-color: $lighter-blue;
-                color: white;
-                text-transform: uppercase;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            .meet {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                a {
+                    font-size: 15px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $lighter-blue;
+                }
+                img {
+                    
+                    height: 15px;
+                    width: 15px;
+                }
                 &:hover {
                     opacity: 0.7;
                     cursor: pointer;
                 }
             }
         }
-       
+    }
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 270px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $lighter-blue;
+        border-radius: 50px;
+        border: 2px solid $lighter-blue;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+            padding-left: 20px;
+        }
+        &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
     }
 }
+
+
+
+
 
 @mixin three-pix {
       display: flex;
       justify-content: space-between;
     .three-photos {
         width: 31.5%;
+        height: 413px;
         border: 3px solid transparent;
         &:hover {
             cursor: pointer;
@@ -454,29 +391,34 @@ $green: #4da953;
             transition-timing-function: ease-out;
         }
         .image-container {
-            height: 215px;
+            height: 210px;
+            border-right: 1px solid #E0E1E2;
+            border-top: 1px solid #E0E1E2;
+            border-left: 1px solid #E0E1E2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img {
-                height: 100%;
-                width: 100%;
+                height: 55%;
+                width: auto;
             }
         }
         
         .text-under-image {
             
-            padding: 25px 20px 35px 20px;
+            padding: 0 20px 45px 20px;
             border-right: 1px solid #E0E1E2;
             border-bottom: 1px solid #E0E1E2;
             border-left: 1px solid #E0E1E2;
             .tui-subject {
                 text-transform: uppercase;
-            }
-            .tui-head {
+                padding-top: 10px;
                 font-size: 22px;
-                margin-top: 10px;
+                font-weight: 500;
             }
             .tui-bread {
-                margin-top: 20px;
-                opacity: 0.4;
+                margin-top: 30px;
+                opacity: 0.7;
                 line-height: 30px;
                 font-size: 20px;
             }
@@ -487,18 +429,17 @@ $green: #4da953;
 
 #section-5 {
     min-height: 530px;
-    margin-top: 30px;
-    margin-bottom: 95px;
-    @include side-pad();
-    .continue {
-        height: 175px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        font-weight: 300;
-    }
+    background-color: #f9fafb;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 150px;
     .three-images {
+        width: 1140px;
+        padding-top: 70px;
+        padding-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         @include three-pix();
     }
@@ -509,7 +450,7 @@ $green: #4da953;
     .top {
         height: 55px;
         width: 100%;
-        background-color: white;
+        background-color: #f9fafb;
         .bar {
             background-color: inherit;
             height: 100%;

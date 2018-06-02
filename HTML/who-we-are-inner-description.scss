@@ -1,0 +1,167 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color:inherit;
+    //font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-family: Montserrat, sans-serif;
+}
+
+$pad-side: 12%;
+$pad-topnbottom: 100px;
+$lighter-blue: #3169ce;
+$darker-blue: #1f2737;
+$yellow: #f9cf01;
+$green: #4da953;
+$baby-blue: #a5c5d1;
+
+@import 'header';
+
+ .pic-and-info {
+     min-height: 720px;
+     width: 100%;
+     display: flex;
+     position: relative;
+     .image {
+         width: 55.7%;
+         img {
+             height: 100%;
+             width: 100%;
+         }
+     }
+     .texts {
+         width: 39%;
+         margin-top: 180px;
+         margin-right: 25px;
+         margin-left: 40px;
+         .title {
+            text-transform: uppercase;
+            font-size: 23px;
+            opacity: 0.8;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0;
+            margin-bottom: 15px;
+         }
+         .bread-1 {
+             line-height: 35px;
+             font-size: 20px;
+             font-weight: 400;
+             opacity: 0.5;
+             margin-bottom: 30px;
+             font-family: "Gill Sans";
+
+         }
+         .bread-2 {
+            line-height: 35px;
+            font-size: 20px;
+            opacity: 0.5;
+            font-family: "Gill Sans";
+         }
+     }
+     .yellow {
+        height: 90px;
+        width: 660px;
+        right: 25px;
+        top: 65px;
+        position: absolute;
+        background-color: $yellow;
+        padding-left: 55px;
+        padding-right: 35px;
+        display: flex;
+        align-items: center;
+        p {
+            color: white;
+            font-size: 32px;
+            font-weight: 400;
+            margin-right: 145px;
+        }
+        img {
+            margin-left: 30px;
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+     }
+ }
+
+ .green-bar-divider {
+    .top {
+        height: 110px;
+        width: 100%;
+        background-color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .bar {
+            background-color: white;
+            height: 100%;
+            width: 50%;
+            border-right: 1px solid $green;
+        }
+    }
+}
+
+.tips {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    height: 530px;
+    margin-bottom: 5px;
+    .boxes {
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-between;
+        text-align: start;
+        .box {
+            height: 420px;
+            width: 33%;
+            border: 3px solid transparent;
+            &:hover {
+                cursor: pointer;
+                border: 3px solid #4ca852;
+                transition-duration: 0.1s;
+                transition-timing-function: ease-out;
+            }
+            .image-container {
+                 height: 255px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .text-under {
+                padding-left: 30px;
+                padding-top: 15px;
+                height: 148px;
+                border: 1px solid #E0E1E2;
+                .head {
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 0px;
+                }
+                .date {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-top: 5px;
+                }
+                .links {
+                    margin-top: 20px;
+                    a {
+                        text-decoration: none;
+                        color: $lighter-blue;
+                        font-size: 14px;
+                        font-weight: 500;
+                        padding: 5px 10px 5px 10px;
+                        letter-spacing: 0px;
+                        border: 2px solid $lighter-blue;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'footer';

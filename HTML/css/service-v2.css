@@ -2,8 +2,8 @@
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   letter-spacing: 1px;
-  background-color: inherit;
-  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; }
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  background-color: inherit; }
 
 header {
   background-color: #FFF;
@@ -45,7 +45,7 @@ header {
 
 .first-section {
   min-height: 350px;
-  background: url(../img/what-we-do/people.png) no-repeat 0 0;
+  background: url(../img/service-v2/1.png) no-repeat 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,13 +131,104 @@ header {
           font-weight: 600;
           letter-spacing: 0px; }
 
-.third-section {
-  padding-left: 12%;
-  padding-right: 12%; }
-  .third-section .border-top {
+.list-123 {
+  height: 640px;
+  text-align: center;
+  position: relative;
+  margin: 0 55px 0 55px; }
+  .list-123 .border-top {
     height: 90px;
     width: 50%;
     border-right: 1px solid #4da953; }
+  .list-123 .t1 {
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 200; }
+  .list-123 .t2 {
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 400;
+    opacity: 0.7; }
+  .list-123 .text-list-1 {
+    text-align: start;
+    height: 175px;
+    width: 340px;
+    background-color: white;
+    position: absolute;
+    left: 60px;
+    top: 360px; }
+    .list-123 .text-list-1 p {
+      margin: 10px 0 0 10px;
+      font-size: 22px; }
+    .list-123 .text-list-1 ul {
+      margin: 20px 0 0 45px;
+      line-height: 30px;
+      list-style-image: url(../img/service-v2/bullet.png); }
+      .list-123 .text-list-1 ul li {
+        color: #777777;
+        font-size: 20px;
+        font-weight: 300;
+        text-indent: 15px; }
+  .list-123 .text-list-2 {
+    text-align: start;
+    height: 175px;
+    width: 340px;
+    background-color: white;
+    position: absolute;
+    left: 550px;
+    top: 360px; }
+    .list-123 .text-list-2 p {
+      margin: 10px 0 0 10px;
+      font-size: 22px; }
+    .list-123 .text-list-2 ul {
+      margin: 20px 0 0 45px;
+      line-height: 30px;
+      list-style-image: url(../img/service-v2/bullet.png); }
+      .list-123 .text-list-2 ul li {
+        color: #777777;
+        font-size: 20px;
+        font-weight: 300;
+        text-indent: 15px; }
+  .list-123 .text-list-3 {
+    text-align: start;
+    height: 175px;
+    width: 340px;
+    background-color: white;
+    position: absolute;
+    left: 1020px;
+    top: 360px; }
+    .list-123 .text-list-3 p {
+      margin: 10px 0 0 10px;
+      font-size: 22px; }
+    .list-123 .text-list-3 ul {
+      margin: 20px 0 0 45px;
+      line-height: 30px;
+      list-style-image: url(../img/service-v2/bullet.png); }
+      .list-123 .text-list-3 ul li {
+        color: #777777;
+        font-size: 20px;
+        font-weight: 300;
+        text-indent: 15px; }
+  .list-123 .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 20px; }
+    .list-123 .boxes .box {
+      width: 400px;
+      text-align: left; }
+      .list-123 .boxes .box .number {
+        font-size: 220px;
+        font-weight: 700;
+        font-family: Montserrat;
+        color: #00ac46; }
+
+.third-section {
+  padding-left: 12%;
+  padding-right: 12%; }
   .third-section .content {
     min-height: 460px;
     display: -webkit-box;
@@ -149,12 +240,14 @@ header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 60px; }
     .third-section .content p {
       font-size: 38px;
       font-weight: 300;
       letter-spacing: 2px;
-      margin: 50px 0 60px 0; }
+      margin: 0 0 60px 0; }
     .third-section .content .boxes {
       min-height: 350px;
       width: 100%;
@@ -237,115 +330,6 @@ header {
         -ms-flex-align: center;
         align-items: center; }
 
-.u-need {
-  padding-left: 12%;
-  padding-right: 12%;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 130px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #f9fafb; }
-  .u-need p {
-    font-size: 40px;
-    font-weight: 300;
-    letter-spacing: 4px; }
-  .u-need .boxes {
-    height: 195px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 60px; }
-    .u-need .boxes .box-1 {
-      height: 100%;
-      width: 32.9%;
-      border: 1px solid #E0E1E2;
-      background: #ffffff url(../img/what-we-do/cog-green.png) no-repeat -25% 150%; }
-      .u-need .boxes .box-1 .texts {
-        padding-left: 40%;
-        padding-top: 60px;
-        padding-right: 10%;
-        background: transparent; }
-        .u-need .boxes .box-1 .texts .texts-1 {
-          background: transparent;
-          font-weight: 400;
-          font-size: 20px;
-          letter-spacing: 1px;
-          padding-bottom: 15px; }
-        .u-need .boxes .box-1 .texts .texts-2 {
-          background: transparent;
-          font-size: 18px;
-          letter-spacing: 1px;
-          line-height: 25px;
-          font-weight: 300; }
-      .u-need .boxes .box-1:hover {
-        background: #4da953 url(../img/what-we-do/cog-white.png) no-repeat -25% 150%;
-        color: white;
-        cursor: pointer; }
-    .u-need .boxes .box-2 {
-      height: 100%;
-      width: 32.9%;
-      border: 1px solid #E0E1E2;
-      background: #ffffff url(../img/what-we-do/brain-green.png) no-repeat -12% 120%; }
-      .u-need .boxes .box-2 .texts {
-        padding-left: 40%;
-        padding-top: 60px;
-        padding-right: 10%;
-        background: transparent; }
-        .u-need .boxes .box-2 .texts .texts-1 {
-          background: transparent;
-          font-weight: 400;
-          font-size: 20px;
-          letter-spacing: 1px;
-          padding-bottom: 15px; }
-        .u-need .boxes .box-2 .texts .texts-2 {
-          background: transparent;
-          font-size: 18px;
-          letter-spacing: 1px;
-          line-height: 25px;
-          font-weight: 300; }
-      .u-need .boxes .box-2:hover {
-        background: #4da953 url(../img/what-we-do/brain-white.png) no-repeat -12% 120%;
-        color: white;
-        cursor: pointer; }
-    .u-need .boxes .box-3 {
-      height: 100%;
-      width: 32.9%;
-      border: 1px solid #E0E1E2;
-      background: #ffffff url(../img/what-we-do/chat-green.png) no-repeat -20% 90%; }
-      .u-need .boxes .box-3 .texts {
-        padding-left: 40%;
-        padding-top: 60px;
-        padding-right: 10%;
-        background: transparent; }
-        .u-need .boxes .box-3 .texts .texts-1 {
-          background: transparent;
-          font-weight: 400;
-          font-size: 20px;
-          letter-spacing: 1px;
-          padding-bottom: 15px; }
-        .u-need .boxes .box-3 .texts .texts-2 {
-          background: transparent;
-          font-size: 18px;
-          letter-spacing: 1px;
-          line-height: 25px;
-          font-weight: 300; }
-      .u-need .boxes .box-3:hover {
-        background: #4da953 url(../img/what-we-do/chat-white.png) no-repeat -20% 90%;
-        color: white;
-        cursor: pointer; }
-
 .green-bar-divider .top {
   height: 55px;
   width: 100%;
@@ -389,7 +373,7 @@ header {
 .why {
   height: 600px;
   padding-bottom: 150px;
-  background-color: white;
+  background-color: #f9fafb;
   position: relative; }
   .why .left-arrow {
     position: absolute;
@@ -477,13 +461,12 @@ header {
 
 #section-5 {
   min-height: 530px;
-  margin-top: 40px;
-  padding-bottom: 95px;
+  margin-top: 20px;
+  padding-bottom: 150px;
   padding-left: 12%;
   padding-right: 12%;
-  background-color: #f9fafb; }
+  background-color: white; }
   #section-5 .continue {
-    padding-top: 60px;
     height: 175px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -540,8 +523,10 @@ header {
 .meet-employee {
   padding-left: 12%;
   padding-right: 12%;
-  margin: 90px 0 150px 0;
-  position: relative; }
+  padding-top: 140px;
+  padding-bottom: 100px;
+  position: relative;
+  background-color: #f9fafb; }
   .meet-employee .image {
     height: 575px;
     width: 100%; }
@@ -551,7 +536,7 @@ header {
   .meet-employee .yellow-box {
     position: absolute;
     left: 44.7%;
-    top: 175px;
+    top: 345px;
     right: 12%;
     background-color: #ffce06;
     color: white; }
@@ -578,7 +563,7 @@ header {
     justify-content: center;
     position: absolute;
     right: 12%;
-    top: 340px;
+    top: 511px;
     font-size: 17px;
     color: white; }
     .meet-employee .button:hover {
