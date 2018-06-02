@@ -3,7 +3,7 @@
 get_header();
 
 ?>
-<article>
+<article class="narrow">
     <div class="main-inner">
         <div class="meta-info">
             <h1 class="head"><?php the_title(); ?></h1>
@@ -71,9 +71,8 @@ get_header();
     <?php
     /* Author info */ 
     $post_id = get_the_ID();
-    $author = wp_get_post_terms( $post_id, 'author')[0];
-    var_dump($author);
-    echo get_term_link( $author, 'author');
+    $author = wp_get_post_terms( $post_id, 'authors')[0];
+    $author_url = get_term_link($author, 'authors');
     ?>
     <seciton class="author-section">
         <div class="profile">
@@ -85,9 +84,9 @@ get_header();
                                 <p class="name"><?= $author->name ?></p>
                             </div>
                             <div class="images">
-                                <img src="img/blog-inner/about-icon.png" alt="">
-                                <img src="img/blog-inner/contacts-icon.png" alt="">
-                                <img src="img/blog-inner/more-icon.png" alt="">
+                                <a href="<?= $author_url ?>"><img src="<?= get_option_field('icon_about'); ?>" alt=""></a>
+                                <a href="<?= $author_url ?>"><img src="<?= get_option_field('icon_contact'); ?>" alt=""></a>
+                                <a href="<?= $author_url ?>"><img src="<?= get_option_field('icon_more'); ?>" alt=""></a>
                             </div>
                         </div>
                         <p class="about"><?= $author->description ?></p>
@@ -96,6 +95,8 @@ get_header();
     </section>
     </div>
 </article> 
+<section class="read-more">
+</section>
 <?php
 
 

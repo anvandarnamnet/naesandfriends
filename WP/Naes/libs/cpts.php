@@ -96,13 +96,13 @@ function create_custom_taxonomies(){
     'menu_name' => __( 'Författare' ),
   );    
  
-  register_taxonomy('author',array('blog-post'), array(
+  register_taxonomy('authors',array('blog-post'), array(
     'hierarchical' => false,
     'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'author' ),
+    'rewrite' => array( 'slug' => 'authors' ),
   ));
 }
 add_action( 'init', 'create_custom_taxonomies', 0 );
