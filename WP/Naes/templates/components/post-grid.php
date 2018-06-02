@@ -1,65 +1,41 @@
-<div class="main-inner">
+<?php
+if(get_row_layout() == 'blog-posts'){
+    $args = array(
+        'post_type' => 'blog-post',
+        'posts_per_page' => -1,
+    );
+    $blog_query = new WP_Query($args);
+    ?>
+
+    <div class="main-inner">
     <div class="grid">
-    <div class="post-grid-item grid-third">
-                <div class="image-container">
-                    <img src="img/blog/i2.png" alt="image">
-                </div>
-                <div class="text-under-image">
-                        <p class="tui-head">How to create a viral campain</p>
-                        <p class="tui-date">2018-01-02</p>
-                        <div class="tui-links">
-                                <a href="#" >Coach</a>
-                                <a href="#" >Marketing</a>
-                                <a href="#" >Podcast</a>
-                        </div>
-                        
-                    </div>
-            </div>
-            <div class="post-grid-item grid-third">
-                <div class="image-container">
-                    <img src="img/blog/i2.png" alt="image">
-                </div>
-                <div class="text-under-image">
-                        <p class="tui-head">How to create a viral campain</p>
-                        <p class="tui-date">2018-01-02</p>
-                        <div class="tui-links">
-                                <a href="#" >Coach</a>
-                                <a href="#" >Marketing</a>
-                                <a href="#" >Podcast</a>
-                        </div>
-                        
-                    </div>
-            </div>
-            <div class="post-grid-item grid-third">
-                <div class="image-container">
-                    <img src="img/blog/i2.png" alt="image">
-                </div>
-                <div class="text-under-image">
-                        <p class="tui-head">How to create a viral campain</p>
-                        <p class="tui-date">2018-01-02</p>
-                        <div class="tui-links">
-                                <a href="#" >Coach</a>
-                                <a href="#" >Marketing</a>
-                                <a href="#" >Podcast</a>
-                        </div>
-                        
-                    </div>
-            </div>
-            <div class="post-grid-item grid-half">
-                <div class="image-container">
-                    <img src="img/blog/i2.png" alt="image">
-                </div>
-                <div class="text-under-image">
-                        <p class="tui-head">How to create a viral campain</p>
-                        <p class="tui-date">2018-01-02</p>
-                        <div class="tui-links">
-                                <a href="#" >Coach</a>
-                                <a href="#" >Marketing</a>
-                                <a href="#" >Podcast</a>
-                        </div>
-                        
-                    </div>
-            </div>
+    <?php
+    while($blog_query->have_posts()){
+        $blog_query->the_post();
+        echo get_component("templates/components/post-grid-item");         
+    }   
+    wp_reset_query();
+    ?>
 
     </div>
 </div>
+
+    <?php
+}else{
+    $teasers = get_sub_field('posts');
+    ?>
+    <div class="main-inner">
+    <div class="grid">
+    <?php
+    foreach($teasers as $post){
+        setup_postdata( $post ); 
+        echo get_component("templates/components/post-grid-item"); 
+    }
+    wp_reset_postdata();
+    ?>
+
+    </div>
+</div>
+    <?php
+}
+?>

@@ -2,24 +2,37 @@
   @import 'variables';
   @import 'mixins';
 
-//layout
-  @import 'layout/header';
-  @import 'layout/footer';
-  @import 'layout/main';
-
 //Defaults 
   @import 'defaults/main';
   @import 'defaults/error';
   @import 'defaults/component';
   @import 'defaults/typography';
 
+
+//layout
+  @import 'layout/header';
+  @import 'layout/footer';
+  @import 'layout/main';
+  @import 'layout/misc';
+  @import 'layout/grid';
+
+
 //Components
   @import 'components/newsletter';
   @import 'components/numbers';
   @import 'components/featured';
+  @import 'components/blog-posts';
+  @import 'components/blog-filters';
+    //Posts flex components
+      @import 'components/posts/full-image';
+      @import 'components/posts/wysiwyg';
+      @import 'components/posts/video';
+      @import 'components/posts/half-grid';
 
 
 //Post gird
   @import 'components/post-grid';
   @import 'components/post-grid-item';
 
+//Pages
+  @import 'pages/single-blog-post';

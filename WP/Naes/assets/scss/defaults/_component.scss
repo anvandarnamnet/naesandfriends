@@ -8,11 +8,11 @@
     margin-top: $header-margin;
     padding-top: 0;
 } 
-.numbers{
+// Remove padding from components
+.numbers, 
+.full-image, 
+.newsletter, 
+.blog-filters{
     padding: 0;
 }
-.newsletter{
-    padding: 0;
-}
-
-
+      

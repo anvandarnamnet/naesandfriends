@@ -1,4 +1,8 @@
 .featured{
+    *{
+        margin: 0;
+        padding: 0;
+    }
     .big-section {
         //@include big-container;
         display: flex;

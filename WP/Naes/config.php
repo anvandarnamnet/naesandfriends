@@ -19,7 +19,6 @@ if(constant('PHP_VERSION') >= 7){
   //PHP 7.0+ required to use array in define(), if your server has a lower php version, some things
   //needs to be rebuilt.
   define('HIDE_ADMIN_PAGES', array(
-    'edit.php',
     'edit-comments.php',
   ));
   //Hide admin pages from the user
@@ -30,6 +29,7 @@ if(constant('PHP_VERSION') >= 7){
   //Define theme languages, uppercase-codes for WPML, lowercase fo polylang
   define('REGISTER_NAVS', array(
     'top',
+    'footer',
   ));
   //Register navs in acf
 }

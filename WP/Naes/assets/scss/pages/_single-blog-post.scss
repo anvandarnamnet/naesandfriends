@@ -1,0 +1,131 @@
+.single-blog-post{
+    .meta-info {
+        *{
+            margin: 0;
+        }
+        width: 100%;
+         .head {
+             font-size: 30px;
+             font-weight: 600;
+             letter-spacing: 1px;
+         }
+         .date-and-links {
+             padding: 30px 0 45px 0;
+             display: flex;
+             border-bottom: 1px solid #E0E1E2;
+             .date {
+                 opacity: 0.6;
+                 font-weight: 600;
+                 padding-right: 50px;
+             }
+             .three-links{
+                 @include three-links-mall();
+                 padding: 0;
+             }
+         }
+     }
+}
+.share-article{
+    border-top: 3px solid #E0E1E2;
+    *{
+        margin: 0;
+    }
+    .share-save {
+        display: flex;
+        padding: 40px 0 0 0;
+        font-size: 20px;
+        .share {
+            flex: 1;
+            .icons {
+                display: flex;
+                img {
+                    padding: 15px 15px 0 0;
+                    &:hover {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                } 
+            }
+        }
+        .save {
+            flex: 1.2;
+            .icons {
+                display: flex;
+                img {
+                    padding: 15px 20px 0 0;
+                    &:hover {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                } 
+            }
+        }
+    }
+}
+.author-section{
+    *{
+        margin: 0;
+    }
+    .profile {
+       height: 400px;
+       width: 100%;
+       display: flex;
+       .author-img{
+        height: 100%;
+        width: auto;
+        max-width: 30%;
+        object-fit: cover;
+       }
+       .info {
+           background-color: #f9fafb;
+           width: 100%;
+           padding: 50px 35px 20px 35px;
+           .top {
+               display: flex;
+               background-color: inherit;
+               width: 100%;
+               padding-bottom: 25px;
+                .title-name {
+                    flex: 2;
+                    background-color: inherit;
+                        .title {
+                            background-color: inherit;
+                            padding: 0 0 10px 0;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        .name {
+                            background-color: inherit;
+                            //padding: 0 0 15px 0;
+                            font-size: 25px;
+                            font-weight: 600;
+                        }
+                }
+                .images {
+                    flex: 1;
+                    background-color: inherit;
+                    padding-bottom: 5px;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    img {
+                        background-color: inherit;
+                        &:hover {
+                            opacity: 0.7;
+                            cursor: pointer;
+                        }
+                    }
+                }
+           }
+           
+           .about {
+            background-color: inherit;
+            //padding: 0 0 10px 35px;
+            font-size: 17px;
+            opacity: 0.4;
+            line-height: 30px;
+           }
+       }
+    }
+}
