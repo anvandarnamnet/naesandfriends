@@ -81,7 +81,8 @@ error.theme_error::after {
 .numbers,
 .full-image,
 .newsletter,
-.blog-filters {
+.blog-filters,
+.green-line {
   padding: 0; }
 
 * {
@@ -674,6 +675,21 @@ html {
           letter-spacing: 1px;
           line-height: 25px;
           font-weight: 300; }
+
+.green-line {
+  position: relative; }
+  .green-line .green-bar {
+    width: 1px;
+    height: 110px;
+    display: block;
+    background: #4da953;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 99; }
 
 .full-image .full-width {
   width: 100%; }

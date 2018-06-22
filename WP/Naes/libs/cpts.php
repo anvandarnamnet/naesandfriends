@@ -22,13 +22,70 @@ function custom_post_type() {
         'labels'        => $labels,
         'description'   => 'Blogginlägg',
         'public'        => true,
-        'menu_position' => 5,
+        'menu_position' => 4,
         'supports'      => array( 'title', 'custom-fields'),
         'has_archive'   => true,
         'rewrite' => array( 'slug' => 'blog' ),
       );
 
     register_post_type( 'blog-post', $args );
+
+
+    $labels = array(
+      'name'               => _x( 'Services', 'blog-post' ),
+      'singular_name'      => _x( 'Service', 'blog-post' ),
+      'add_new'            => _x( 'Lägg till nytt', 'blog-post' ),
+      'add_new_item'       => __( 'Lägg till ny service' ),
+      'edit_item'          => __( 'Redigera inlägg' ),
+      'new_item'           => __( 'Ny service' ),
+      'all_items'          => __( 'Alla services' ),
+      'view_item'          => __( 'Visa services' ),
+      'search_items'       => __( 'Sök services' ),
+      'not_found'          => __( 'Inga services hittades' ),
+      'not_found_in_trash' => __( 'Inga services finns i Soptunnan' ),
+      'parent_item_colon'  => '',
+      'menu_name'          => 'Services'
+    );
+
+    $args = array(
+      'labels'        => $labels,
+      'description'   => 'Services',
+      'public'        => true,
+      'menu_position' => 5,
+      'supports'      => array( 'title', 'custom-fields'),
+      'has_archive'   => true,
+      'rewrite' => array( 'slug' => 'service' ),
+    );
+
+  register_post_type( 'service', $args );
+
+  $labels = array(
+    'name'               => _x( 'Skills', 'blog-post' ),
+    'singular_name'      => _x( 'Skill', 'blog-post' ),
+    'add_new'            => _x( 'Lägg till ny', 'blog-post' ),
+    'add_new_item'       => __( 'Lägg till ny Skill' ),
+    'edit_item'          => __( 'Redigera skill' ),
+    'new_item'           => __( 'Ny skill' ),
+    'all_items'          => __( 'Alla skills' ),
+    'view_item'          => __( 'Visa skill' ),
+    'search_items'       => __( 'Sök skills' ),
+    'not_found'          => __( 'Inga skills hittades' ),
+    'not_found_in_trash' => __( 'Inga skills finns i Soptunnan' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Skills'
+  );
+
+  $args = array(
+    'labels'        => $labels,
+    'description'   => 'Services',
+    'public'        => true,
+    'menu_position' => 6,
+    'supports'      => array( 'title', 'custom-fields'),
+    'has_archive'   => true,
+    'rewrite' => array( 'slug' => 'skill' ),
+  );
+
+register_post_type( 'skill', $args );
 
     }
   add_action( 'init', 'custom_post_type', 0 );

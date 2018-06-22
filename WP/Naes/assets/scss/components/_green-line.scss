@@ -1,0 +1,17 @@
+.green-line{
+    position: relative;
+    .green-bar{
+        //1px solid #4da953
+        width: 1px;
+        height: 110px;
+        display: block;
+        background: #4da953;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+
+      
+    }
+}

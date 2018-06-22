@@ -86,7 +86,7 @@ get_header();
                             <div class="images">
                                 <a href="<?= $author_url ?>"><img src="<?= get_option_field('icon_about'); ?>" alt=""></a>
                                 <a href="<?= $author_url ?>"><img src="<?= get_option_field('icon_contact'); ?>" alt=""></a>
-                                <a href="<?= $author_url ?>"><img src="<?= get_option_field('icon_more'); ?>" alt=""></a>
+                                <a target="blank" href="<?= get_field('read_more_file', $author); ?>"><img src="<?= get_option_field('icon_more'); ?>" alt=""></a>
                             </div>
                         </div>
                         <p class="about"><?= $author->description ?></p>
