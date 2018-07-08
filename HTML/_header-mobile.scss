@@ -1,0 +1,30 @@
+header {
+    //max-width: 750px;
+    margin: 30px 35px 30px 35px;
+    padding: 0;
+    border-bottom: 0;
+    .logo {
+        background-color: #fff;
+        height: 70px;
+        img{
+            background: transparent;
+            height: 70px;
+            width: 135px;
+        }
+    }
+    ul {
+        display: none;
+    }
+    .mobileonly {
+        display: inline;
+        margin-left: auto;
+        img {
+            height: 30px;
+            width: 45px;
+        }
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    }
+}

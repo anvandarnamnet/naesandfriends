@@ -165,3 +165,100 @@ $baby-blue: #a5c5d1;
 }
 
 @import 'footer';
+
+@media (max-width: 1140px) {
+    @import 'header-mobile';
+    .pic-and-info {
+        width: 750px;
+        margin: auto auto;
+        flex-direction: column;
+        .image {
+            width: 750px;
+            height: 600px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .texts {
+            width: 680px;
+            margin-top: 120px;
+            margin-right: 30px;
+            margin-left: 30px;
+            .title {
+                font-size: 31px;
+            }
+            .bread-1 {
+                font-size: 25px;
+            }
+            .bread-2 {
+                font-size: 25px;
+            }
+        }
+        .yellow {
+            width: 750px;
+            right: 0;
+            left: 0;
+            top: 600px;
+            padding: 0;
+            p {
+                margin-left: 30px;
+                margin-right: 60px;
+                font-weight: 500;
+                font-size: 45px;
+            }
+        }
+    }
+    .tips {
+        font-size: 50px;
+        height: 2060px;
+        .boxes {
+            flex-direction: column;
+            align-items: center;
+            height: 1820px;
+            .box {
+                width: 675px;
+                height: 550px;
+                .image-container {
+                    height: 310px;
+                   img {
+                       height: 100%;
+                       width: 100%;
+                   }
+               }
+               .text-under {
+                   height: 198px;
+                   padding-left: 30px;
+                   padding-top: 40px;
+                   .head {
+                       font-size: 30px;
+                   }
+                   .date {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-top: 20px;
+                        opacity: 0.6;
+                    }
+                    .links {
+                        margin-top: 10px;
+                        a {
+                            background-color: #b8c9e8;
+                            text-decoration: none;
+                            color: #404754;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 2px 5px 2px 5px;
+                            letter-spacing: 0px;
+                            border: 2px solid #b8c9e8;
+                            border-radius: 25px;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                        }
+                    }
+               }
+            }
+        }
+    }
+    @import 'footer-mobile';
+}
