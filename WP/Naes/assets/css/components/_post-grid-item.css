@@ -1,0 +1,71 @@
+.post-grid-item {
+  border: 3px solid transparent;
+  position: relative; }
+  .post-grid-item * {
+    margin: 0; }
+  .post-grid-item:hover {
+    cursor: pointer;
+    border: 3px solid #4ca852;
+    -webkit-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .post-grid-item .image-container {
+    height: 260px;
+    border: 1px solid #E0E1E2;
+    border-bottom: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+    .post-grid-item .image-container img {
+      height: auto;
+      width: 100%;
+      max-width: 100%;
+      -o-object-fit: contain;
+      object-fit: contain; }
+  .post-grid-item .text-under-image {
+    height: 95px;
+    padding: 30px 35px 35px 35px;
+    border-right: 1px solid #E0E1E2;
+    border-bottom: 1px solid #E0E1E2;
+    border-left: 1px solid #E0E1E2; }
+    .post-grid-item .text-under-image .tui-head {
+      font-size: 22px; }
+    .post-grid-item .text-under-image .tui-date {
+      opacity: 0.7;
+      padding: 5px 0 20px 0; }
+    .post-grid-item .text-under-image .tui-links {
+      word-spacing: 10px; }
+      .post-grid-item .text-under-image .tui-links a {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1px solid transparent;
+        order: 1px solid transparent;
+        border-radius: 50px;
+        text-decoration: none;
+        padding: 1px 4px 1px 4px;
+        background-color: #B6CAE8;
+        color: #3f4754;
+        font-size: 14px; }
+  .post-grid-item .image_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .post-grid-item .image_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }

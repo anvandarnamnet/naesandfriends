@@ -4,7 +4,7 @@
     }
     border: 3px solid transparent;
     position: relative;
-    &:hover {
+    &:not(.grid-full):hover {
         cursor: pointer;
         border: 3px solid #4ca852;
         transition-duration: 0.1s;
@@ -21,7 +21,7 @@
             height: auto;
             width: 100%;
             max-width: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
     }
     
@@ -48,6 +48,73 @@
                 background-color: #B6CAE8;
                 color: #3f4754;
                 font-size: 14px;
+            }
+        }
+    }
+    .image_left{
+        display: flex;
+        flex-direction: row;
+        height: 420px;
+        .image-container {
+            width: 50%;
+            height: unset;
+            border: none;
+        }
+        .text-under-image {
+            width: 50%;
+        }
+    }
+    .image_right {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 420px;
+        .image-container {
+            width: 50%;
+            height: unset;
+            border: none;
+        }
+        .text-under-image {
+            padding: 35px 35px 15px 35px;
+            width: 50%;
+            background-color: #f9fafb;
+            height: auto;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .tui-head {
+                font-size: 30px;
+                font-weight: 600;
+                max-width: 80%;
+            }
+            .tui-date {
+                opacity: 0.6;
+                padding: 5px 0 20px 0;
+                font-weight: 600;
+            }
+            .bread {
+                opacity: 0.5;
+                line-height: 30px;
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+            .read_more {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $lighter-blue;
+                font-weight: 700;
+                font-size: 14px;
+                img {
+                    padding-left: 10px;
+                }
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+            .tui-links {
+                padding-bottom: 15px;
+                padding-top: 30px;
+                border-top: 1px solid #E0E1E2;
             }
         }
     }

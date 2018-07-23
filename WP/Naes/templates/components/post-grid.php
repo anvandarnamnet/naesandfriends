@@ -1,5 +1,5 @@
 <?php
-if(get_row_layout() == 'blog-posts'){
+if(! (bool) get_field('featured')){
     $args = array(
         'post_type' => 'blog-post',
         'posts_per_page' => -1,
