@@ -1,4 +1,5 @@
 <?php
+
 if(! (bool) get_field('featured')){
     $args = array(
         'post_type' => 'blog-post',

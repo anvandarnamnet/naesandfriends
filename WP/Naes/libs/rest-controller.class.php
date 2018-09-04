@@ -26,9 +26,30 @@ class NAES_REST_Controller extends WP_REST_Controller {
         $params = $request->get_params();
 
         $args = array(
-            'post_type' => 'blog-post'
+            'post_type' => 'blog-post',
+            'posts_per_page' => 20,
+            'order_by' => 'date',
+            'order' => 'DESC',
         ); 
+        
+        
+        if(!empty($params['blog-cat'])){
+            $args['tax_query'][] = array(
+                'taxonomy' => 'blog-cat',
+                'field' => 'term_id',
+                'terms' => $params['blog-cat']
+            );
+        }
 
-        return $params;
+        $blog_query = new WP_Query($args);
+
+
+        while($blog_query->have_posts()){
+            $blog_query->the_post();
+            $html .= get_component("templates/components/post-grid-item");         
+        }   
+        wp_reset_query();
+
+        return array('data' => $html);
     }
 }
