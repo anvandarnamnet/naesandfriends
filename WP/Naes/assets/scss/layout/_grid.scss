@@ -4,12 +4,13 @@
     grid-template-columns: repeat(6, minmax(185px, 1fr));
     grid-auto-rows: 426px;
     grid-gap: 6px;
+    grid-auto-flow: row dense;
     .grid-third{
         grid-column: span 2;
         grid-row: span 1;                
     }
-    .grid-half{
-        grid-column: span 3;
+    .grid-two-thirds{
+        grid-column: span 4;
         grid-row: span 1;                
     }
     .grid-full{

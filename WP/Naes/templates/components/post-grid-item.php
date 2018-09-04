@@ -1,6 +1,6 @@
 <div class="post-grid-item grid-<?= get_field('grid_size') ?>">
         <a class="overlay-link" href="<?php the_permalink(); ?>"></a>
-                <div class="<?php echo get_field('grid_size') ==  "full" ? get_field('image_position') : null ;?>">
+                <div class="<?php echo get_field('grid_size') ==  "full" ? "full " . get_field('image_position') : null ;?>">
                         <div class="image-container">
                                 <img src="<?= get_field('teaser_image'); ?>" alt="image">
                         </div>

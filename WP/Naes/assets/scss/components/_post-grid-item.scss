@@ -51,22 +51,14 @@
             }
         }
     }
-    .image_left{
+    .full {
         display: flex;
-        flex-direction: row;
-        height: 420px;
-        .image-container {
-            width: 50%;
-            height: unset;
-            border: none;
+        .image_right {
+            flex-direction: row-reverse;
         }
-        .text-under-image {
-            width: 50%;
+        .image_left {
+            flex-direction: row;
         }
-    }
-    .image_right {
-        display: flex;
-        flex-direction: row-reverse;
         height: 420px;
         .image-container {
             width: 50%;
