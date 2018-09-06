@@ -21,7 +21,7 @@
                         <p class="t2"><?php the_sub_field('expertice_text3'); ?></p>
                 </div>
             </div>
-            <?php 
+            <?php /*
                 $repeater = get_sub_field('repeater');
                 foreach($repeater as $expertise){
                     ?>
@@ -31,7 +31,7 @@
                     <?php
                 }
 
-            
+                */
             
             
             ?>
