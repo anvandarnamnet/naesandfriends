@@ -1,0 +1,86 @@
+.third-section {
+    .border-top {
+        height: 90px;
+        width: 50%;
+        border-right: 1px solid $green;
+    }
+    .content {
+        width: 1140px;
+        margin: auto auto;
+        min-height: 460px;
+        display: flex;
+        //justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p {
+            font-size: 35px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin: 50px 0 60px 0;
+        }
+        .boxes {
+            min-height: 350px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
+            margin-bottom: 90px;
+            .box {
+                height: 300px;
+                width: 31%;
+                border: 1px solid #E0E1E2;
+                text-align: center;
+                .t1 {
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin: 90px 40px 30px 40px;
+                }
+                .t2 {
+                    font-size: 17px;
+                    font-weight: 500;
+                    opacity: 0.4;
+                    line-height: 30px;
+                    letter-spacing: 0.3px;
+                    margin: 0 41px 30px 41px;
+                }
+            }
+            .img-green-1 {
+                position: absolute;
+                top: 0px;
+                left: 11%;
+                height: 100px;
+                width: 100px;
+                background-color: #4da953;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .img-green-2 {
+                position: absolute;
+                top: 0px;
+                left: 46%;
+                height: 100px;
+                width: 100px;
+                background-color: #4da953;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .img-green-3 {
+                position: absolute;
+                top: 0px;
+                left: 80%;
+                height: 100px;
+                width: 100px;
+                background-color: #4da953;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

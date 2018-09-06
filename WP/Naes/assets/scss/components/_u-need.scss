@@ -1,0 +1,88 @@
+@mixin texts-in-boxes {
+    .texts {
+        padding-left: 40%;
+        padding-top: 60px;
+        padding-right: 10%;
+        background: transparent;
+        .texts-1 {
+            background: transparent;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding-bottom: 15px;
+        }
+        .texts-2 {
+            background: transparent;
+            font-size: 16px;
+            opacity: 0.6;
+            letter-spacing: 0px;
+            line-height: 25px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+.u-need {
+    background-color: #f9fafb;
+    height: 390px;
+    padding-top: 140px;
+    
+    .content {
+        width: 1140px;
+        margin: auto auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        p {
+            font-size: 35px;
+            font-weight: 300;
+            letter-spacing: 4px;
+        }
+        .boxes {
+            height: 195px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            .box-1 {
+                height: 100%;
+                width: 32.9%;
+                border: 1px solid #E0E1E2;
+                background: url(../images/cog-green.png) no-repeat -25% 150%;
+                @include texts-in-boxes();
+                &:hover {
+                    background: #4da953 url(../images/cog-white.png) no-repeat -25% 150%;
+                    color: white;
+                    cursor: pointer;
+                }   
+            }
+            .box-2 {
+                height: 100%;
+                width: 32.9%;
+                border: 1px solid #E0E1E2;
+                background: url(../images/brain-green.png) no-repeat -12% 120%;
+                @include texts-in-boxes();
+                &:hover {
+                    background: #4da953 url(../images/brain-white.png) no-repeat -12% 120%;
+                    color: white;
+                    cursor: pointer;
+                }   
+            }
+            .box-3 {
+                height: 100%;
+                width: 32.9%;
+                border: 1px solid #E0E1E2;
+                background: url(../images/chat-green.png) no-repeat -20% 90%;
+                @include texts-in-boxes();
+                &:hover {
+                    background: #4da953 url(../images/chat-white.png) no-repeat -20% 90%;
+                    color: white;
+                    cursor: pointer;
+                }   
+            }
+        }
+    }
+    
+}

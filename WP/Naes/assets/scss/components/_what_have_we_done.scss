@@ -1,0 +1,54 @@
+
+
+
+
+#section-5 {
+    min-height: 530px;
+    margin-top: 20px;
+    padding: 0;
+    padding-bottom: 100px;
+    background-color: #f9fafb;
+    .continue {
+        height: 155px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    .three-images {
+        display: flex;
+        width: 680px;
+        margin: auto auto;
+        .three-photos {
+            width: 100%;
+            height: 580px;
+            margin-bottom: 20px;
+            .image-container {
+                height: 305px;
+            }
+            .text-under-image {
+                padding: 40px 20px 55px 20px;
+                height: 179px;
+                .tui-subject {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .tui-head {
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin-top: 18px;
+                }
+                .tui-bread {
+                    margin-top: 20px;
+                    opacity: 0.6;
+                    line-height: 40px;
+                    font-size: 22px;
+                }
+            }
+        }
+
+    }
+}

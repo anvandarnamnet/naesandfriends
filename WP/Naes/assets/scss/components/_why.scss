@@ -1,0 +1,107 @@
+.why {
+    
+    height: 650px;
+    padding-bottom: 150px;
+    position: relative;
+    .left-arrow {
+        position: absolute;
+        right: 55px;
+        top: 440px;
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+    .right-arrow {
+        position: absolute;
+        left: 55px;
+        top: 440px;
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+
+    .content {
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        .head {
+            background-color: inherit;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 300;
+            padding-top: 130px;
+            padding-bottom: 80px;
+        }
+        .info {
+            background-color: inherit;
+            min-height: 415px;
+            position: relative;
+
+            .image {
+                position: absolute;
+                height: 445px;
+                img {
+                    height: 100%;
+                }
+            }
+            .image-mobile {display: none}
+            .yellow-and-button {
+                
+                position: absolute;
+                right: 0;
+                top: 40px;
+                width: 750px;
+                background-color: transparent;
+                
+                .yellow {
+                    background: #ffce06 url(../img/service-v2/8.png) no-repeat 6% 20%;
+                    color: white; 
+                    letter-spacing: 1px;
+                    .text {
+                        background: transparent;
+                        padding: 34px 40px 0 130px;
+                        font-style: italic;
+                        font-size: 18px;
+                        line-height: 30px;
+                        
+                    }
+                    .text-mobile {display: none}
+                    .border {
+                        border-bottom: 1px solid #e3be43;
+                        margin: 20px 0 15px 130px;
+                        width: 136px;
+                    }
+                    .name {
+                        background: transparent;
+                        padding: 0 40px 30px 130px;
+                        font-weight: 600;
+                        font-size: 17px;
+                        line-height: 30px;
+                        text-transform: uppercase;
+                    }
+                }
+                .button {
+                    float: right;
+                    height: 60px;
+                    width: 300px;
+                    background-color: $lighter-blue;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    //position: absolute;
+                    right: $pad-side;
+                    //margin-top: 319px;
+                    font-size: 18px;
+                    
+                    color: white;
+                    &:hover {
+                        opacity: 0.7;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

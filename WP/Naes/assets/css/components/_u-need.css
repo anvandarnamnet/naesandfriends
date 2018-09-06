@@ -1,0 +1,112 @@
+.u-need {
+  background-color: #f9fafb;
+  height: 390px;
+  padding-top: 140px; }
+  .u-need .content {
+    width: 1140px;
+    margin: auto auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .u-need .content p {
+      font-size: 35px;
+      font-weight: 300;
+      letter-spacing: 4px; }
+    .u-need .content .boxes {
+      height: 195px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 60px; }
+      .u-need .content .boxes .box-1 {
+        height: 100%;
+        width: 32.9%;
+        border: 1px solid #E0E1E2;
+        background: url(../img/skill/cog-green.png) no-repeat -25% 150%; }
+        .u-need .content .boxes .box-1 .texts {
+          padding-left: 40%;
+          padding-top: 60px;
+          padding-right: 10%;
+          background: transparent; }
+          .u-need .content .boxes .box-1 .texts .texts-1 {
+            background: transparent;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding-bottom: 15px; }
+          .u-need .content .boxes .box-1 .texts .texts-2 {
+            background: transparent;
+            font-size: 16px;
+            opacity: 0.6;
+            letter-spacing: 0px;
+            line-height: 25px;
+            font-weight: 400; }
+        .u-need .content .boxes .box-1:hover {
+          background: #4da953 url(../img/skill/cog-white.png) no-repeat -25% 150%;
+          color: white;
+          cursor: pointer; }
+      .u-need .content .boxes .box-2 {
+        height: 100%;
+        width: 32.9%;
+        border: 1px solid #E0E1E2;
+        background: url(../img/skill/brain-green.png) no-repeat -12% 120%; }
+        .u-need .content .boxes .box-2 .texts {
+          padding-left: 40%;
+          padding-top: 60px;
+          padding-right: 10%;
+          background: transparent; }
+          .u-need .content .boxes .box-2 .texts .texts-1 {
+            background: transparent;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding-bottom: 15px; }
+          .u-need .content .boxes .box-2 .texts .texts-2 {
+            background: transparent;
+            font-size: 16px;
+            opacity: 0.6;
+            letter-spacing: 0px;
+            line-height: 25px;
+            font-weight: 400; }
+        .u-need .content .boxes .box-2:hover {
+          background: #4da953 url(../img/skill/brain-white.png) no-repeat -12% 120%;
+          color: white;
+          cursor: pointer; }
+      .u-need .content .boxes .box-3 {
+        height: 100%;
+        width: 32.9%;
+        border: 1px solid #E0E1E2;
+        background: url(../img/skill/chat-green.png) no-repeat -20% 90%; }
+        .u-need .content .boxes .box-3 .texts {
+          padding-left: 40%;
+          padding-top: 60px;
+          padding-right: 10%;
+          background: transparent; }
+          .u-need .content .boxes .box-3 .texts .texts-1 {
+            background: transparent;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding-bottom: 15px; }
+          .u-need .content .boxes .box-3 .texts .texts-2 {
+            background: transparent;
+            font-size: 16px;
+            opacity: 0.6;
+            letter-spacing: 0px;
+            line-height: 25px;
+            font-weight: 400; }
+        .u-need .content .boxes .box-3:hover {
+          background: #4da953 url(../img/skill/chat-white.png) no-repeat -20% 90%;
+          color: white;
+          cursor: pointer; }
