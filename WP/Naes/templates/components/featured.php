@@ -1,22 +1,41 @@
-<section class="big-section">
+<?php
+
+$post_object = get_sub_field('post');
+
+if( $post_object ): 
+
+	// override $post
+	$post = $post_object;
+	setup_postdata( $post ); 
+
+	?>
+    <section class="big-section">
         <div class="content">
-            <div class="image-big-section">
-                <img src="img/blog/Layer1.png" alt="image">
-            </div>
-            <div class="info-box">
-                <div class="ten-things">
-                    <p class="head">10 things to know when ordering a new site </p>
-                    <p class="date">2018-01-02</p>
-                    <p class="bread">Lorem ipsum dolor sit amet, consectetuer adipishing elit. Aenan commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.</p>
-                    <a href="#">Read more <img src="img/blog/arrow.png" alt="arrow"></a>
-                
-                </div>
-                <div class="three-links">
-                        <a href="#">Coach</a>
-                        <a href="#">Marketing</a>
-                        <a href="#">Podcast</a>
+            <div class="post-grid-item grid-full">
+                <a class="overlay-link" href="<?php the_permalink(); ?>"></a>
+                <div class="full <?php echo get_field('image_position') ?>">
+                    <div class="image-container">
+                        <img src="<?= get_field('teaser_image'); ?>" alt="image">
+                    </div>
+                    <div class="text-under-image">
+                        <div>
+                            <p class="tui-head"><?php the_title(); ?></p>
+                            <p class="tui-date"><?php echo get_the_date('Y-m-d'); ?></p>
+                            <p class="bread"><?php echo get_the_excerpt() ?></p>
+                            <a class="read_more" href="<?php the_permalink() ?>">Read more<img src="<?php echo site_url() ?>/wp-content/themes/Naes/assets/images/arrow.png" alt="arrow"></a>
+                        </div>
+                        <?php $categories = wp_get_post_terms($post->ID, "blog-cat");
+                        if(!empty($categories)){ ?>
+                            <div class="tui-links">
+                                <?php foreach($categories as $cat){ ?>
+                                    <a href="#" ><?php echo $cat->name ?></a>
+                                <?php } ?>
+                            </div>
+                        <?php } ?>                
+                    </div>
                 </div>
             </div>
         </div>
-        
     </section>
+<?php wp_reset_postdata();
+endif; ?>

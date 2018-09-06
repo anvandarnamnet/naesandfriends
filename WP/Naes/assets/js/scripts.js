@@ -90,3 +90,33 @@ function toggleModal(id){
 function closeModal(id){
   
 }
+
+function loadBlogPosts(){
+  var form = $('#blog-post-filter');
+
+  var formData = form.serialize();
+  
+  var url = $(form).find('[name=api-url]').val();
+
+  var blogPostContainer = $('#blog-posts-container');
+
+  var parent = $(blogPostContainer).closest('.main-inner');
+
+  console.log(parent);
+
+  $(parent).addClass('loading');
+
+  $.ajax({
+    url: url,
+    data: formData,
+    method: "GET",
+  })
+  .done(function(data){
+      $(blogPostContainer).html(data.data);
+      $(parent).removeClass('loading');
+  })
+}
+
+$('#blog-post-filter').find('select').change(function(){
+  loadBlogPosts();
+})

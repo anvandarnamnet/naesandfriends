@@ -8,6 +8,7 @@ require_once 'libs/wp-hacks.php';
 require_once 'libs/layout.php';
 require_once 'libs/error.php';
 require_once 'libs/multilang.php';
+require_once 'libs/rest-controller.class.php';
 
 require_once 'config.php';
 

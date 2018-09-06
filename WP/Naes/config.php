@@ -33,4 +33,8 @@ if(constant('PHP_VERSION') >= 7){
   //Register navs in acf
 }
 
+
+$rest_controller = new NAES_REST_Controller();
+$rest_controller->hook_rest_server();
+
  ?>

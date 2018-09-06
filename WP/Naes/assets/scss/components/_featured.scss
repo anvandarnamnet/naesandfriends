@@ -1,65 +1,57 @@
-.featured{
-    *{
+.featured {
+    * {
         margin: 0;
         padding: 0;
     }
+
     .big-section {
         //@include big-container;
         display: flex;
         justify-content: center;
         align-items: center;
-        .content{
-            background-color: #fff;
+        height: 565px;
+        .content {
             height: 370px;
-            display: flex;
             width: 1140px;
-            .image-big-section {
-                flex: 8.5;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
+        }
+        @media screen and (max-width: 800px) {
+            height: 900px;
+            .content {
+                height: 820px;
             }
-            .info-box {
-                flex: 6;
-                margin: 0 0 0 70px;
-    
-                .ten-things {
-                    border-bottom: 1px solid #E0E1E2;
-                    padding-bottom: 40px;
-                    .head {
-                        font-size: 30px;
-                        font-weight: 600;
+        }
+        .post-grid-item {
+            width: 100%;
+            height: 370px;
+            .full {
+                height: 370px;
+            }
+            .image-container {
+                width: 60%; 
+            }
+            .text-under-image {
+                background-color: transparent;
+                width: 40%;
+            }
+            @media screen and (max-width: 800px) {
+                height: 100%;
+                .full{
+                    flex-direction: column;
+                    height: 100%;
+                    .image-container {
+                        height: 423px;
+                        min-height: 423px;
+                        width: 100%;
                     }
-                    .date {
-                        opacity: 0.6;
-                        padding: 5px 0 20px 0;
-                        font-weight: 600;
-                    }
-                    .bread {
-                        opacity: 0.5;
-                        line-height: 30px;
-                        font-size: 20px;
-                        padding-bottom: 20px;
-                    }
-                    a {
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        color: $lighter-blue;
-                        font-weight: 700;
-                        font-size: 14px;
-                        img {
-                            padding-left: 10px;
-                        }
-                        &:hover {
-                            opacity: 0.6;
+                    .text-under-image {
+                        width: calc(100% - 70px);
+                        height: 373px;
+                        div {
+                            margin-bottom: 10px;
                         }
                     }
                 }
-                .three-links {
-                    padding: 25px 0 10px 0;
-                    @include three-links-mall;
-                }
+                
             }
         }
     }

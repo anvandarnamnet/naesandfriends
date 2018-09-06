@@ -1,5 +1,6 @@
 <?php
-if(! (bool) get_field('featured')){
+
+if(! (bool) get_sub_field('featured')){
     $args = array(
         'post_type' => 'blog-post',
         'posts_per_page' => -1,
@@ -8,17 +9,20 @@ if(! (bool) get_field('featured')){
     ?>
 
     <div class="main-inner">
-    <div class="grid">
-    <?php
-    while($blog_query->have_posts()){
-        $blog_query->the_post();
-        echo get_component("templates/components/post-grid-item");         
-    }   
-    wp_reset_query();
-    ?>
+        <div class="spinner-overlay">
+            <div class="spinner"></div>
+        </div>
+        <div id="blog-posts-container" class="grid">
+        <?php
+        while($blog_query->have_posts()){
+            $blog_query->the_post();
+            echo get_component("templates/components/post-grid-item");         
+        }   
+        wp_reset_query();
+        ?>
 
+        </div>
     </div>
-</div>
 
     <?php
 }else{
