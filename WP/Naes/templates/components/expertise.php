@@ -21,6 +21,20 @@
                         <p class="t2"><?php the_sub_field('expertice_text3'); ?></p>
                 </div>
             </div>
+            <?php 
+                $repeater = get_sub_field('repeater');
+                foreach($repeater as $expertise){
+                    ?>
+                    <div classs="box">
+                        <p class="t1"><?php echo $expertise['text1'] ?>
+                    </div>
+                    <?php
+                }
+
+            
+            
+            
+            ?>
         </div>
     </section>
     
