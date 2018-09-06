@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="left-arrow">
-                        <img src="../../assets/images/arrow-left.png" alt="">
+                        <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/arrow-left.png') ?>" alt="">
                     </div>
                     <div class="right-arrow">
                         <img src="../../assets/images/arrow-right.png" alt="">
