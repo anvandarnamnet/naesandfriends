@@ -100,6 +100,12 @@ function loadBlogPosts(){
 
   var blogPostContainer = $('#blog-posts-container');
 
+  var parent = $(blogPostContainer).closest('.main-inner');
+
+  console.log(parent);
+
+  $(parent).addClass('loading');
+
   $.ajax({
     url: url,
     data: formData,
@@ -107,6 +113,7 @@ function loadBlogPosts(){
   })
   .done(function(data){
       $(blogPostContainer).html(data.data);
+      $(parent).removeClass('loading');
   })
 }
 

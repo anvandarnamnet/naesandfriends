@@ -10,10 +10,15 @@
         justify-content: center;
         align-items: center;
         height: 565px;
-
         .content {
             height: 370px;
             width: 1140px;
+        }
+        @media screen and (max-width: 800px) {
+            height: 900px;
+            .content {
+                height: 820px;
+            }
         }
         .post-grid-item {
             width: 100%;
@@ -27,6 +32,26 @@
             .text-under-image {
                 background-color: transparent;
                 width: 40%;
+            }
+            @media screen and (max-width: 800px) {
+                height: 100%;
+                .full{
+                    flex-direction: column;
+                    height: 100%;
+                    .image-container {
+                        height: 423px;
+                        min-height: 423px;
+                        width: 100%;
+                    }
+                    .text-under-image {
+                        width: calc(100% - 70px);
+                        height: 373px;
+                        div {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                
             }
         }
     }

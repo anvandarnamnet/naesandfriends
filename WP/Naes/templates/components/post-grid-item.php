@@ -8,8 +8,8 @@
                                 <div>
                                         <p class="tui-head"><?php the_title(); ?></p>
                                         <p class="tui-date"><?php echo get_the_date('Y-m-d'); ?></p>
-                                        <p class="bread"><?php echo get_the_excerpt() ?></p>
                                         <?php if( get_field('grid_size') ==  "full" ):?>
+                                                <p class="bread"><?php echo get_the_excerpt() ?></p>
                                                 <a class="read_more" href="<?php the_permalink() ?>">Read more<img src="<?php echo site_url() ?>/wp-content/themes/Naes/assets/images/arrow.png" alt="arrow"></a>
                                         <?php endif; ?>
                                 </div>

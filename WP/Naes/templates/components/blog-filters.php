@@ -6,7 +6,7 @@
                 <div class="selectors">
                     <div class="select-box">
                         <select name="blog-cat">
-                            <option>Subject</option>
+                            <option value="">Subject</option>
                             <?php 
                                 $cats = get_terms([
                                     'taxonomy' => 'blog-cat',
@@ -22,7 +22,7 @@
         
                     <div class="select-box">
                         <select >
-                            <option>Read &amp listen</option>
+                            <option value="">Read &amp listen</option>
                             <?php 
                                 $types = get_terms([
                                     'taxonomy' => 'content-type',
@@ -37,7 +37,7 @@
                     </div>
                     <div class="select-box">
                         <select>
-                            <option>Author</option>
+                            <option value="">Author</option>
                             <?php 
                                 $authors = get_terms([
                                     'taxonomy' => 'authors',

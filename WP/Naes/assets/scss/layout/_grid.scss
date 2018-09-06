@@ -18,4 +18,32 @@
         grid-row: span 1;
 
     }
+    @media screen and (max-width: 1200px){
+        grid-template-columns: repeat(3, minmax(185px, 1fr));
+        .grid-third{
+            grid-column: span 1;              
+        }
+        .grid-two-thirds{
+            grid-column: span 2;              
+        }
+        .grid-full{
+            grid-column: span 3;
+    
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        grid-template-columns: repeat(1, minmax(185px, 1fr));
+        .grid-third{
+            grid-column: span 1;              
+        }
+        .grid-two-thirds{
+            grid-column: span 1;              
+        }
+        .grid-full{
+            grid-column: span 1;
+            grid-row: span 2;
+    
+        }
+    }
 }

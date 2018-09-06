@@ -6,14 +6,15 @@
         justify-content: space-between;
         padding-top: 35px;
         padding-bottom: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         .main-inner {
             background-color: inherit;
             display: flex;
             justify-content: space-between;
             width: 1140px;
+            @media screen and (max-width: 600px){
+                flex-direction: column;
+                min-height: 220px;
+            }
             p {
                 cursor: default;
                 flex: 1;
@@ -33,14 +34,20 @@
                     display: flex;
                     justify-content: space-between;
                     background-color: $lightest-blue;
-                    
+                    @media screen and (max-width: 600px){
+                        flex-direction: column;
+                        height: 150px;
+                    }
                     .select-box {
                         
-                        height: 100%;
+                        height: 50px;
                         width: 31%;
                         border: 1px solid $gray-text;
                         display: inline-block;
-                    
+                        @media screen and (max-width: 800px){
+                            margin-bottom: 10px;
+                            width: 100%;
+                        }
                         
                         select {
                             background:
