@@ -41,15 +41,33 @@ class NAES_REST_Controller extends WP_REST_Controller {
             );
         }
 
+        if(!empty($params['content-type'])){
+            $args['tax_query'][] = array(
+                'taxonomy' => 'content-type',
+                'field' => 'term_id',
+                'terms' => $params['content-type']
+            );
+        }
+
+        if(!empty($params['author'])){
+            $args['tax_query'][] = array(
+                'taxonomy' => 'author',
+                'field' => 'term_id',
+                'terms' => $params['author']
+            );
+        }
+
         $blog_query = new WP_Query($args);
 
 
         while($blog_query->have_posts()){
             $blog_query->the_post();
-            $html .= get_component("templates/components/post-grid-item");         
+            ob_start();
+            get_component("templates/components/post-grid-item"); 
+            $html .= ob_get_clean();        
         }   
         wp_reset_query();
 
-        return array('data' => $html);
+        return array('data' => $html, "args" => $args);
     }
 }

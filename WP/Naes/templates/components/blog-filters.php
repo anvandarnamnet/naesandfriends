@@ -2,7 +2,7 @@
     <section class="filters">
         <div class="main-inner">
             <p><?= the_sub_field('text'); ?></p>
-            <form id="blog-post-filet">
+            <form id="blog-post-filter">
                 <div class="selectors">
                     <div class="select-box">
                         <select name="blog-cat">
@@ -51,6 +51,7 @@
                         </select>  
                     </div>
                 </div>
+                <input type="hidden" name="api-url" value="<?php echo site_url("wp-json/naes/v1/blog-posts")?>">
             </form>
         </div>
     </section>

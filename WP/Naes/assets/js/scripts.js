@@ -90,3 +90,26 @@ function toggleModal(id){
 function closeModal(id){
   
 }
+
+function loadBlogPosts(){
+  var form = $('#blog-post-filter');
+
+  var formData = form.serialize();
+  
+  var url = $(form).find('[name=api-url]').val();
+
+  var blogPostContainer = $('#blog-posts-container');
+
+  $.ajax({
+    url: url,
+    data: formData,
+    method: "GET",
+  })
+  .done(function(data){
+      $(blogPostContainer).html(data.data);
+  })
+}
+
+$('#blog-post-filter').find('select').change(function(){
+  loadBlogPosts();
+})

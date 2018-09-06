@@ -1,6 +1,6 @@
 <?php
 
-if(! (bool) get_field('featured')){
+if(! (bool) get_sub_field('featured')){
     $args = array(
         'post_type' => 'blog-post',
         'posts_per_page' => -1,
@@ -9,7 +9,7 @@ if(! (bool) get_field('featured')){
     ?>
 
     <div class="main-inner">
-    <div class="grid">
+    <div id="blog-posts-container" class="grid">
     <?php
     while($blog_query->have_posts()){
         $blog_query->the_post();
