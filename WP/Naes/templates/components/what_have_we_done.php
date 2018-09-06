@@ -1,4 +1,6 @@
 <section id="section-5">
+            <div class="main">
+                <div class="main-inner">
             <div class="continue">What have we done?</div>
             <div class="three-images">
                     <div class="three-photos">
@@ -32,4 +34,6 @@
                         </div>
                     </div>
             </div>
+</div>
+</div>
     </section>
