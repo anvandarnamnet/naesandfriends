@@ -3,7 +3,7 @@
                 <p class="head">Why Naes &amp Friends?</p>
                 <div class="info">
                     <div class="image"><img src="<?php the_sub_field('why_bild'); ?>" alt=""></div>
-                    <div class="image-mobile"><img src="img/service-v2/7-mobile.png" alt=""></div>
+                    <div class="image-mobile"><img src="<?php the_sub_field('why_bild'); ?>" alt=""></div>
                     <div class="yellow-and-button">
                         <div class="yellow">
                                 <p class="text"><?php the_sub_field('why_citat'); ?></p>
@@ -18,7 +18,8 @@
                         <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/arrow-left.png') ?>" alt="">
                     </div>
                     <div class="right-arrow">
-                        <img src="../../assets/images/arrow-right.png" alt="">
+                        <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/arrow-right.png') ?>" alt="">
                 </div>
             </div>
 </section>
+

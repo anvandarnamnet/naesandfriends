@@ -27,6 +27,7 @@
     background-color: #f9fafb;
     height: 390px;
     padding-top: 140px;
+    padding-bottom: 100px;
     
     .content {
         width: 1140px;
@@ -85,4 +86,85 @@
         }
     }
     
+}
+
+
+@media (max-width: 1140px) {
+    @mixin texts-in-boxes {
+        .texts {
+            padding-left: 30%;
+            padding-top: 60px;
+            padding-right: 10%;
+            background: transparent;
+            .texts-1 {
+                background: transparent;
+                font-weight: 600;
+                font-size: 40px;
+                letter-spacing: 1px;
+                padding-bottom: 15px;
+            }
+            .texts-2 {
+                background: transparent;
+                font-size: 27px;
+                letter-spacing: 1px;
+                line-height: 25px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .u-need {
+        height: 1020px;
+        padding-top: 100px;
+        .content {
+            width: 680px;
+            p{
+                font-size: 45px;
+                font-weight: 300;
+            }
+            .boxes {
+                flex-direction: column;
+                height: 790px;
+                .box-1{
+                    width: 100%;
+                    height: 255px;
+                    background: url(../images/cog-green.png) no-repeat -12% 160%;
+                    background-size: 200px;
+                    @include texts-in-boxes();
+                    &:hover {
+                        background: #4da953 url(../images/cog-white.png) no-repeat -12% 160%;
+                        background-size: 200px;
+                        color: white;
+                        cursor: pointer;
+                    }   
+                }
+                .box-2{
+                    width: 100%;
+                    height: 255px;
+                    background: url(../images/brain-green.png) no-repeat -10% 120%;
+                    background-size: 170px;
+                    @include texts-in-boxes();
+                    &:hover {
+                        background: #4da953 url(../images/brain-white.png) no-repeat -10% 120%;
+                        background-size: 170px;
+                        color: white;
+                        cursor: pointer;
+                    }   
+                } 
+                .box-3 {
+                    width: 100%;
+                    height: 255px;
+                    background: url(../images/chat-green.png) no-repeat -9% 90%;
+                    background-size: 180px;
+                    @include texts-in-boxes();
+                    &:hover {
+                        background: #4da953 url(../images/chat-white.png) no-repeat -9% 90%;
+                        background-size: 180px;
+                        color: white;
+                        cursor: pointer;
+                    }   
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,65 @@
+#section-5 {
+  min-height: 530px;
+  background-color: #f9fafb;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  padding-top: 150px; }
+  #section-5 .three-images {
+    width: 1140px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    #section-5 .three-images .three-photos {
+      width: 31.5%;
+      height: 413px;
+      border: 3px solid transparent; }
+      #section-5 .three-images .three-photos:hover {
+        cursor: pointer;
+        border: 3px solid #4ca852;
+        -webkit-transition-duration: 0.1s;
+        -o-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+        -webkit-transition-timing-function: ease-out;
+        -o-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      #section-5 .three-images .three-photos .image-container {
+        height: 210px;
+        border-right: 1px solid #E0E1E2;
+        border-top: 1px solid #E0E1E2;
+        border-left: 1px solid #E0E1E2;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        #section-5 .three-images .three-photos .image-container img {
+          height: 55%;
+          width: auto; }
+      #section-5 .three-images .three-photos .text-under-image {
+        padding: 0 30px 44px 30px;
+        border-right: 1px solid #E0E1E2;
+        border-bottom: 1px solid #E0E1E2;
+        border-left: 1px solid #E0E1E2; }
+        #section-5 .three-images .three-photos .text-under-image .tui-subject {
+          padding-top: 10px;
+          font-size: 22px;
+          font-weight: 500; }
+        #section-5 .three-images .three-photos .text-under-image .tui-bread {
+          margin-top: 30px;
+          opacity: 0.6;
+          line-height: 30px;
+          font-size: 17px;
+          font-weight: 400; }

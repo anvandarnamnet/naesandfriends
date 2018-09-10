@@ -6,6 +6,7 @@
     min-height: 530px;
     margin-top: 20px;
     padding: 0;
+    padding-top: 80px;
     padding-bottom: 100px;
     background-color: #f9fafb;
     .continue {
@@ -19,17 +20,30 @@
     }
     .three-images {
         display: flex;
+        justify-content: space-between;
         margin: auto auto;
         .three-photos {
-            width: 100%;
+            width: 31.5%;
             height: 580px;
             margin-bottom: 20px;
+            border: 3px solid transparent;
+            &:hover {
+                cursor: pointer;
+                border: 3px solid #4ca852;
+                transition-timing-function: ease-out;
+                transition-duration: 0.1s;
+            }
             .image-container {
                 height: 305px;
+                background-position: center;
+                background-size: cover;
             }
             .text-under-image {
                 padding: 40px 20px 55px 20px;
                 height: 179px;
+                border-right: 1px solid #E0E1E2;
+                border-bottom: 1px solid #E0E1E2;
+                border-left: 1px solid #E0E1E2;
                 .tui-subject {
                     text-transform: uppercase;
                     font-size: 20px;
@@ -49,5 +63,59 @@
             }
         }
 
+    }
+}
+
+@media (max-width: 1140px) {
+    #section-5 {
+        min-height: 530px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 100px;
+        background-color: #f9fafb;
+        .continue {
+            height: 155px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+        .three-images {
+            display: flex;
+            flex-direction: column;
+            width: 680px;
+            margin: auto auto;
+            .three-photos {
+                width: 100%;
+                height: 580px;
+                margin-bottom: 20px;
+                .image-container {
+                    height: 305px;
+                }
+                .text-under-image {
+                    padding: 40px 20px 55px 20px;
+                    height: 179px;
+                    .tui-subject {
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .tui-head {
+                        font-size: 30px;
+                        font-weight: 500;
+                        margin-top: 18px;
+                    }
+                    .tui-bread {
+                        margin-top: 20px;
+                        opacity: 0.6;
+                        line-height: 40px;
+                        font-size: 22px;
+                    }
+                }
+            }
+
+        }
     }
 }
