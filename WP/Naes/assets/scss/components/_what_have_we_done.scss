@@ -4,7 +4,6 @@
 
 #section-5 {
     min-height: 530px;
-    margin-top: 20px;
     padding: 0;
     padding-top: 80px;
     padding-bottom: 100px;
@@ -22,9 +21,10 @@
         display: flex;
         justify-content: space-between;
         margin: auto auto;
+        text-align: left;
         .three-photos {
             width: 31.5%;
-            height: 580px;
+            height: auto;
             margin-bottom: 20px;
             border: 3px solid transparent;
             &:hover {
@@ -46,8 +46,10 @@
                 border-left: 1px solid #E0E1E2;
                 .tui-subject {
                     text-transform: uppercase;
-                    font-size: 20px;
-                    font-weight: 600;
+                    padding-top: 20px;
+                    margin-top: 0;
+                    font-size: 15px;
+                    font-weight: 700;
                 }
                 .tui-head {
                     font-size: 30px;
@@ -99,8 +101,9 @@
                     height: 179px;
                     .tui-subject {
                         text-transform: uppercase;
+                        padding-top: 20px;
+                        margin-top: 0;
                         font-size: 20px;
-                        font-weight: 600;
                     }
                     .tui-head {
                         font-size: 30px;
