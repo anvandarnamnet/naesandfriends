@@ -80,6 +80,7 @@
                         font-size: 17px;
                         line-height: 30px;
                         text-transform: uppercase;
+                        margin: 0;
                     }
                 }
                 .button {
@@ -104,4 +105,72 @@
             }
         }
     }
+}
+
+@media (max-width: 1140px) {
+    .why {
+        height: 860px;
+        padding-bottom: 100px;
+        .content {
+            width: 545px;
+            .head {
+                background-color: inherit;
+                text-align: center;
+                font-size: 45px;
+                font-weight: 400;
+                padding-top: 100px;
+                padding-bottom: 70px;
+            }
+            .info {
+                position: relative;
+                .image {display: none}
+                .image-mobile {
+                    display: inline;
+                    position: absolute;
+                    height: 415px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .yellow-and-button {
+                    margin: 0;
+                    right: 3px;
+                    top: 215px;
+                    width: 430px;
+                    .yellow {
+                        background: #ffce06 url(../img/service-v2/8-mobile.png) no-repeat 4% 17%;
+                        .text {display: none}
+                        .text-mobile {
+                            display: inline-block;
+                            background: transparent;
+                            padding: 30px 10px 20px 90px;
+                            font-style: italic;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 25px;
+                 
+                        }
+                        .border {
+                            margin: 20px 0 0px 90px;
+                            width: 100px;
+                        }
+                        .name {
+                            padding: 10px 20px 40px 90px;
+                            font-weight: 600;
+                            font-size: 22px;
+                            line-height: 22px;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .button {
+                        height: 80px;
+                        width: 310px;
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
 }

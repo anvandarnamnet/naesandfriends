@@ -18,6 +18,7 @@
   @import 'layout/grid';
   @import 'layout/buttons';
 
+  
 
 //Components
   @import 'components/newsletter';
@@ -26,12 +27,18 @@
   @import 'components/blog-posts';
   @import 'components/blog-filters';
   @import 'components/doer';
+  @import 'components/doers';
   @import 'components/numbers-big';
   @import 'components/green-line';
   @import 'components/expertice';
   @import 'components/u-need';
   @import 'components/why';
   @import 'components/what_have_we_done';
+  @import 'components/meet_person';
+  @import 'components/who_we_are';
+  @import 'components/our_experts';
+  @import 'components/partners';
+
     //Posts flex components
       @import 'components/posts/image';
       @import 'components/posts/wysiwyg';
