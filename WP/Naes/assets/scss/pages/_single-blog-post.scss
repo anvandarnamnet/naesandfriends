@@ -24,9 +24,15 @@
              }
          }
      }
+     .flexible {
+        .component {
+            padding: 0;
+        }
+    }
 }
 .share-article{
     border-top: 3px solid #E0E1E2;
+    margin-bottom: 4rem;
     *{
         margin: 0;
     }
@@ -70,6 +76,7 @@
        height: 400px;
        width: 100%;
        display: flex;
+       margin-bottom: 6rem;
        .author-img{
         height: 100%;
         width: auto;
@@ -127,5 +134,14 @@
             line-height: 30px;
            }
        }
+    }
+}
+.read-more {
+    margin-bottom: 2rem;
+    h3 {
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 6rem;
     }
 }
