@@ -191,3 +191,66 @@
 }
 
 }
+
+
+
+
+@media (max-width: 600px) {
+
+    .experts {
+        width: 100%;
+        margin-bottom: 70px;
+        margin-top: 60px;
+        font-size: 45px;
+        .boxes {
+            flex-direction: column;
+            padding-bottom: 0px;
+            overflow-x: hidden;
+            .expert-box {
+                width: 100%;
+                //min-height: 700px;
+                .yellow { 
+                    top: 300px;
+                    height: auto;
+                    padding-left: 20px;
+                    padding-bottom: 20px;
+                    width: 100%;
+                    .name {
+                        font-size: 35px;
+                    }
+                    .position {
+                        font-size: 20px;
+                    }
+                }
+                img {
+                    height: 500px;
+                    width: 100%;
+                }
+                .description {
+                    padding: 10px 20px 0 20px;
+                    line-height: 1.5;
+                }
+                .meet {
+                    margin-top: 0px;
+                    margin-bottom: 50px;
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .button {
+            width: 250px;
+            height: 50px;
+            font-size: 15px;
+            img {
+                padding-left: 20px;
+            }
+            &:hover {
+                opacity: 0.6;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    }

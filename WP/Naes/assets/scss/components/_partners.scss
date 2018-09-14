@@ -50,7 +50,7 @@
   }
 }
 
-#section-5 {
+#partners {
     min-height: 530px;
     background-color: #f9fafb;
     text-align: center;
@@ -74,7 +74,7 @@
 
 @media (max-width: 1140px) {
 
-    #section-5 {
+    #partners {
         min-height: 1580px;
         background-color: #f9fafb;
         text-align: center;
@@ -110,6 +110,27 @@
                         font-size: 20px;
                         font-weight: 500;
                     }
+                }
+            }
+        }
+       
+    }
+
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    #partners {
+        .three-images {
+            width: 90%;
+            .three-photos {
+                width: 100%;
+                .text-under-image {
+                    height: auto;
                 }
             }
         }

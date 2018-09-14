@@ -96,3 +96,43 @@
         }
     }
 }    
+
+
+
+
+@media (max-width: 600px) {
+    .meet-employee {
+        padding-bottom: 0;
+        padding-top: 0px;
+        .background-fill {
+            width: 100%;
+            .image {display: none}
+            .mobile-image {
+                display: inline;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+            .yellow-box {
+                position: initial;
+                width:100%;
+                height: 300px;
+                padding-top: 30px;
+                .t1 {
+                    margin: 30px 20px 10px 20px;
+                }
+                .t2 {
+                    margin: 30px 20px 20px 20px;
+                }
+            }
+            .button {
+                width:100%;
+                bottom:0;
+                top: auto;
+                right: 0;
+            }
+        }
+    }
+}    

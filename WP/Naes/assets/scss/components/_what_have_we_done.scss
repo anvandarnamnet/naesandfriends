@@ -122,3 +122,33 @@
         }
     }
 }
+
+
+
+
+
+    @media (max-width: 600px) {
+
+        #section-5 {
+            .three-images {
+                width: 100%;
+                .three-photos {
+                    width: 100%;
+                    height: auto;
+                    .text-under-image {
+                        height: auto;
+                        padding: 10px 10px 10px 10px;
+                        .tui-subject {
+                            font-size: 15px;
+                        }
+                        .tui-head {
+                            margin-top: -5px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+           
+        }
+    
+    }

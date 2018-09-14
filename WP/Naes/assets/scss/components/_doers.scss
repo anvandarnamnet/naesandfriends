@@ -134,3 +134,71 @@
         }
     }
 }
+
+
+
+
+@media (max-width: 600px) {
+    @mixin overlapping-text-box ($position) {
+        text-align: start;
+        height: auto;
+        width: 100%;
+        background-color: rgba(255, 255, 255,0);
+        position: absolute;
+        left: $position;
+        top: 120px;
+        p {
+            margin: 10px 0 0 10px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        ul {
+            margin: 20px 0 0 0px;
+            line-height: 35px;
+            list-style-image: url(../img/service-v2/bullet.png);
+            li {
+                color: #777777;
+                font-size: 22px;
+                font-weight: 400;
+                text-indent: 0px;
+            }
+        }
+    }
+
+    .list-123 {
+        height: auto;
+        width: 100%;
+        margin: auto auto;
+        .t1 {
+            font-size: 45px;
+        }
+        .t2 {
+            font-size: 25px;
+            font-weight: 500;
+            opacity: 0.9;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .boxes {
+            flex-direction: column;
+            margin-left: 0px;
+            .box {
+                width: 100%;
+                height: 400px;
+                padding-bottom: 50px;
+                .text-list-1 {
+                    @include overlapping-text-box(0px);
+                }
+                .text-list-2 {
+                    @include overlapping-text-box(0px);
+                }
+                .text-list-3 {
+                    @include overlapping-text-box(0px);
+                }
+            .number {
+                opacity: 0.7;
+            }    
+            }
+        }
+    }
+}

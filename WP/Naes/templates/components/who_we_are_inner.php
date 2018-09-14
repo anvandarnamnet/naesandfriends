@@ -8,9 +8,9 @@
         </div>
         <div class="yellow">
             <p><?php the_sub_field('rubrik'); ?></p>
-            <img src="img/who-we-are-inner-description/2.png" alt="">
-            <img src="img/who-we-are-inner-description/3.png" alt="">
-            <img src="img/who-we-are-inner-description/4.png" alt="">
-            <img src="img/who-we-are-inner-description/5.png" alt="">
+            <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/facebook.png') ?>" alt="">
+            <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/3.png') ?>" alt="">
+            <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/4.png') ?>" alt="">
+            <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/5.png') ?>" alt="">
         </div>
 </section>

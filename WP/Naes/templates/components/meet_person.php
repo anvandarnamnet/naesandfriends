@@ -1,7 +1,10 @@
 <div class="main">
-    <div class="main-inner">
+    
 
         <section class="meet-employee">
+
+
+
             <div class="background-fill">
                 <div class="image"><img src="<?php the_sub_field('bild') ?>" alt=""></div>
                 <div class="mobile-image"><img src="<?php the_sub_field('bild') ?>" alt=""></div>
@@ -11,7 +14,8 @@
                 </div>
                 <div class="button"><?php the_sub_field('knapptext') ?></div>
             </div>
-        </section>
+        
 
-    </div>
+</section>
+
 </div>    
