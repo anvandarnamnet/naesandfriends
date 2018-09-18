@@ -11,3 +11,11 @@
     <div style="width: 0px; height: 0px;" id="top" ></div>
     <?= get_component('templates/layout/header'); ?>
 <div class="header-fix"></div>
+
+<?php if(get_field('hero')):?>
+  <section class="hero">
+    <div class="hero-container" style="background-image: url(<?php the_field('hero_image') ?>)">
+      <?php the_field('hero_text') ?>
+    </div>
+  </section>
+<?php endif; ?>
