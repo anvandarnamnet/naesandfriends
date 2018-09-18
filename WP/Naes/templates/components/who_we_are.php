@@ -6,7 +6,6 @@
                     <p class="t2"><?php the_sub_field('underrubrik'); ?></p>
                     <p class="t3"><?php the_sub_field('text'); ?></p>
                 </div>
-                <div class="image-background"></div>
         </section>
     </div>
 </div>

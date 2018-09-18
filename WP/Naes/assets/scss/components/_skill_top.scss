@@ -1,0 +1,188 @@
+
+.skill-top {
+    width: 1140px;
+    margin: auto auto;
+    margin-bottom: 130px;
+    .border-top {
+        height: 90px;
+        width: 50%;
+        border-right: 1px solid $green;
+    }
+    .content {
+        min-height: 460px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        .image {
+            width: 50%;
+        }
+        .text {
+            width: 50%;
+            margin-top: 80px;
+            .head {
+                font-size: 32px;
+                font-weight: 300;
+                letter-spacing: 3px;
+                margin-bottom: 30px;
+            }
+            .subhead {
+                margin-bottom: 30px;
+                font-size: 24px;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+            ul {
+                margin-left: 50px;
+                line-height: 30px;
+                list-style-image: url(../img/skill/bullet.png);
+               li {
+                   color: #89898a;
+                   font-size: 17px;
+                   font-weight: 500;
+                   text-indent: 15px;
+               }
+            }
+            .boxes {
+                display: flex;
+                margin-top: 30px;
+                text-transform: uppercase;
+                .box-1 {
+                    height: 45px;
+                    width: 140px;
+                    border: 2px solid transparent;
+                    background-color: $lighter-blue;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    &:hover {
+                        opacity: 0.7;
+                        cursor: pointer;
+                    }
+                }
+                .box-2 {
+                    height: 45px;
+                    width: 140px;
+                    border: 2px solid $lighter-blue;
+                    color: $lighter-blue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    &:hover {
+                        opacity: 0.5;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+.skill-top {
+    width: 100%;
+    margin: auto auto;
+    margin-bottom: 130px;
+    .border-top {
+        height: 90px;
+        width: 50%;
+        border-right: 1px solid $green;
+    }
+    .content {
+        min-height: 460px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .image {
+            width: 100%;
+        }
+        .text {
+            width: 100%;
+            margin-top: 0px;
+            .head {
+                font-size: 32px;
+                font-weight: 300;
+                letter-spacing: 3px;
+                margin-bottom: 30px;
+            }
+            .subhead {
+                margin-bottom: 30px;
+                font-size: 24px;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+            ul {
+                margin-left: 50px;
+                line-height: 30px;
+                list-style-image: url(../img/skill/bullet.png);
+               li {
+                   color: #89898a;
+                   font-size: 17px;
+                   font-weight: 500;
+                   text-indent: 15px;
+               }
+            }
+            .boxes {
+                display: flex;
+                margin-top: 30px;
+                text-transform: uppercase;
+                .box-1 {
+                    height: 45px;
+                    width: 140px;
+                    border: 2px solid transparent;
+                    background-color: $lighter-blue;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    &:hover {
+                        opacity: 0.7;
+                        cursor: pointer;
+                    }
+                }
+                .box-2 {
+                    height: 45px;
+                    width: 140px;
+                    border: 2px solid $lighter-blue;
+                    color: $lighter-blue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    &:hover {
+                        opacity: 0.5;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+}

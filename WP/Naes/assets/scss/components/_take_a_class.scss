@@ -1,0 +1,84 @@
+.take-a-class {
+    
+    min-height: 600px;
+    background-color: #f9fafb;
+    padding-top: 130px;
+    .content {
+        width: 1140px;
+        margin: auto auto;
+        .head {
+            background-color: inherit;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 300;
+            letter-spacing: 2px;   
+            margin-bottom: 50px;
+        }
+        .text-and-image {
+            background-color: inherit;
+            min-height: 625px;
+            display: flex;
+            .image {
+                display: inline-block;
+                background-color: inherit;
+                height: 100%;
+                width: 100%;
+                &:hover {
+                    opacity: 0.9;
+                    cursor: pointer;
+                }
+            }
+            .image-mobile {
+                display: none;
+            }
+            .text {
+                background-color: inherit;
+                height: 410px;
+                margin-right: 50px;
+                margin-left: 50px;
+                .top {
+                    background-color: inherit;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .mid {
+                    background-color: inherit;
+                    font-size: 17px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    opacity: 0.4;
+                    margin-top: 35px;
+                }
+                .bottom {
+                    background-color: inherit;
+                    font-size: 17px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    opacity: 0.4;
+                    margin-top: 35px;
+                }
+                .button {
+                    background-color: inherit;
+                    height: 70px;
+                    width: 260px;
+                    margin-top: 35px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    background-color: $lighter-blue;
+                    color: white;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover {
+                        opacity: 0.7;
+                        cursor: pointer;
+                    }
+                }
+            }
+           
+        }
+    }
+    
+}

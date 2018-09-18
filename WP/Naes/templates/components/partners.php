@@ -1,6 +1,6 @@
 <div class="main">
 
-        <section id="section-5">
+        <section id="partners">
             Our partners
             <div class="three-images">
 
