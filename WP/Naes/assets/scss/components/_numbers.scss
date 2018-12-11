@@ -40,6 +40,29 @@
 
 
 
+
+@media (max-width: 1140px) {
+
+
+    .numbers{
+        .big-bar {
+            .flex{
+                .big-bar-text {
+                    min-width: 43%;
+                    margin-bottom: 40px;
+                    margin-top: 40px;
+                } 
+            }
+              
+        }
+    }
+
+
+}
+
+
+
+
 @media (max-width: 600px) {
 
     .numbers{

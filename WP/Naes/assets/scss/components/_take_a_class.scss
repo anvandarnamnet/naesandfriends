@@ -82,3 +82,148 @@
     }
     
 }
+
+
+
+
+
+@media (max-width: 1140px) {
+
+    .take-a-class {
+        padding-top: 90px;
+        padding-bottom: 100px;
+        .content {
+            width: 540px;
+            .head {
+                font-size: 45px;
+            }
+            .text-and-image {
+                flex-direction: column;
+                .image {
+                    height: auto;
+                }
+                .text {
+                    margin: 10px 0 0 0;
+                    .top {
+                        font-weight: 600;
+                        font-size: 25px;
+                    }
+                    .mid {
+                        font-size: 22px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        opacity: 0.5;
+                  
+                    }
+                    .bottom { 
+                        font-size: 22px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        margin-bottom: 40px;
+                    }
+                    .button {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}    
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .take-a-class {
+        min-height: 600px;
+        background-color: #f9fafb;
+        padding-top: 130px;
+        .content {
+            width: 100%;
+            margin: auto auto;
+            .head {
+                background-color: inherit;
+                text-align: center;
+                font-size: 35px;
+                font-weight: 300;
+                letter-spacing: 2px;   
+                margin-bottom: 50px;
+            }
+            .text-and-image {
+                flex-wrap: wrap;
+                .image {
+                    display: inline-block;
+                    background-color: inherit;
+                    height: auto;
+                    width: 100%;
+                    &:hover {
+                        opacity: 0.9;
+                        cursor: pointer;
+                    }
+                    img {
+                        width: 90%;
+                        margin-left: 5%;
+                    }
+                }
+                .image-mobile {
+                    display: none;
+                }
+                .text {
+                    background-color: inherit;
+                    height: auto;
+                    margin-right: 30px;
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                    .top {
+                        background-color: inherit;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .mid {
+                        background-color: inherit;
+                        font-size: 17px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        opacity: 0.4;
+                        margin-top: 35px;
+                    }
+                    .bottom {
+                        background-color: inherit;
+                        font-size: 17px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        opacity: 0.4;
+                        margin-top: 35px;
+                    }
+                    .button {
+                        background-color: inherit;
+                        height: 70px;
+                        width: 70%;
+                        margin-left: 15%;
+                        margin-top: 30px;
+                        margin-bottom: 20px;
+                        background-color: $lighter-blue;
+                        color: white;
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:hover {
+                            opacity: 0.7;
+                            cursor: pointer;
+                        }
+                    }
+                }
+               
+            }
+        }
+        
+    }
+
+}
