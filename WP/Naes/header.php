@@ -11,3 +11,43 @@
     <div style="width: 0px; height: 0px;" id="top" ></div>
     <?= get_component('templates/layout/header'); ?>
 <div class="header-fix"></div>
+
+<?php if(get_field('hero')):?>
+  <section class="hero">
+    <div class="hero-container" style="background-image: url(<?php the_field('hero_image') ?>)">
+      <?php the_field('hero_text') ?>
+    </div>
+    <div class="hire">
+      <div class="main-inner">
+        <div class="hire-inner">
+          <div class="hire-title">
+            <h3>Want to hire us?</h3>
+          </div>
+          <div class="hire-items">
+            <div class="hire-item">
+              <div class="hire-image"><img src="<?php echo get_option_field('icon_phone') ?>"></div>
+              <div class="hire-text">
+                <p>CALL US</p>
+                <a href="tel:<?php echo get_option_field('phone_number') ?>"><?php echo get_option_field('phone_number') ?></a>
+              </div>
+            </div>
+            <div class="hire-item">
+              <div class="hire-image"><img src="<?php echo get_option_field('icon_conversation') ?>"></div>
+              <div class="hire-text">
+                <p>CHAT WHIT US</p>
+                <a href="#">Chat</a>
+              </div>
+            </div>
+            <div class="hire-item">
+              <div class="hire-image"><img src="<?php echo get_option_field('icon_email') ?>"></div>
+              <div class="hire-text">
+                <p>CALL US</p>
+                <a href="email:<?php echo get_option_field('email') ?>">Write Email</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<?php endif; ?>
