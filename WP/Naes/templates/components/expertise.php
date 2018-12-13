@@ -5,7 +5,7 @@
         <section class="third-section">
             <div class="border-top"></div>
             <div class="content">
-                <p>Our Expertise</p>
+                <h2>Our Expertise</h2>
                 <div class="boxes">
                     <div class="img-green-1"><img src="<?php the_sub_field('expertise_bild_1'); ?>" alt=""></div>
                     <div class="img-green-2"><img src="<?php the_sub_field('expertise_bild_2'); ?>" alt=""></div>

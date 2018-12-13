@@ -1,7 +1,7 @@
-
+<div class="main-inner">
         <section class="u-need">
             <div class="content">
-                <p>What do you need?</p>
+                <h2>What do you need?</h2>
                 <div class="boxes">
                     <div class="box-1">
                         <div class="texts">
@@ -24,3 +24,4 @@
                 </div>
             </div>
         </section>
+</div>

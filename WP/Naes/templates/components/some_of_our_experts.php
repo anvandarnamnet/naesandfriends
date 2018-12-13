@@ -1,7 +1,7 @@
 <div class="main">
-    <div class="inner-main">        
+    <div class="main-inner">        
         <section class="experts">
-                <p>Some of our experts</p>
+                <h2>Some of our experts</h2>
                 <div class="boxes">
                     
                 

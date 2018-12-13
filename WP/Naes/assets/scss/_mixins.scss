@@ -24,10 +24,10 @@
     .three-photos {
       
         width: 100%;
-        border: 3px solid transparent;
+        outline: 1px solid #E0E1E2;
         &:hover {
             cursor: pointer;
-            border: 3px solid #4ca852;
+            outline: 3px solid #4ca852;
             transition-duration: 0.1s;
             transition-timing-function: ease-out;
         }
@@ -42,9 +42,6 @@
         .text-under-image {
             
             padding: 30px 35px 35px 35px;
-            border-right: 1px solid #E0E1E2;
-            border-bottom: 1px solid #E0E1E2;
-            border-left: 1px solid #E0E1E2;
             .tui-head {
                 font-size: 22px;
             }

@@ -1,7 +1,7 @@
 <section id="section-5">
             <div class="main">
                 <div class="main-inner">
-            <div class="continue"><?php the_sub_field('titel'); ?></div>
+            <div class="continue"><h2><?php the_sub_field('titel'); ?></h2></div>
             <div class="three-images">
 
 

@@ -1,4 +1,5 @@
 <div class="main">
+    <div class="main-inner">
     
 
         <section class="meet-employee">
@@ -16,6 +17,7 @@
             </div>
         
 
-</section>
+        </section>
+    </div>
 
 </div>    

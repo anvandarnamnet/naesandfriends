@@ -1,7 +1,8 @@
 <div class="main">
+    <div class="main-inner">
 
         <section id="partners">
-            Our partners
+            <h2>Our partners</h2>
             <div class="three-images">
 
 
@@ -35,4 +36,5 @@
 
             </div>
         </section>
+    </div>
 </div>

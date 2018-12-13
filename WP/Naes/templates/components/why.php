@@ -1,6 +1,7 @@
 <section class="why">
+    <div class="main-inner">
             <div class="content">
-                <p class="head">Why Naes &amp Friends?</p>
+                <h2 class="head">Why Naes &amp Friends?</h2>
                 <div class="info">
                     <div class="image"><img src="<?php the_sub_field('why_bild'); ?>" alt=""></div>
                     <div class="image-mobile"><img src="<?php the_sub_field('why_bild'); ?>" alt=""></div>
@@ -21,5 +22,6 @@
                         <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/arrow-right.png') ?>" alt="">
                 </div>
             </div>
+    </div>
 </section>
 

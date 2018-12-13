@@ -23,14 +23,10 @@
     }
 
     .content {
-        width: 1140px;
         margin-left: auto;
         margin-right: auto;
         .head {
-            background-color: inherit;
             text-align: center;
-            font-size: 35px;
-            font-weight: 300;
             padding-top: 130px;
         }
         .info {
@@ -113,10 +109,6 @@
         .content {
             width: 545px;
             .head {
-                background-color: inherit;
-                text-align: center;
-                font-size: 45px;
-                font-weight: 400;
                 padding-top: 100px;
                 padding-bottom: 70px;
             }

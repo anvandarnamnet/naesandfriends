@@ -4,7 +4,6 @@
     padding-bottom: 100px;
     width: 100%;
     .background-fill {
-        width: 1090px;
         margin: auto auto;
         position: relative;
         .image {
@@ -65,16 +64,15 @@
 @media (max-width: 1140px) {
     .meet-employee {
         .background-fill {
-            width: 675px;
             .image {display: none}
             .mobile-image {
                 display: inline;
             }
             .yellow-box {
-                top: 110px;
+                top: 296px;
                 right: 0px;
                 left: 245px;
-                bottom: 180px;
+                bottom: 51px;
                 .t1 {
                     margin: 30px 0 10px 70px;
                     font-size: 35px;
@@ -89,7 +87,8 @@
                 }
             }
             .button {
-                top: 330px;
+                top: unset;
+                bottom: 50px;
                 right: 0;
                 font-weight: 500;
             }

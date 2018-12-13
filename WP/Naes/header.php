@@ -15,7 +15,10 @@
 <?php if(get_field('hero')):?>
   <section class="hero">
     <div class="hero-container" style="background-image: url(<?php the_field('hero_image') ?>)">
-      <?php the_field('hero_text') ?>
+      
+      <div class="main-inner">
+        <?php the_field('hero_text') ?>
+      </div>
     </div>
     <div class="hire">
       <div class="main-inner">

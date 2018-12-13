@@ -16,20 +16,18 @@
         }
         .text-and-image {
             background-color: inherit;
-            min-height: 625px;
             display: flex;
-            .image {
+            .videocontainer {
                 display: inline-block;
                 background-color: inherit;
-                height: 100%;
                 width: 100%;
                 &:hover {
                     opacity: 0.9;
                     cursor: pointer;
                 }
-            }
-            .image-mobile {
-                display: none;
+                video {
+                    width: 100%;
+                }
             }
             .text {
                 background-color: inherit;
@@ -170,9 +168,6 @@
                         width: 90%;
                         margin-left: 5%;
                     }
-                }
-                .image-mobile {
-                    display: none;
                 }
                 .text {
                     background-color: inherit;

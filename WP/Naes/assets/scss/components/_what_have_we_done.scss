@@ -26,10 +26,10 @@
             width: 31.5%;
             height: auto;
             margin-bottom: 20px;
-            border: 3px solid transparent;
+            outline: 1px solid #E0E1E2;
             &:hover {
                 cursor: pointer;
-                border: 3px solid #4ca852;
+                outline: 3px solid #4ca852;
                 transition-timing-function: ease-out;
                 transition-duration: 0.1s;
             }
@@ -40,10 +40,7 @@
             }
             .text-under-image {
                 padding: 40px 20px 55px 20px;
-                height: 179px;
-                border-right: 1px solid #E0E1E2;
-                border-bottom: 1px solid #E0E1E2;
-                border-left: 1px solid #E0E1E2;
+                
                 .tui-subject {
                     text-transform: uppercase;
                     padding-top: 20px;
@@ -80,14 +77,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 45px;
-            font-weight: 400;
             margin-top: 20px;
         }
         .three-images {
             display: flex;
             flex-direction: column;
-            width: 680px;
+            width: 100%;
             margin: auto auto;
             .three-photos {
                 width: 100%;
