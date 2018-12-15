@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main <?php the_sub_field('bakgrundsfarg'); ?>">
     <div class="main-inner">        
         <section class="experts">
                 <h2>Some of our experts</h2>

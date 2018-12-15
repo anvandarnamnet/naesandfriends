@@ -1,9 +1,9 @@
-<div class="main">
+<div class="main <?php the_sub_field('bakgrundsfarg'); ?>">
     <div class="main-inner">    
     
     <section class="list-123">
         <div class="border-top"></div>
-        <p class="t1"><?php the_sub_field('huvudrubrik') ?></p>
+        <h2 class="t1"><?php the_sub_field('huvudrubrik') ?></h2>
         <p class="t2"><?php the_sub_field('underrubrik') ?></p>
         <div class="boxes">
 

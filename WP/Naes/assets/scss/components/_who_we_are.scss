@@ -6,27 +6,28 @@
 }
 
 .whoweare {
-    height: 610px;
+    padding-top: 140px;
+    padding-bottom: 100px;
     .texts {
-        min-height: 360px;
         width: 500px;
         color: white;
         display: flex; 
         flex-direction: column;
-        justify-content: space-between;
-        padding-top: 125px;
         .t1 {
             font-size: 40px;
             font-weight: 300;
+            margin:0;
         }
         .t2 {
             font-size: 25px;
             font-weight: 500;
+            margin:0;
         }
         .t3 {
             font-size: 17px;
             font-weight: 400;
             line-height: 30px;
+            margin-bottom: 0;
         }
     }
   
@@ -37,8 +38,6 @@
 @media (max-width: 1140px) {
 
     .whoweare {
-        height: auto;
-        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -46,7 +45,6 @@
             padding-top: 90px;
             width: 100%;
             margin: auto auto;
-            min-height: 500px;
             display: inline-block;
             .t2 {
                 font-size: 28px;
@@ -70,9 +68,6 @@
 @media (max-width: 600px) {
 
     .whoweare {
-        height: 1110px;
-        width:100%;
-        padding: 0;
         .texts {
             padding-top: 90px;
             width: 100%;

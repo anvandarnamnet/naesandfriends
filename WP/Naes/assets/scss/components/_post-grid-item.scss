@@ -5,6 +5,7 @@
     border: 3px solid transparent;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
     &:not(.grid-full):hover {
         cursor: pointer;
         border: 3px solid #4ca852;
@@ -40,7 +41,7 @@
             padding: 5px 0 20px 0;
         }
         .tui-links {
-            word-spacing: 10px;
+            word-spacing: 6px;
             a{
                 order: 1px solid transparent;
                 border-radius: 50px;
@@ -48,7 +49,9 @@
                 padding: 1px 4px 1px 4px;
                 background-color: #B6CAE8;
                 color: #3f4754;
-                font-size: 14px;
+                font-size: 15px;
+                padding: 6px 15px 3px;
+                display: inline-block;
             }
         }
     }

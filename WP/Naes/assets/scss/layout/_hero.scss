@@ -6,6 +6,37 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        .main-inner {
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            h1 {
+                margin-bottom: 0;
+            }
+            .button-container {
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 50px;
+                .hero-button {
+                    color: white;
+                    text-transform: uppercase;
+                    border: 2px solid white;
+                    border-radius: 30px;
+                    padding: 10px 20px 7px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    transition: all 0.2s ease;
+                    &:hover {
+                        color: black;
+                        background-color: white;
+
+                    }
+                }
+            }
+            
+        }
+        
     }
 }
 

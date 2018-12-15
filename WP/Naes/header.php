@@ -17,8 +17,26 @@
     <div class="hero-container" style="background-image: url(<?php the_field('hero_image') ?>)">
       
       <div class="main-inner">
-        <?php the_field('hero_text') ?>
+        
+          <?php the_field('hero_text') ?>
+
+          <div class="button-container">
+            <?php 
+              $link = get_field('knapp');
+
+              if( $link ): 
+                  $link_url = $link['url'];
+                  $link_title = $link['title'];
+                  $link_target = $link['target'] ? $link['target'] : 'self';
+                  ?>
+                  <a class="hero-button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+          <?php endif; ?>
+          </div>
+
       </div>
+
+      
+
     </div>
     <div class="hire">
       <div class="main-inner">

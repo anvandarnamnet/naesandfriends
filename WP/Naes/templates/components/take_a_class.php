@@ -1,13 +1,24 @@
-<div class="main">
+<div class="main <?php the_sub_field('bakgrundsfarg'); ?>">
         <section class="take-a-class">
                 <div class="content">
-                    <p class="head">Take a class</p>
+                    <h2 class="head"><?php the_sub_field('titel'); ?></h2>
                     <div class="text-and-image">
                         <div class="text">
-                            <p class="top">Evening class in web analytics and conversion</p>
-                            <p class="mid">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit temporibus culpa quibusdam eius ducimus praesentium magnam nostrum provident molestias sed cumque, aspernatur cum, minus quas quasi quia.</p>
-                            <p class="bottom">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo perspiciatis maxime laborum, error enim, molestias illum, ullam dolore ducimus quidem similique quasi culpa.</p>
-                            <div class="button">Read more and apply</div>
+                            <p class="top"><?php the_sub_field('ingress'); ?></p>
+                            <p class="mid"><?php the_sub_field('text'); ?></p>
+
+                            <?php 
+
+                            $link = get_sub_field('knapp');
+
+                            if( $link ): 
+                                $link_url = $link['url'];
+                                $link_title = $link['title'];
+                                $link_target = $link['target'] ? $link['target'] : 'self';
+                                ?>
+                                <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                            <?php endif; ?>
+                            
                         </div>
                         <div class="videocontainer">
                         <video controls>

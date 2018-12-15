@@ -1,21 +1,18 @@
 
-
-
-
 #section-5 {
     min-height: 530px;
     padding: 0;
-    padding-top: 80px;
+    padding-top: 140px;
     padding-bottom: 100px;
-    background-color: #f9fafb;
+    &.lightgrey {
+        background-color: #f9fafb;
+    }
     .continue {
-        height: 155px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 45px;
         font-weight: 400;
-        margin-top: 20px;
     }
     .three-images {
         display: flex;
@@ -25,7 +22,6 @@
         .three-photos {
             width: 31.5%;
             height: auto;
-            margin-bottom: 20px;
             outline: 1px solid #E0E1E2;
             &:hover {
                 cursor: pointer;
@@ -68,16 +64,11 @@
 @media (max-width: 1140px) {
     #section-5 {
         min-height: 530px;
-        margin-top: 20px;
-        padding: 0;
-        padding-bottom: 100px;
         background-color: #f9fafb;
         .continue {
-            height: 155px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 20px;
         }
         .three-images {
             display: flex;
@@ -121,10 +112,10 @@
 
 
 
-
     @media (max-width: 600px) {
 
         #section-5 {
+            padding-bottom: 80px;
             .three-images {
                 width: 100%;
                 .three-photos {

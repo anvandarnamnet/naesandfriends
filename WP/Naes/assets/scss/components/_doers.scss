@@ -36,57 +36,63 @@
     }
 }
 
-.list-123 {
-    height: 640px;
-    text-align: center;
-    width: none;
-    margin: 0 55px 0 55px;
-    .border-top {
-        height: 90px;
-        width: 50%;
-        border-right: 1px solid $green;
+.main {
+    &.lightgrey {
+        background-color: #f9fafb;
     }
-    .t1 {
-        margin-top: 50px;
-        font-size: 35px;
-        font-weight: 300;
-    }
-    .t2 {
-        margin-top: 10px;
-        font-size: 22px;
-        font-weight: 600;
-        opacity: 0.7;
-    }
-    
-    .boxes {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-        .box {
-            width: 400px;
-            text-align: left;
-            position: relative;
-            .number {   
-                font-size: 220px;
-                font-weight: 700;
-                font-family: Montserrat;
-                color: #00ac46;
-                margin: 0;
-            }
-            .text-list-1 {
-                @include overlapping-text-box(60px);
-                background-color: white;
-            }
-            .text-list-2 {
-                @include overlapping-text-box(85px);
-            }
-            .text-list-3 {
-                @include overlapping-text-box(87px);
+    .list-123 {
+        text-align: center;
+        width: none;
+        margin: 0 55px 0 55px;
+        padding-bottom: 120px;
+        .border-top {
+            height: 90px;
+            width: 50%;
+            border-right: 1px solid $green;
+            margin-bottom: 50px;
+        }
+        .t1 {
+            margin-top: 0px;
+        }
+        .t2 {
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: 600;
+            opacity: 0.7;
+        }
+        
+        .boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            .box {
+                width: 400px;
+                text-align: left;
+                position: relative;
+                .number {   
+                    font-size: 220px;
+                    font-weight: 700;
+                    font-family: Montserrat;
+                    color: #00ac46;
+                    margin: 0;
+                }
+                .text-list-1 {
+                    @include overlapping-text-box(60px);
+                    background-color: white;
+                    height: auto;
+                }
+                .text-list-2 {
+                    @include overlapping-text-box(85px);
+                }
+                .text-list-3 {
+                    @include overlapping-text-box(87px);
+                }
             }
         }
-    }
-   
+       
+    }    
 }
+
 
 @media (max-width: 1140px) {
     @mixin overlapping-text-box ($position) {
@@ -108,13 +114,9 @@
         }
     }
 
+.main {    
     .list-123 {
-        height: 1370px;
-        width: 750px;
         margin: auto auto;
-        .t1 {
-            font-size: 45px;
-        }
         .t2 {
             font-size: 25px;
             font-weight: 500;
@@ -126,7 +128,6 @@
             flex-direction: column;
             margin-left: 30px;
             .box {
-                padding-bottom: 50px;
                 &:nth-of-type(2) {
                     align-self: flex-end;
                 }
@@ -136,11 +137,14 @@
 }
 
 
+}
+
+
 
 
 @media (max-width: 600px) {
 
-
+.main {
     .list-123 {
         height: auto;
         width: 100%;
@@ -154,6 +158,7 @@
             }
         }
     }
+}
 
 
 

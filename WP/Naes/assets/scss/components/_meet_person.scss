@@ -1,86 +1,87 @@
-
-.meet-employee {
-    padding-top: 140px;
-    padding-bottom: 100px;
-    width: 100%;
-    .background-fill {
-        margin: auto auto;
-        position: relative;
-        .image {
-            height: 575px;
-            width: 560px;
-            img {
-                height: 100%;
-                width: 100%;
-            }
-        }
-        .mobile-image {
-            display: none;
-        }
-        .yellow-box {
-            position: absolute;
-            left: 470px;
-            top: 190px;
-            bottom: 255px;
-            right: 0;
-            //height: 130px;
-            //width: 620px;
-            background-color: #ffce06;
-            color: white;
-            .t1 {
-                margin: 20px 60px 10px 70px;
-                font-size: 34px;
-                font-weight: 300;
-            }
-            .t2 {
-                margin: 0 60px 50px 70px;
-                font-size: 22px;
-                font-weight: 600;
-            }
-        }
-        .button {
-            //float: right;
-            height: 60px;
-            width: 235px;
-            background-color: $lighter-blue;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            right: 0;
-            top: 320px;
-            font-size: 15px;
-            font-weight: 500;
-            letter-spacing: 0px;
-            color: white;
-            &:hover {
-                opacity: 0.7;
-                cursor: pointer;
-            }
-        }
-    }    
-}
-
-@media (max-width: 1140px) {
+.main {
+    &.lightgrey {
+        background-color: #f9fafb;
+    }
     .meet-employee {
+        padding-top: 140px;
+        padding-bottom: 100px;
+        width: 100%;
         .background-fill {
-            .image {display: none}
+            margin: auto auto;
+            position: relative;
+            .image {
+                height: 575px;
+                width: 560px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+    
             .mobile-image {
-                display: inline;
+                display: none;
             }
             .yellow-box {
-                top: 296px;
-                right: 0px;
-                left: 245px;
-                bottom: 51px;
+                position: absolute;
+                left: 470px;
+                bottom: 160px;
+                right: 0;
+                //height: 130px;
+                //width: 620px;
+                background-color: #ffce06;
+                color: white;
                 .t1 {
-                    margin: 30px 0 10px 70px;
+                    margin: 20px 60px 10px 70px;
+                    font-size: 34px;
+                    font-weight: 300;
+                }
+                .t2 {
+                    margin: 0 60px 50px 70px;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+            }
+            .button {
+                //float: right;
+                height: 60px;
+                width: 235px;
+                background-color: $lighter-blue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                right: 0;
+                bottom: 100px;
+                font-size: 15px;
+                font-weight: 500;
+                letter-spacing: 0px;
+                color: white;
+                &:hover {
+                    opacity: 0.7;
+                    cursor: pointer;
+                }
+            }
+        }    
+    }
+}
+
+
+@media (max-width: 1140px) {
+.main {    
+    .meet-employee {
+        .background-fill {
+            .yellow-box {
+                right: 0px;
+                left: 200px;
+                bottom: 100px;
+                .t1 {
+                    margin: 30px 0 10px 30px;
                     font-size: 35px;
                     font-weight: 300;
                     line-height: 35px;
                 }
                 .t2 {
-                    margin: 30px 0px 0px 70px;
+                    margin: 10px 0px 10px 30px;
                     font-size: 22px;
                     line-height: 30px;
                     font-weight: 600;
@@ -88,21 +89,22 @@
             }
             .button {
                 top: unset;
-                bottom: 50px;
+                bottom: 40px;
                 right: 0;
                 font-weight: 500;
             }
         }
     }
 }    
+}
+
 
 
 
 
 @media (max-width: 600px) {
+.main { 
     .meet-employee {
-        padding-bottom: 0;
-        padding-top: 0px;
         .background-fill {
             width: 100%;
             .image {display: none}
@@ -134,4 +136,5 @@
             }
         }
     }
+}
 }    
