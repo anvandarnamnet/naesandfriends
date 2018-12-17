@@ -211,7 +211,12 @@
     .main {
         .u-need {
             width:100%;
+            padding-top: 80px;
+            padding-bottom: 80px;
             .content {
+                h2 {
+                    margin-bottom: 0;
+                }
                 .boxes {
                     flex-direction: column;
                     height: auto;

@@ -38,8 +38,10 @@
             .image {
                 position: absolute;
                 height: 445px;
+                width: 500px;
                 img {
                     height: 100%;
+                    object-fit: cover;
                 }
             }
             .image-mobile {display: none}
@@ -104,8 +106,7 @@
 }
 
 @media (max-width: 1140px) {
-    .why {
-        height: 860px;
+    .whysection {
         padding-bottom: 100px;
         .content {
             width: 545px;
@@ -172,9 +173,10 @@
 
 
 @media (max-width: 600px) {
-    .why {
-        height: 780px;
+    .whysection {
         clear: both;
+        padding-top: 80px;
+        padding-bottom: 180px;
         .left-arrow {
             right: 30px;
             top: 32%;

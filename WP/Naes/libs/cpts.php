@@ -87,6 +87,36 @@ function custom_post_type() {
 
 register_post_type( 'skill', $args );
 
+
+$labels = array(
+  'name'               => _x( 'Employees', 'blog-post' ),
+  'singular_name'      => _x( 'Employee', 'blog-post' ),
+  'add_new'            => _x( 'Lägg till ny', 'blog-post' ),
+  'add_new_item'       => __( 'Lägg till ny employee' ),
+  'edit_item'          => __( 'Redigera employee' ),
+  'new_item'           => __( 'Ny employee' ),
+  'all_items'          => __( 'Alla employees' ),
+  'view_item'          => __( 'Visa employee' ),
+  'search_items'       => __( 'Sök employees' ),
+  'not_found'          => __( 'Inga employees hittades' ),
+  'not_found_in_trash' => __( 'Inga employees finns i Soptunnan' ),
+  'parent_item_colon'  => '',
+  'menu_name'          => 'Employees'
+);
+
+$args = array(
+  'labels'        => $labels,
+  'description'   => 'Employees',
+  'public'        => true,
+  'menu_position' => 6,
+  'supports'      => array( 'title', 'custom-fields'),
+  'has_archive'   => true,
+  'rewrite' => array( 'slug' => 'employee' ),
+);
+
+register_post_type( 'employee', $args );
+
+
     }
   add_action( 'init', 'custom_post_type', 0 );
 

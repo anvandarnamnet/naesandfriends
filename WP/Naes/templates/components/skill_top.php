@@ -33,8 +33,34 @@
 
                         </ul>
                         <div class="boxes">
-                            <div class="box-1">Read more</div>
-                            <div class="box-2">Contact us</div>
+
+                            <?php 
+
+                            $link = get_sub_field('knapp1');
+
+                            if( $link ): 
+                                $link_url = $link['url'];
+                                $link_title = $link['title'];
+                                $link_target = $link['target'] ? $link['target'] : 'self';
+                                ?>
+                                <a class="box-1" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                            <?php endif; ?>
+
+                            <?php 
+
+                            $link = get_sub_field('knapp2');
+
+                            if( $link ): 
+                                $link_url = $link['url'];
+                                $link_title = $link['title'];
+                                $link_target = $link['target'] ? $link['target'] : 'self';
+                                ?>
+                                <a class="box-2" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                            <?php endif; ?>
+
+
+
+
                         </div>
                     </div>
                 </div>

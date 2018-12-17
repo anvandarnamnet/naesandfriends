@@ -24,9 +24,9 @@
             margin:0;
         }
         .t3 {
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 400;
-            line-height: 30px;
+            line-height: 1.7;
             margin-bottom: 0;
         }
     }
@@ -38,24 +38,15 @@
 @media (max-width: 1140px) {
 
     .whoweare {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         .texts {
-            padding-top: 90px;
             width: 100%;
-            margin: auto auto;
-            display: inline-block;
             .t2 {
                 font-size: 28px;
-                font-weight: 500;
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
             .t3 {
                 font-size: 22px;
-                font-weight: 400;
-                line-height: 35px;
             }
         }
     }
@@ -68,24 +59,14 @@
 @media (max-width: 600px) {
 
     .whoweare {
+        padding-top: 80px;
+        padding-bottom: 80px;
         .texts {
-            padding-top: 90px;
-            width: 100%;
             .t1 {
-                padding: 0px 20px 0px 20px;
             }
             .t2 {
-                font-size: 28px;
-                font-weight: 500;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                padding: 0px 20px 0px 20px;
             }
             .t3 {
-                font-size: 22px;
-                font-weight: 400;
-                line-height: 35px;
-                padding: 0px 20px 0px 20px;
             }
         }
         .image-background {

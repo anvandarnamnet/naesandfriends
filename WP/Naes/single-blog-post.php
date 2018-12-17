@@ -8,11 +8,24 @@ get_header();
         <div class="meta-info">
             <h1 class="head"><?php the_title(); ?></h1>
             <div class="date-and-links">
-                <p class="date">2018-01-02</p>
+                <p class="date"><?php echo get_the_date('d-m-Y'); ?></p>
                 <div class="three-links">
-                        <a href="#">Coach</a>
-                        <a href="#">Marketing</a>
-                        <a href="#">Podcast</a>
+                        
+                <?php
+                $categories = wp_get_post_terms($post->ID, "blog-cat");
+                if(!empty($categories)):
+                ?>
+                    <div class="links">
+                        
+                        <?php
+                        foreach($categories as $cat):  ?>
+                            <a href="#" ><?php echo $cat->name ?></a>
+                        <?php endforeach; ?>
+                        
+                    </div>
+                        
+                <?php endif;  ?>
+
                 </div>
             </div>
         </div>
@@ -79,7 +92,7 @@ get_header();
         $read_more_file_url = get_field('read_more_file', $author);
         $email = get_field('email', $author);
     ?>
-    <seciton class="author-section">
+    <section class="author-section">
         <div class="profile">
                     <img class="author-img" src="<?= get_field('image', $author); ?>" alt="">
                     <div class="info">
@@ -89,9 +102,9 @@ get_header();
                                 <p class="name"><?= $author->name ?></p>
                             </div>
                             <div class="images">
-                                <a href="<?= $author_url ?>"><img src="<?= get_option_field('icon_about'); ?>" alt=""></a>
-                                <?php if($email){?><a href="mailto:<?= $author_url ?>"><img src="<?= get_option_field('icon_contact'); ?>" alt=""></a><?php } ?>
-                                <?php if($read_more_file_url){?><a target="blank" href="<?= $read_more_file_url ?>"><img src="<?= get_option_field('icon_more'); ?>" alt=""></a><?php }?> 
+                                <a href="<?= get_field('about-link', $author); ?>"><img src="<?= get_option_field('icon_about'); ?>" alt=""></a>
+                                <?php if($email){?><a href="mailto:<?= get_field('email', $author); ?>"><img src="<?= get_option_field('icon_contact'); ?>" alt=""></a><?php } ?>
+                                <?php if($read_more_file_url){?><a href="<?= get_field('about-link', $author); ?>"><img src="<?= get_option_field('icon_more'); ?>" alt=""></a><?php }?> 
                             </div>
                         </div>
                         <p class="about"><?= $author->description ?></p>

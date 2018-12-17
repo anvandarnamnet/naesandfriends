@@ -1,0 +1,96 @@
+.contactrow {
+    background-color: #C1D2F0;
+    padding: 30px 0;
+    .main-inner {
+        color: #1f2737;
+        display: flex;
+        flex-wrap: wrap;
+        .contact-title {
+            border-right: 1px solid #b7b7b7;
+            flex: 3;
+            h3 {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+            }
+        }
+        .contact-items {
+            flex: 8;
+            display: flex;
+            justify-content: space-evenly;
+            .contact-item {
+                display: flex;
+                align-items: center;
+                .contact-image {
+                    padding-right: 3rem;
+                }
+                .contact-text {
+                    p {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-bottom: 0.4rem;
+                        margin-top: 0;
+                    }
+                    a {
+                        font-size: 22px;
+                        font-weight: 600;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 1140px) { 
+
+
+    .contactrow {
+        .main-inner {
+            .contact-title {
+                border-right: none;
+                flex: 100%;
+                h3 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+            .contact-items {
+                justify-content: space-around;
+                .contact-item {
+                    .contact-image {
+                        padding-right: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 500px) { 
+
+
+    .contactrow {
+        .main-inner {
+            .contact-title {
+                
+            }
+            .contact-items {
+                flex-wrap: wrap;
+                .contact-item {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+
+
+
+}

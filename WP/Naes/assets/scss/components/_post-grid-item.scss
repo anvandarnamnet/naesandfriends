@@ -43,15 +43,15 @@
         .tui-links {
             word-spacing: 6px;
             a{
-                order: 1px solid transparent;
-                border-radius: 50px;
                 text-decoration: none;
-                padding: 1px 4px 1px 4px;
-                background-color: #B6CAE8;
-                color: #3f4754;
-                font-size: 15px;
-                padding: 6px 15px 3px;
-                display: inline-block;
+                color: #3169ce;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 6px 10px 3px 10px;
+                letter-spacing: 0px;
+                border: 2px solid #3169ce;
+                margin-bottom: 10px;
+                display: inline;
             }
         }
     }

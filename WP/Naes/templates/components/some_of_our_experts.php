@@ -21,10 +21,28 @@
                             </div>
                             <img src="<?php echo $experts['bild'] ?>" alt="">
                             <p class="description"><?php echo $experts['beskrivning'] ?></p>
-                            <div class="meet">
-                                <a href=""><?php echo $experts['knapptext'] ?></a>
-                                <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/right-arrow.png') ?>" alt="">
-                            </div> 
+                            
+                            
+                            <?php 
+
+                            $link = get_sub_field('knapp');
+
+                            if( $link ): 
+                                $link_url = $link['url'];
+                                $link_title = $link['title'];
+                                $link_target = $link['target'] ? $link['target'] : 'self';
+                                ?>
+                            
+
+                                <div class="meet">
+                                    <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                    <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/right-arrow.png') ?>" alt="">
+                                </div> 
+
+                            
+                            <?php endif; ?>
+                            
+
                         </div>
 
 

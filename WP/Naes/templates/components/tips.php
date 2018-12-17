@@ -3,73 +3,47 @@
     <div class="main">
         <div class="main-inner">
             <h2><?php the_sub_field('titel'); ?></h2>
-            <div class="boxes">
-
-                <?php 
-
-                $repeater = get_sub_field('repeater');
-
-                if($repeater){
-                    foreach($repeater as $tips){
-                        ?>
-                        
-
-
-                        <div class="box">
-                            <div class="image-container">
-                                    <img src="<?php echo $tips['bild'] ?>" alt="">
-                            </div>
-                            <div class="text-under">
-                                <p class="head"><?php echo $tips['titel'] ?></p>
-                                <p class="date">2018-01-02</p>
-                                <div class="links">
-                                    <a href="#" >Coach</a>
-                                    <a href="#" >Marketing</a>
-                                    <a href="#" >Podcast</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <?php
-                    }
-                }
-
-                ?>
-
-            </div>
-
-
-
-
-
 
             <?php
 
-            $post_objects = get_sub_field('post_objects');
+            $post_objects = get_sub_field('post_object');
 
             if( $post_objects ): ?>
-                <h2>hoho</h2>
                 <div class="boxes">
                 <?php foreach( $post_objects as $post): ?>
                     <?php setup_postdata($post); ?>
 
+                        <a href="<?php the_permalink(); ?>">
                         <div class="box">
-                            <div class="image-container">
-                                <img src="" alt="">
-                            </div>
-                            <div class="text-under">
-                            <a href="<?php the_permalink(); ?>"><p class="head"><?php the_title(); ?></p></a>
-                                <p class="date">2018-01-02</p>
-                                <div class="links">
-                                    <a href="#" >Coach</a>
-                                    <a href="#" >Marketing</a>
-                                    <a href="#" >Podcast</a>
+                            
+                                <div class="image-container">
+                                    <img src="<?php the_field('teaser_image'); ?>" alt="">
                                 </div>
-                            </div>
+                                <div class="text-under">
+                                    <p class="head"><?php the_title(); ?></p>
+                                    <p class="date"><?php echo get_the_date('d-m-Y'); ?></p>
+
+                                   
+                                   <?php
+                                    $categories = wp_get_post_terms($post->ID, "blog-cat");
+                                    if(!empty($categories)):
+                                    ?>
+                                        <div class="links">
+                                            
+                                            <?php
+                                            foreach($categories as $cat):  ?>
+                                                <p href="#" ><?php echo $cat->name ?></p>
+                                            <?php endforeach; ?>
+                                            
+                                        </div>
+                                            
+                                    <?php endif;  ?>
+                                    
+
+                                </div>
+                            
                         </div>
+                        </a>
 
                     
                 <?php endforeach; ?>
@@ -81,3 +55,6 @@
         </div>
     </div>  
 </section>
+
+
+ 

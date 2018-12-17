@@ -199,10 +199,13 @@
 
 .main {     
     .experts {
+        padding-top: 80px;
+        padding-bottom: 80px;
         .boxes {
             flex-direction: column;
             padding-bottom: 0px;
             overflow-x: hidden;
+            padding-top:20px;
             .expert-box {
                 .yellow { 
                     top: 300px;

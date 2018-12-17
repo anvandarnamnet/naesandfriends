@@ -31,6 +31,31 @@ footer {
                 color: $white;
                 font-size: 14px;
             }
+            ul {
+                padding: 0;
+                color: $white;
+                font-size: 14px;
+                margin-top: -3px;
+                font-weight: 600;
+                li {
+                    a {
+                        padding: 7px 0;
+                        display: inline-block;
+                        &:hover {
+                            color: #ffcc00;
+                        }
+                    }
+                }
+            }
+            a {
+                display: block;
+                color: $white;
+                font-size: 14px;
+                font-weight: 600;
+                &:hover {
+                    color: #ffcc00;
+                }
+            }
             .social-media-logos {
                 background-color: $darker-blue;
                 height: 50px;
