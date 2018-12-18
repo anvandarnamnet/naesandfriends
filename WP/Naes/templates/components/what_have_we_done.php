@@ -21,7 +21,7 @@
                                 <p class="tui-head"><?php echo $expertise['titel'] ?></p>
                                 <p class="tui-bread"><?php echo $expertise['text'] ?></p>    
                             </div>
-                            <a>
+                            </a>
                     </div>
                     
 
@@ -32,17 +32,8 @@
                 
             
             
-            ?>
-
-
-
-
-                   
-                  
-
-                    
-                   
+            ?>    
             </div>
-</div>
-</div>
-    </section>
+        </div>
+    </div>
+</section>

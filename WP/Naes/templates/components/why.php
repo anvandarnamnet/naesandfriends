@@ -1,38 +1,57 @@
+<?php 
+
+$slides = get_sub_field('slides');
+
+?>
+
 <section class="whysection <?php the_sub_field('bakgrundsfarg'); ?>">
     <div class="main-inner">
-            <div class="content">
-                <h2 class="head">Why Naes &amp Friends?</h2>
-                <div class="info">
-                    <div class="image"><img src="<?php the_sub_field('why_bild'); ?>" alt=""></div>
-                    <div class="image-mobile"><img src="<?php the_sub_field('why_bild'); ?>" alt=""></div>
-                    <div class="yellow-and-button">
-                        <div class="yellow">
-                                <p class="text"><?php the_sub_field('why_citat'); ?></p>
-                                <p class="text-mobile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et.</p>
-                                <div class="border"></div>
-                                <p class="name"><?php the_sub_field('why_namn'); ?></p>
+        <h2 class="head">Why Naes &amp Friends?</h2>
+
+        <?php if($slides): ?>
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+
+                    
+                    <?php foreach($slides as $slide): ?>
+                        <div class="swiper-slide">
+                            <div class="content">
+                                <div class="info">
+                                    <div class="image"><img src="<?php echo $slide['image']['url']; ?>" alt="<?php echo $slide['image']['alt']; ?>"></div>
+                                    <div class="image-mobile"><img src="<?php echo $slide['image']['url']; ?>" alt="<?php echo $slide['image']['alt']; ?>"></div>
+                                    <div class="yellow-and-button">
+                                        <div class="yellow">
+                                                <p class="text"><?php echo $slide['quote'] ?></p>
+                                                <p class="text-mobile"><?php echo $slide['quote'] ?></p>
+                                                <div class="border"></div>
+                                                <p class="name"><?php echo $slide['name'] ?></p>
+                                        </div>
+                                        
+                                        <?php 
+                                            if( $slide['link'] ): 
+                                                $link_url = $slide['link']['url'];
+                                                $link_title = $slide['link']['title'];
+                                                $link_target = $slide['link']['target'] ? $link['target'] : 'self';
+                                                ?>
+                                                <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                        <?php endif; ?>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <?php 
-                            $link = get_sub_field('knapp');
 
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : 'self';
-                                ?>
-                                <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-                        <?php endif; ?>
+                    <?php endforeach; ?>
+                    </div>
 
-                    </div>
-                </div>
-                <div class="left-arrow">
-                        <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/arrow-left.png') ?>" alt="">
-                    </div>
-                    <div class="right-arrow">
-                        <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/arrow-right.png') ?>" alt="">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
                 </div>
             </div>
+        <?php endif; ?>
+
     </div>
 </section>
 

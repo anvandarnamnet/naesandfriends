@@ -120,3 +120,42 @@ function loadBlogPosts(){
 $('#blog-post-filter').find('select').change(function(){
   loadBlogPosts();
 })
+
+var swipers = [];
+
+jQuery(".swiper-container").each(function(){
+    
+    var temp = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+
+    });
+
+    swipers.push(temp);
+})
+
+jQuery("#show-more-expertises").click(function(){
+  jQuery(".expert-box.show-more").toggleClass("show");
+  jQuery(this).toggleClass("active");
+  if(jQuery(this).text() == "Show more"){
+    jQuery(this).text("Show less");
+  } else {
+    jQuery(this).text("Show more");
+  }
+
+})
+
+jQuery("#open-contact-me").click(function(){
+  jQuery("#contact-me").addClass("show");
+})
+
+jQuery("#close-contact-me").click(function(){
+  jQuery("#contact-me").removeClass("show");
+})

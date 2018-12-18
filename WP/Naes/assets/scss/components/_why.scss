@@ -2,105 +2,105 @@
     padding-bottom: 100px;
     padding-top: 140px;
     position: relative;
+    h2 {
+        text-align: center;
+    }
     &.lightgrey {
         background-color: #f9fafb;
     }
-    .left-arrow {
-        position: absolute;
-        right: 55px;
-        top: 50%;
-        &:hover {
-            opacity: 0.7;
-            cursor: pointer;
-        }
-    }
-    .right-arrow {
-        position: absolute;
-        left: 55px;
-        top: 50%;
-        &:hover {
-            opacity: 0.7;
-            cursor: pointer;
-        }
-    }
+    .swiper-container {
+        width: 100%;
+        height: 445px;
 
-    .content {
-        margin-left: auto;
-        margin-right: auto;
-        .head {
-            text-align: center;
-        }
-        .info {
-            background-color: inherit;
-            min-height: 445px;
-            position: relative;
-
-            .image {
-                position: absolute;
-                height: 445px;
-                width: 500px;
-                img {
-                    height: 100%;
-                    object-fit: cover;
-                }
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            .head {
+                text-align: center;
             }
-            .image-mobile {display: none}
-            .yellow-and-button {
-                
-                position: absolute;
-                right: 0;
-                top: 40px;
-                width: 750px;
-                background-color: transparent;
-                
-                .yellow {
-                    background: #ffce06 url(../img/service-v2/8.png) no-repeat 6% 20%;
-                    color: white; 
-                    letter-spacing: 1px;
-                    .text {
-                        background: transparent;
-                        padding: 34px 40px 0 130px;
-                        font-style: italic;
-                        font-size: 18px;
-                        line-height: 30px;
-                        
-                    }
-                    .text-mobile {display: none}
-                    .border {
-                        border-bottom: 1px solid #e3be43;
-                        margin: 20px 0 15px 130px;
-                        width: 136px;
-                    }
-                    .name {
-                        background: transparent;
-                        padding: 0 40px 30px 130px;
-                        font-weight: 600;
-                        font-size: 17px;
-                        line-height: 30px;
-                        text-transform: uppercase;
-                        margin: 0;
+            .info {
+                background-color: inherit;
+                min-height: 445px;
+                position: relative;
+
+                .image {
+                    position: absolute;
+                    height: 445px;
+                    width: 500px;
+                    img {
+                        height: 100%;
+                        object-fit: cover;
                     }
                 }
-                .button {
-                    float: right;
-                    height: 60px;
-                    width: 300px;
-                    background-color: $lighter-blue;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    //position: absolute;
-                    right: $pad-side;
-                    //margin-top: 319px;
-                    font-size: 18px;
+                .image-mobile {display: none}
+                .yellow-and-button {
                     
-                    color: white;
-                    &:hover {
-                        opacity: 0.7;
-                        cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    top: 40px;
+                    width: 750px;
+                    background-color: transparent;
+                    
+                    .yellow {
+                        background: #ffce06 url(../img/service-v2/8.png) no-repeat 6% 20%;
+                        color: white; 
+                        letter-spacing: 1px;
+                        .text {
+                            background: transparent;
+                            padding: 34px 40px 0 130px;
+                            font-style: italic;
+                            font-size: 18px;
+                            line-height: 30px;
+                            
+                        }
+                        .text-mobile {display: none}
+                        .border {
+                            border-bottom: 1px solid #e3be43;
+                            margin: 20px 0 15px 130px;
+                            width: 136px;
+                        }
+                        .name {
+                            background: transparent;
+                            padding: 0 40px 30px 130px;
+                            font-weight: 600;
+                            font-size: 17px;
+                            line-height: 30px;
+                            text-transform: uppercase;
+                            margin: 0;
+                        }
+                    }
+                    .button {
+                        float: right;
+                        height: 60px;
+                        width: 300px;
+                        background-color: $lighter-blue;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        //position: absolute;
+                        right: $pad-side;
+                        //margin-top: 319px;
+                        font-size: 18px;
+                        
+                        color: white;
+                        &:hover {
+                            opacity: 0.7;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
+        }
+        .swiper-button-next {
+            background-image: url(../images/arrow-left.png);
+        }
+        .swiper-button-prev {
+            background-image: url(../images/arrow-right.png);
+        }
+
+        .swiper-button-next, 
+        .swiper-button-prev {
+            background-size: 12px 20px;
         }
     }
 }
@@ -108,56 +108,60 @@
 @media (max-width: 1140px) {
     .whysection {
         padding-bottom: 100px;
-        .content {
-            width: 545px;
-            .head {
-            }
-            .info {
-                position: relative;
-                .image {display: none}
-                .image-mobile {
-                    display: inline;
-                    position: absolute;
-                    height: 415px;
-                    img {
-                        width: 100%;
-                    }
+        .swiper-container {
+            width: 100%;
+            height: 545px;
+            .content {
+                width: 545px;
+                .head {
                 }
-                .yellow-and-button {
-                    margin: 0;
-                    right: 3px;
-                    top: 215px;
-                    width: 430px;
-                    .yellow {
-                        background: #ffce06 url(../img/service-v2/8-mobile.png) no-repeat 4% 17%;
-                        .text {display: none}
-                        .text-mobile {
-                            display: inline-block;
-                            background: transparent;
-                            padding: 30px 10px 20px 90px;
-                            font-style: italic;
+                .info {
+                    position: relative;
+                    .image {display: none}
+                    .image-mobile {
+                        display: inline;
+                        position: absolute;
+                        height: 415px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .yellow-and-button {
+                        margin: 0;
+                        right: 3px;
+                        top: 215px;
+                        width: 430px;
+                        .yellow {
+                            background: #ffce06 url(../img/service-v2/8-mobile.png) no-repeat 4% 17%;
+                            .text {display: none}
+                            .text-mobile {
+                                display: inline-block;
+                                background: transparent;
+                                padding: 30px 10px 20px 90px;
+                                font-style: italic;
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 25px;
+                    
+                            }
+                            .border {
+                                margin: 20px 0 0px 90px;
+                                width: 100px;
+                            }
+                            .name {
+                                padding: 10px 20px 40px 90px;
+                                font-weight: 600;
+                                font-size: 22px;
+                                line-height: 22px;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .button {
+                            height: 80px;
+                            width: 310px;
                             font-size: 20px;
                             font-weight: 500;
-                            line-height: 25px;
-                 
                         }
-                        .border {
-                            margin: 20px 0 0px 90px;
-                            width: 100px;
-                        }
-                        .name {
-                            padding: 10px 20px 40px 90px;
-                            font-weight: 600;
-                            font-size: 22px;
-                            line-height: 22px;
-                            text-transform: uppercase;
-                        }
-                    }
-                    .button {
-                        height: 80px;
-                        width: 310px;
-                        font-size: 20px;
-                        font-weight: 500;
                     }
                 }
             }
@@ -185,34 +189,39 @@
             left: 30px;
             top: 32%;
         }
-        .content {
+        .swiper-container {
             width: 100%;
-            .info {
-                .image-mobile {
-                    img {
-                        width: 100%;
-                    }
-                }
-                .yellow-and-button {
-                    width: 100%;
-                    right: 0px;
-                    .yellow {
-                        .text-mobile {
-                            padding: 30px 30px 0px 30px;
-                 
-                        }
-                        .border {
-                            margin: 0px 0 0px calc(50% - 50px);
-                        }
-                        .name {
-                            padding: 10px 20% 40px 20%;
-                            text-align: center;
-                            font-size: 15px;
+            height: 545px;
+            .content {
+                width: 100%;
+                .info {
+                    .image-mobile {
+                        img {
+                            width: 100%;
                         }
                     }
-                    .button {
+                    .yellow-and-button {
                         width: 100%;
-                        height: 70px;
+                        right: 0px;
+                        
+                        .yellow {
+                            .text-mobile {
+                                padding: 30px 30px 0px 30px;
+                                height: 120px;
+                            }
+                            .border {
+                                margin: 0px 0 0px calc(50% - 50px);
+                            }
+                            .name {
+                                padding: 10px 20% 40px 20%;
+                                text-align: center;
+                                font-size: 15px;
+                            }
+                        }
+                        .button {
+                            width: 100%;
+                            height: 70px;
+                        }
                     }
                 }
             }

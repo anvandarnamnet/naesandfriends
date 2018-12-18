@@ -125,8 +125,11 @@
             }
             .text-under-image {
                 width: calc(100% - 70px);
-                height: 373px;
+                height: unset;
             }
+        }
+        .text-under-image {
+            height: unset;
         }
         
     }

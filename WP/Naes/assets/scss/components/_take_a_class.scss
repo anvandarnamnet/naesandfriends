@@ -6,78 +6,94 @@
     .take-a-class {
         padding-top: 140px;
         padding-bottom: 100px;
-        .content {
-            width: 1140px;
-            margin: auto auto;
-            .head {
-                background-color: inherit;
-                text-align: center;  
-                margin-bottom: 50px;
-            }
-            .text-and-image {
-                background-color: inherit;
-                display: flex;
-                .videocontainer {
-                    display: inline-block;
+        h2 {
+            text-align: center;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 445px;
+            .content {
+                width: 1140px;
+                margin: auto auto;
+                .head {
                     background-color: inherit;
-                    width: 100%;
-                    &:hover {
-                        opacity: 0.9;
-                        cursor: pointer;
-                    }
-                    video {
-                        width: 100%;
-                    }
+                    text-align: center;  
+                    margin-bottom: 50px;
                 }
-                .text {
+                .text-and-image {
                     background-color: inherit;
-                    margin-right: 50px;
-                    margin-left: 50px;
-                    .top {
-                        background-color: inherit;
-                        font-size: 20px;
-                        font-weight: 600;
-                    }
-                    .mid {
-                        background-color: inherit;
-                        font-size: 17px;
-                        font-weight: 500;
-                        line-height: 30px;
-                        opacity: 0.4;
-                        margin-top: 35px;
-                    }
-                    .bottom {
-                        background-color: inherit;
-                        font-size: 17px;
-                        font-weight: 500;
-                        line-height: 30px;
-                        opacity: 0.4;
-                        margin-top: 35px;
-                    }
-                    .button {
-                        background-color: inherit;
-                        height: 70px;
-                        width: 260px;
-                        margin-top: 35px;
-                        font-size: 13px;
-                        font-weight: 600;
-                        letter-spacing: 1px;
-                        background-color: $lighter-blue;
-                        color: white;
-                        text-transform: uppercase;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                    display: flex;
+                    .videocontainer {
+                        flex: 1;
                         &:hover {
-                            opacity: 0.7;
+                            opacity: 0.9;
                             cursor: pointer;
+                        }
+                        video {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .text {
+                        flex: 1;
+                        background-color: inherit;
+                        margin-right: 50px;
+                        margin-left: 50px;
+                        .top {
+                            background-color: inherit;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        .mid {
+                            background-color: inherit;
+                            font-size: 17px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            opacity: 0.4;
+                            margin-top: 35px;
+                        }
+                        .bottom {
+                            background-color: inherit;
+                            font-size: 17px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            opacity: 0.4;
+                            margin-top: 35px;
+                        }
+                        .button {
+                            background-color: inherit;
+                            height: 70px;
+                            width: 260px;
+                            margin-top: 35px;
+                            font-size: 13px;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            background-color: $lighter-blue;
+                            color: white;
+                            text-transform: uppercase;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &:hover {
+                                opacity: 0.7;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
-               
+            }
+            .swiper-button-next {
+                background-image: url(../images/arrow-left.png);
+            }
+            .swiper-button-prev {
+                background-image: url(../images/arrow-right.png);
+            }
+    
+            .swiper-button-next, 
+            .swiper-button-prev {
+                background-size: 12px 20px;
             }
         }
-        
     }
 }
 
@@ -88,35 +104,42 @@
 
 @media (max-width: 1140px) {
 
-.main {    
-    .take-a-class {
-        .content {
-            width: 90%;
-            .head {
-                font-size: 45px;
-            }
-            .text-and-image {
-                flex-direction: column;
-                .text {
-                    margin: 10px 0 0 0;
-                    .top {
-                        font-weight: 600;
-                        font-size: 25px;
+    .main {    
+        .take-a-class {
+            .swiper-container {
+                width: 100%;
+                height: 650px;
+                .content {
+                    width: 90%;
+                    .head {
+                        font-size: 45px;
                     }
-                    .mid {
-                        font-size: 22px;
-                        line-height: 30px;
-                        font-weight: 500;
-                        opacity: 0.5;
-                    }
-                    .button {
-                        display: none;
+                    .text-and-image {
+                        flex-direction: column;
+                        .text {
+                            margin: 10px 0 0 0;
+                            .top {
+                                font-weight: 600;
+                                font-size: 25px;
+                            }
+                            .mid {
+                                font-size: 22px;
+                                line-height: 30px;
+                                font-weight: 500;
+                                opacity: 0.5;
+                            }
+                            .button {
+                                display: none;
+                            }
+                        }
+                        .videocontainer {
+                            height: 400px;
+                        }
                     }
                 }
             }
         }
     }
-}
 
 }    
 
@@ -128,72 +151,74 @@
 
 
 @media (max-width: 600px) {
-.main {
-    .take-a-class {
-        padding-top: 80px;
-        padding-bottom: 80px;
-        .content {
-            width: 100%;
-            margin: auto auto;
-            .head {
-                background-color: inherit;
-                text-align: center;  
-                margin-bottom: 0;
-            }
-            .text-and-image {
-                flex-wrap: wrap;
-                .videocontainer {
-                    display: inline-block;
-                    background-color: inherit;
+
+    .main {
+        .take-a-class {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            .swiper-container {
+                width: 100%;
+                height: 720px;
+                .content {
                     width: 100%;
-                    text-align: center;
-                    video {
-                        width: 90%;
-                    }
-                }
-                .text {
-                    background-color: inherit;
-                    height: auto;
-                    margin-right: 30px;
-                    margin-left: 30px;
-                    margin-bottom: 30px;
-                    .top {
+                    margin: auto auto;
+                    .head {
                         background-color: inherit;
-                        font-size: 20px;
-                        font-weight: 600;
+                        text-align: center;  
+                        margin-bottom: 0;
                     }
-                    .mid {
-                        background-color: inherit;
-                        font-size: 17px;
-                        font-weight: 500;
-                        line-height: 30px;
-                        opacity: 0.4;
-                        margin-top: 35px;
-                    }
-                    .button {
-                        background-color: inherit;
-                        height: 70px;
-                        width: 70%;
-                        margin-left: 15%;
-                        margin-top: 30px;
-                        margin-bottom: 20px;
-                        background-color: $lighter-blue;
-                        color: white;
-                        text-transform: uppercase;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        &:hover {
-                            opacity: 0.7;
-                            cursor: pointer;
+                    .text-and-image {
+                        flex-wrap: wrap;
+                        .videocontainer {
+                            height: 200px;
+                            text-align: center;
+                            video {
+                                width: 90%;
+                            }
                         }
+                        .text {
+                            background-color: inherit;
+                            height: auto;
+                            margin-right: 30px;
+                            margin-left: 30px;
+                            margin-bottom: 30px;
+                            .top {
+                                background-color: inherit;
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+                            .mid {
+                                background-color: inherit;
+                                font-size: 17px;
+                                font-weight: 500;
+                                line-height: 30px;
+                                opacity: 0.4;
+                                margin-top: 35px;
+                            }
+                            .button {
+                                background-color: inherit;
+                                height: 70px;
+                                width: 70%;
+                                margin-left: 15%;
+                                margin-top: 30px;
+                                margin-bottom: 20px;
+                                background-color: $lighter-blue;
+                                color: white;
+                                text-transform: uppercase;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                &:hover {
+                                    opacity: 0.7;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    
                     }
                 }
-               
             }
         }
-        
     }
-}
 
 }

@@ -11,10 +11,12 @@
                 $repeater = get_sub_field('repeater');
 
                 if($repeater){
+                    $count = 0;
                     foreach($repeater as $experts){
+                        $count++;
                         ?>
 
-                        <div class="expert-box">
+                        <div class="expert-box <?php echo $count > 3 ? "show-more" : null; ?>">
                             <div class="yellow">
                                 <p class="name"><?php echo $experts['namn'] ?></p>
                                 <p class="position"><?php echo $experts['titel'] ?></p>
@@ -25,7 +27,7 @@
                             
                             <?php 
 
-                            $link = get_sub_field('knapp');
+                            $link = $experts['knapp'];
 
                             if( $link ): 
                                 $link_url = $link['url'];
@@ -54,9 +56,9 @@
             
                    
                 </div>
-                <div class="button">Show more
-                    <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/down-arrow.png') ?>" alt="">
-                </div>
+                <?php if(sizeof($repeater) > 3): ?>
+                    <button id="show-more-expertises" class="button">Show more</button>
+                <?php endif; ?>
         </section>
     </div>
 </div>

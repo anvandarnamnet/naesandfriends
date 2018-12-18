@@ -27,6 +27,11 @@
             }
         }
     }
+    @media screen and (max-width: 800px){
+        .grid {
+            grid-auto-rows: auto;
+        }
+    }
 }
 
 @keyframes spin {

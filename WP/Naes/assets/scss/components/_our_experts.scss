@@ -12,12 +12,19 @@
         .boxes {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             padding-top: 50px;
             padding-bottom: 40px;
             .expert-box {
                 min-height: 460px;
                 width: 31.58%;
                 position: relative;
+                &.show-more {
+                    display: none;
+                    &.show {
+                        display: unset;
+                    }
+                }
                 .yellow {
                     height: 80px;
                     width: 75%;
@@ -89,8 +96,21 @@
             border: 2px solid $lighter-blue;
             margin-left: auto;
             margin-right: auto;
-            img {
-                padding-left: 20px;
+            background-color: #FFF;
+            &::after {
+                content: '';
+                background-image: url(../images/down-arrow.png);
+                background-size: 17px 19px;
+                background-repeat: no-repeat;
+                height: 19px;
+                width: 17px;
+                margin-left: 20px;
+                transition:  all ease 0.8s;
+            }
+            &.active::after {
+                transform: rotate(-180deg);
+                margin-left: 20px;
+                margin-right: 0;
             }
             &:hover {
                 opacity: 0.6;
