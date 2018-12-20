@@ -17,7 +17,7 @@ if( $post_object ):
                     <div class="image-container">
                         <img src="<?= get_field('teaser_image'); ?>" alt="image">
                     </div>
-                    <div class="text-under-image">
+                    <div class="text-under-image featured">
                         <div>
                             <p class="tui-head"><?php the_title(); ?></p>
                             <p class="tui-date"><?php echo get_the_date('Y-m-d'); ?></p>

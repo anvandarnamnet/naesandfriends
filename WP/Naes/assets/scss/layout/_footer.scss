@@ -3,7 +3,7 @@ footer {
     //height: 300px;
     color: $white;
 
-    padding: 20px 0 40px 0;
+    padding: 60px 0 40px 0;
     
     
     .footer-flex{
@@ -18,6 +18,9 @@ footer {
                 margin-top: 10px;
                 object{
                     max-width: 250px;
+                    @media screen and (max-width: $mobile-breakpoint) {
+                        width: 30%;
+                    }
                 }
             }
             h3{
@@ -94,10 +97,6 @@ footer {
                 padding: 0 20px;
             }
         }
-    }
-    object {
-        width: 100%;
-        height: auto;
     }
     .footer-text-box {
         padding-left: 300px;

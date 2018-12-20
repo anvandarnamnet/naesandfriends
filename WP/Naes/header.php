@@ -42,7 +42,7 @@
       <div class="main-inner">
         <div class="hire-inner">
           <div class="hire-title">
-            <h3>Want to hire us?</h3>
+            <h3>Can we help you?</h3>
           </div>
           <div class="hire-items">
             <div class="hire-item">

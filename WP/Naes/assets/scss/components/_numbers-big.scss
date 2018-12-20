@@ -1,0 +1,84 @@
+.numbers_big{
+    .big-bar {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .overlay{
+            background-color: rgba(41,107,221, 0.8);
+            width: 100%;
+            padding: 120px 0;
+        }
+        .flex{
+            justify-content: space-around;
+            .big-bar-text {
+                text-align: center;
+                width: 25%;
+                
+                .big-text {
+                    font-size: 60px;
+                    color: $white;
+                    padding-bottom: 10px;
+                    margin: 0;
+                }
+                .small-text {
+                    font-size: 20px;
+                    color: $white;
+                    margin: 0;
+                }
+            } 
+        }
+          
+    }
+}
+
+
+
+
+@media screen and (max-width: 1140px) {
+
+
+    .numbers_big{
+        .big-bar {
+            .overlay{
+                padding: 80px 0;
+            }  
+            .flex{
+                flex-wrap: wrap;
+                .big-bar-text {
+                    width: 50%;
+                    margin-bottom: 40px;
+                    margin-top: 40px;
+                } 
+            }
+              
+        }
+    }
+
+
+}
+
+
+
+
+@media screen and  (max-width: 600px) {
+
+    .numbers_big{
+        .big-bar {
+            .flex{
+                flex-wrap: wrap;
+                .big-bar-text {
+                    .big-text {
+                        padding-bottom: 0px;
+                        margin: -5px;
+                        font-size: 40px;
+                    }
+                } 
+            }
+              
+        }
+    }
+
+}

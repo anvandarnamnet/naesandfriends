@@ -9,9 +9,19 @@ $logosrc = get_option_field('logo');
                     </object>
                 </div>
             </div>
+            <div class="desktop-nav">
+                <?php echo wp_nav(array(
+                                'lang' => current_language(),
+                                'nav_id' => 'top',
+                            ));
+                            ?>
+            </div>
+            <button id="toggle-mobile-nav" class="mobile-nav-button"><hr class="line-1"><hr class="line-2"><hr class="line-3"></button>
+            <div id="mobile-nav" class="mobile-nav">
             <?php echo wp_nav(array(
                             'lang' => current_language(),
                             'nav_id' => 'top',
                         ));
                         ?>
-    </header>
+            </div>
+</header>

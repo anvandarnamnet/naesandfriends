@@ -102,7 +102,7 @@
 }
 
 
-@media (max-width: 1140px) {
+@media (max-width: $tablet-breakpoint) {
     @mixin texts-in-boxes {
         .texts {
             padding-left: 30%;
@@ -181,7 +181,7 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: $mobile-breakpoint) {
 
     @mixin texts-in-boxes {
         .texts {

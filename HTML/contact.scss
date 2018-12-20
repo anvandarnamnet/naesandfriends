@@ -198,7 +198,7 @@ $darker-blue: #1f2737;
 
  @import 'footer';
 
- @media (max-width: 1140px) {
+ @media (max-width: $tablet-breakpoint) {
      @import 'header-mobile';
 
      .map-and-contact {

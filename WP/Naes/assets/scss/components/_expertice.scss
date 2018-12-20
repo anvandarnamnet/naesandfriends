@@ -5,9 +5,12 @@
     }
     .third-section {
         .border-top {
-            height: 90px;
+            height: 110px;
             width: 50%;
             border-right: 1px solid $green;
+            @media screen and (max-width: $mobile-breakpoint){
+                height: 55px;
+            }
         }
         .content {
             width: 1140px;
@@ -91,7 +94,7 @@
 
 
 
-@media (max-width: 1140px) {
+@media (max-width: $tablet-breakpoint) {
 .main {    
     .third-section {
         .content {
@@ -152,7 +155,7 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: $mobile-breakpoint) {
 .main {
     .third-section {
         .content {
@@ -162,16 +165,16 @@
                 margin-bottom: 0;
                 .box {
                     width: 100%;
-                    height: 300px;
+                    height: 250px;
                     margin-bottom: 100px;
                     &:last-child {
                         margin-bottom: 0px;
                     }
                     .t1 {
-                        margin: 85px 40px 20px 40px;
+                        margin: 85px 10px 20px 10px;
                     }
                     .t2 {
-                        margin: 0 30px 30px 30px;
+                        margin: 0 15px 30px 15px;
                     }
                 }
                 .img-green-1 {
@@ -180,12 +183,12 @@
                     transform: translateX(-50%);
                 }
                 .img-green-2 {
-                    top: 350px;
+                    top: 300px;
                     left: 50%;
                     transform: translateX(-50%);
                 }
                 .img-green-3 {
-                    top: 750px;
+                    top: 675px;
                     left: 50%;
                     transform: translateX(-50%);
                 }

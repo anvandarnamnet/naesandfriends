@@ -10,6 +10,21 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 99;
+        @media screen and (max-width: 600px) {
+            height: 55px;
+        }
+        &.top {
+            top: 55px;
+            @media screen and (max-width: 600px) {
+                top: 27.5px;
+            }
+        }
+        &.bottom {
+            bottom: 55px;
+            @media screen and (max-width: 600px) {
+                bottom: 27.5px;
+            }
+        }
 
       
     }

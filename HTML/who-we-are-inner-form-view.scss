@@ -235,7 +235,7 @@ $baby-blue: #a5c5d1;
 
 @import 'footer';
 
-@media (max-width: 1140px) {
+@media (max-width: $tablet-breakpoint) {
     @import 'header-mobile';
     .pic-and-info {
         height: 1250px;

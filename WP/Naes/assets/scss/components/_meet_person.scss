@@ -67,7 +67,7 @@
 }
 
 
-@media (max-width: 1140px) {
+@media (max-width: $tablet-breakpoint) {
 .main {    
     .meet-employee {
         .background-fill {
@@ -100,7 +100,7 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: $mobile-breakpoint) {
 .main { 
     .meet-employee {
         padding-top: 80px;

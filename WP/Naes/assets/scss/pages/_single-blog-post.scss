@@ -1,53 +1,50 @@
-.single-blog-post{
+.single-blog-post {
     .meta-info {
-        *{
+        * {
             margin: 0;
         }
         width: 100%;
         margin-top: 130px;
-         .head {
-             font-size: 30px;
-             font-weight: 600;
-             letter-spacing: 1px;
-         }
-         .date-and-links {
-             padding: 30px 0 45px 0;
-             display: flex;
-             border-bottom: 1px solid #E0E1E2;
-             .date {
-                 opacity: 0.6;
-                 font-weight: 600;
-                 padding-right: 50px;
-             }
-             .three-links{
-                 @include three-links-mall();
-                 padding: 0;
-                 a {
+        .head {
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .date-and-links {
+            padding: 30px 0 45px 0;
+            display: flex;
+            border-bottom: 1px solid #E0E1E2;
+            .date {
+                opacity: 0.6;
+                font-weight: 600;
+                padding-right: 50px;
+            }
+            .three-links {
+                @include three-links-mall();
+                padding: 0;
+                a {
+                    border: 1px solid transparent;
+                    border-radius: 50px;
                     text-decoration: none;
-                    color: #3169ce;
+                    padding: 1px 4px 1px 4px;
+                    background-color: #B6CAE8;
+                    color: #3f4754;
                     font-size: 14px;
-                    font-weight: 500;
-                    padding: 6px 10px 3px 10px;
-                    letter-spacing: 0px;
-                    border: 2px solid #3169ce;
-                    margin-bottom: 10px;
-                    display: inline;
-                    border-radius: 0;
-                    background-color: white;
-                 }
-             }
-         }
-     }
-     .flexible {
+                }
+            }
+        }
+    }
+    .flexible {
         .component {
             padding: 0;
         }
     }
 }
-.share-article{
+
+.share-article {
     border-top: 3px solid #E0E1E2;
     margin-bottom: 4rem;
-    *{
+    * {
         margin: 0;
     }
     .share-save {
@@ -64,7 +61,7 @@
                         opacity: 0.8;
                         cursor: pointer;
                     }
-                } 
+                }
             }
         }
         .save {
@@ -77,51 +74,64 @@
                         opacity: 0.8;
                         cursor: pointer;
                     }
-                } 
+                }
             }
         }
     }
 }
-.author-section{
-    *{
+
+.author-section {
+    * {
         margin: 0;
     }
     .profile {
-       height: 400px;
-       width: 100%;
-       display: flex;
-       margin-bottom: 6rem;
-       .author-img{
-        height: 100%;
-        width: auto;
-        max-width: 40%;
-        object-fit: cover;
-       }
-       .info {
-           background-color: #f9fafb;
-           width: 100%;
-           padding: 50px 35px 20px 35px;
-           .top {
-               display: flex;
-               background-color: inherit;
-               width: 100%;
-               padding-bottom: 25px;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        margin-bottom: 6rem;
+        @media screen and (max-width: $mobile-breakpoint) {
+            flex-direction: column;
+            height: unset;
+        }
+        .author-img {
+            height: 100%;
+            width: auto;
+            max-width: 40%;
+            object-fit: cover;
+            @media screen and (max-width: $mobile-breakpoint) {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .info {
+            background-color: #f9fafb;
+            width: 100%;
+            padding: 50px 35px 20px 35px;
+            box-sizing: border-box;
+            overflow: hidden;
+            .top {
+                display: flex;
+                background-color: inherit;
+                width: 100%;
+                padding-bottom: 25px;
+                @media screen and (max-width: $tablet-breakpoint) {
+                    flex-direction: column;
+                }
                 .title-name {
                     flex: 2;
                     background-color: inherit;
-                        .title {
-                            background-color: inherit;
-                            padding: 0 0 10px 0;
-                            text-transform: uppercase;
-                            font-size: 16px;
-                            font-weight: 600;
-                        }
-                        .name {
-                            background-color: inherit;
-                            //padding: 0 0 15px 0;
-                            font-size: 25px;
-                            font-weight: 600;
-                        }
+                    .title {
+                        background-color: inherit;
+                        padding: 0 0 10px 0;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    .name {
+                        background-color: inherit; //padding: 0 0 15px 0;
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
                 }
                 .images {
                     flex: 1;
@@ -130,6 +140,9 @@
                     display: flex;
                     align-items: flex-end;
                     justify-content: space-between;
+                    @media screen and (max-width: $tablet-breakpoint) {
+                        padding-top: 2.5rem;
+                    }
                     img {
                         background-color: inherit;
                         &:hover {
@@ -138,18 +151,17 @@
                         }
                     }
                 }
-           }
-           
-           .about {
-            background-color: inherit;
-            //padding: 0 0 10px 35px;
-            font-size: 17px;
-            opacity: 0.4;
-            line-height: 30px;
-           }
-       }
+            }
+            .about {
+                background-color: inherit; //padding: 0 0 10px 35px;
+                font-size: 17px;
+                opacity: 0.4;
+                line-height: 30px;
+            }
+        }
     }
 }
+
 .read-more {
     margin-bottom: 2rem;
     h3 {

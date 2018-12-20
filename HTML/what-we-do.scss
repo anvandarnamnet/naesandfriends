@@ -641,7 +641,7 @@ $green: #4da953;
 
 @import 'footer';
 
-@media (max-width: 1140px) {
+@media (max-width: $tablet-breakpoint) {
     @import 'header-mobile';
 
     .first-section {

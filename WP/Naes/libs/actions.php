@@ -6,4 +6,5 @@ function theme_init(){
   return;
 }
 add_action('init', 'theme_init');
+
  ?>

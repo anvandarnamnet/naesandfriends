@@ -600,7 +600,7 @@ $gray-text: #3E4855;
 
 
 
-@media (max-width: 1140px) { 
+@media (max-width: $tablet-breakpoint) { 
 
     @mixin three-pix {
         .three-photos {

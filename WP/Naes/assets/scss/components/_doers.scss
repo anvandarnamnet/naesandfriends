@@ -94,7 +94,7 @@
 }
 
 
-@media (max-width: 1140px) {
+@media (max-width: $tablet-breakpoint) {
     @mixin overlapping-text-box ($position) {
         text-align: start;
         height: 175px;
@@ -142,7 +142,7 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: $mobile-breakpoint) {
 
 .main {
     .list-123 {

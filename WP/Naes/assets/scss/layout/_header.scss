@@ -4,57 +4,55 @@ header {
     padding: 20px;
     display: flex;
     align-items: center;
- 
     border-bottom: 1px solid #E0E1E2;
-
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     width: calc(100% - 40px);
     .logo {
-         flex: 4;
-         background-color: #fff;
-         height: 100%;
-         display: inline;
-         width: 100px;
-         .inner-logo{
-             position: relative;
-             display: inline-block;
-             height: 100%;
-         }
-         img {
-             background-color: #000;
-             width: 20%;
-             height: 100%;
-             }
-             
-         }
-         nav{
-           
-            display: block;
-            
-            width: calc(100% - 100px);
-            float: right;
+        flex: 4;
+        background-color: #fff;
+        height: 100%;
+        display: inline;
+        width: 100px;
+        .inner-logo {
+            position: relative;
+            display: inline-block;
+            height: 100%;
+        }
+        img {
+            background-color: #000;
+            width: 20%;
+            height: 100%;
+        }
+    }
+    .desktop-nav {
+        display: block;
+        width: calc(100% - 100px);
+        float: right;
+        @media screen and (max-width: $nav-breakpoint) {
+            display: none;
+        }
+        nav {
             ul {
                 text-transform: uppercase;
                 list-style-type: none;
                 padding: 0;
                 text-align: right;
-                
-                 .nav_item{
-                     display: inline-block;
-                     padding-right: 20px;
-                     position: relative;
-                     a{
+                .nav_item {
+                    display: inline-block;
+                    padding-right: 20px;
+                    position: relative;
+                    a {
                         font-size: 14px;
                         font-weight: 600;
                         opacity: 0.7;
                         display: inline-block;
                         margin-bottom: 10px;
                         margin-top: 10px;
-                     }
-                     .sub_nav {
+                    }
+                    .sub_nav {
                         display: none;
                         position: absolute;
                         text-align: left;
@@ -62,7 +60,7 @@ header {
                         left: -6px;
                         width: 129px;
                         box-shadow: 0px 2px 1px 1px lightgrey;
-                         .sub_nav_item {
+                        .sub_nav_item {
                             padding: 8px 6px 7px;
                             background-color: white;
                             a {
@@ -75,30 +73,107 @@ header {
                                     color: #3069ce;
                                 }
                             }
-                         }
-                     }
-                     &:hover {
+                        }
+                    }
+                    &:hover {
                         .sub_nav {
                             display: block;
                         }
-                     }
-                 }
-                 li:hover {
-                     a {
+                    }
+                }
+                li:hover {
+                    a {
                         color: #3069ce;
                     }
-                 }
-             }
-         }
-     
- }
+                }
+            }
+        }
+    }
+    .mobile-nav-button {
+        display: none;
+        margin-right: 40px;
+        background-color: transparent;
+        border: none;
+        @media screen and (max-width: $nav-breakpoint) {
+            display: block;
+        }
+        .line-1,
+        .line-2,
+        .line-3 {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            width: 40px;
+            height: 6px;
+            border-radius: 4px;
+            background-color: $lighter-blue;
+            transition: all ease 0.4s;
+            border: none;
+        }
+        &.active {
+            .line-3 {
+                display: none;
+            }
+            .line-2 {
+                transform: rotate(45deg);
+                margin-bottom: 20px;
+                margin-top: -5px;
+            }
+            .line-1 {
+                transform: rotate(-45deg);
+                margin-bottom: 0px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .mobile-nav {
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        nav {
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #E0E1E2;
+            ul {
+                text-transform: uppercase;
+                list-style-type: none;
+                padding: 0;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                .nav_item {
+                    display: inline-block;
+                    padding-left: 20px;
+                    position: relative;
+                    a {
+                        font-size: 14px;
+                        font-weight: 600;
+                        opacity: 0.7;
+                        display: inline-block;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                    }
+                    .sub_nav {
+                        .sub_nav_item {
+                            padding: 8px 6px 7px;
+                            padding-right: 30px;
+                            background-color: white;
+                            a {
+                                margin-bottom: 0;
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-
-
- @media (max-width: 600px) {
-
-  header {
-      width: 100%;
-  }  
-
- }
+@media (max-width: $mobile-breakpoint) {
+    header {
+        width: 100%;
+    }
+}

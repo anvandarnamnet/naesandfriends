@@ -62,7 +62,7 @@ a.overlay-link{
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: $mobile-breakpoint) {
 
     h1 {
         font-size: 40px;

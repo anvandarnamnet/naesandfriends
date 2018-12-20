@@ -43,4 +43,14 @@ function contact_messages($messages){
 }
 add_filter("qterest_contact_messages", "contact_messages");
 
+
+function my_acf_google_map_api( $api ){
+	
+	$api['key'] = 'AIzaSyBxTYEufX3g-GybCqAWq04EPDTSgarzHT8';
+	
+	return $api;
+	
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
  ?>

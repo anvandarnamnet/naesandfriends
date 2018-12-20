@@ -447,7 +447,7 @@ $link-blue: #B6CAE8;
 
 @import 'footer';
 
-@media (max-width: 1140px) { 
+@media (max-width: $tablet-breakpoint) { 
 
     @mixin three-pix {
         .three-photos {

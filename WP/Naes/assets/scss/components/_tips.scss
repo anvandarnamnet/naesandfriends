@@ -68,7 +68,7 @@
 
 
 
-@media (max-width: 1140px) {
+@media (max-width: $tablet-breakpoint) {
 
     .tipsen {
         padding-bottom: 70px;
@@ -114,7 +114,7 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: $mobile-breakpoint) {
 
     .tipsen {
         .boxes {
