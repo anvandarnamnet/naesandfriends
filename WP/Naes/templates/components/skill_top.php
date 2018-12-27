@@ -5,7 +5,7 @@
                 <div class="content">
                     <div class="image"><img src="<?php the_sub_field('skillbild'); ?>" alt=""></div>
                     <div class="text">
-                        <p class="head"><?php the_sub_field('rubrik'); ?></p>
+                        <h3 class="head"><?php the_sub_field('rubrik'); ?></h3>
                         <p class="subhead"><?php the_sub_field('underrubrik'); ?></p>
                         <ul>
 

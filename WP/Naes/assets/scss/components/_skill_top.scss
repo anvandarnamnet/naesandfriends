@@ -20,14 +20,13 @@
             width: 50%;
             margin-top: 80px;
             .head {
-                font-size: 32px;
                 font-weight: 300;
                 letter-spacing: 3px;
                 margin-bottom: 30px;
             }
             .subhead {
                 margin-bottom: 30px;
-                font-size: 24px;
+                font-size: 21px;
                 letter-spacing: 1px;
                 font-weight: 500;
             }
@@ -119,7 +118,6 @@
                 width: 100%;
                 margin-top: 60px;
                 .head {
-                    font-size: 45px;
                     font-weight: 400;
                 }
                 ul {
@@ -172,25 +170,33 @@
         .text {
             width: 100%;
             margin-top: 0px;
+            .subhead {
+                font-size: 19px;
+            }
             ul {
                 margin-left: 0px;
                 padding-right: 30px;
-                padding-left: 20px;
+                padding-left: 0;
                 line-height: 30px;
                 list-style-image: url(../../images/bullet.png);
                li {
                    text-indent: 0px;
+                   font-size: 19px;
+                   margin: 6px 0;
                }
             }
             .boxes {
                 justify-content: center;
+                width:80%;
+                margin-top: 30px;
                 .box-1 {
                     margin-right: 5px;
-                    margin-left: 5px;
+                    height: 45px;
                 }
                 .box-2 {
                     margin-right: 5px;
                     margin-left: 5px;
+                    height: 45px;
                 }
                 }
             }

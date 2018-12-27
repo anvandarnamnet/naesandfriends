@@ -123,13 +123,29 @@
     .hire {
         .hire-inner {
             .hire-title {
-                
+                font-size: 20px;
+                font-weight: 600;
             }
             .hire-items {
-                flex-wrap: wrap;
                 .hire-item {
-                    width: 100%;
-                    margin-top: 20px;
+                    width: 30%;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    .hire-image {
+                        padding: 0;
+                        margin-bottom: 10px;
+                        height: 30px;
+                    }
+                    .hire-text {
+                        p {
+                            font-size: 11px;
+                            margin-bottom: 2px;
+                        }
+                        a {
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
         }
