@@ -117,6 +117,35 @@ $args = array(
 register_post_type( 'employee', $args );
 
 
+$labels = array(
+  'name'               => _x( 'Testimonial', 'blog-post' ),
+  'singular_name'      => _x( 'Testimonial', 'blog-post' ),
+  'add_new'            => _x( 'Lägg till ny', 'blog-post' ),
+  'add_new_item'       => __( 'Lägg till ny testimonial' ),
+  'edit_item'          => __( 'Redigera testimonial' ),
+  'new_item'           => __( 'Ny testimonial' ),
+  'all_items'          => __( 'Alla testimonials' ),
+  'view_item'          => __( 'Visa testimonial' ),
+  'search_items'       => __( 'Sök testimonial' ),
+  'not_found'          => __( 'Inga testimonials hittades' ),
+  'not_found_in_trash' => __( 'Inga testimonials finns i Soptunnan' ),
+  'parent_item_colon'  => '',
+  'menu_name'          => 'Testimonials'
+);
+
+$args = array(
+  'labels'        => $labels,
+  'description'   => 'Testimonial',
+  'public'        => true,
+  'menu_position' => 6,
+  'supports'      => array( 'title', 'custom-fields'),
+  'has_archive'   => true,
+  'rewrite' => array( 'slug' => 'testimonial' ),
+);
+
+register_post_type( 'testimonial', $args );
+
+
     }
   add_action( 'init', 'custom_post_type', 0 );
 

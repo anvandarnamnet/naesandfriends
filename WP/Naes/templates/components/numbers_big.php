@@ -1,5 +1,5 @@
 <?php 
-$numbers = get_sub_field('numbers');
+$numbers = get_option_field('numbers', 'option');
 $image = get_sub_field('bg_image');
 ?>
 <?php if($numbers): ?>

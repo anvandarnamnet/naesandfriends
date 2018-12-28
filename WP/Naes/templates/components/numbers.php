@@ -1,5 +1,5 @@
 <?php 
-$numbers = get_sub_field('numbers');
+$numbers = get_option_field('numbers');
 ?>
 <?php if($numbers): ?>
     <section class="big-bar">
