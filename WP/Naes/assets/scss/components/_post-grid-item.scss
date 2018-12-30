@@ -1,17 +1,21 @@
 .post-grid-item {
-    *{
+    * {
         margin: 0;
     }
+
     border: 3px solid transparent;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+    text-align: left;
+
     &:not(.grid-full):hover {
         cursor: pointer;
         border: 3px solid #4ca852;
         transition-duration: 0.1s;
         transition-timing-function: ease-out;
     }
+
     .image-container {
         height: 259px;
         border: 1px solid #E0E1E2;
@@ -19,6 +23,7 @@
         display: flex;
         justify-content: center;
         align-content: center;
+
         img {
             height: auto;
             width: 100%;
@@ -26,50 +31,58 @@
             object-fit: cover;
         }
     }
-    
+
     .text-under-image {
         height: 94px;
         padding: 30px 35px 35px 35px;
         border-right: 1px solid #E0E1E2;
         border-bottom: 1px solid #E0E1E2;
         border-left: 1px solid #E0E1E2;
+
         .tui-head {
             font-size: 22px;
             margin: 0 auto;
         }
+
         .tui-date {
             opacity: 0.7;
             padding: 5px 0 20px 0;
         }
+
         .tui-links {
             word-spacing: 6px;
-            a{
+
+            a {
+                border: 1px solid transparent;
+                border-radius: 50px;
                 text-decoration: none;
-                    color: $lighter-blue;
-                    font-size: 14px;
-                    font-weight: 500;
-                    padding: 6px 10px 3px 10px;
-                    letter-spacing: 0px;
-                    border: 2px solid $lighter-blue;
-                    margin-bottom: 10px;
-                    display: inline;
+                padding: 1px 4px 1px 4px;
+                background-color: $lightest-blue;
+                color: $gray-text;
+                font-size: 14px;
             }
         }
     }
+
     .full {
         display: flex;
+
         .image_right {
             flex-direction: row-reverse;
         }
+
         .image_left {
             flex-direction: row;
         }
+
         height: 420px;
+
         .image-container {
             width: 50%;
             height: unset;
             border: none;
         }
+
         .text-under-image {
             padding: 35px 35px 15px 35px;
             width: 50%;
@@ -79,46 +92,54 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
             &.featured {
                 @media screen and (min-width: $mobile-breakpoint) {
                     padding-top: 0;
                 }
-                
+
             }
+
             .tui-head {
                 font-size: 30px;
                 font-weight: 600;
-                max-width: 80%;
             }
+
             .tui-date {
                 opacity: 0.6;
                 padding: 5px 0 20px 0;
                 font-weight: 600;
             }
+
             .bread {
                 opacity: 0.5;
                 line-height: 30px;
                 font-size: 20px;
                 padding-bottom: 20px;
             }
+
             .read_more {
                 text-transform: uppercase;
                 text-decoration: none;
                 color: $lighter-blue;
                 font-weight: 700;
                 font-size: 14px;
+
                 img {
                     padding-left: 10px;
                 }
+
                 &:hover {
                     opacity: 0.6;
                 }
             }
+
             div {
-                @media screen and (max-width: $mobile-breakpoint){
+                @media screen and (max-width: $mobile-breakpoint) {
                     padding-bottom: 1rem;
                 }
             }
+
             .tui-links {
                 padding-bottom: 15px;
                 padding-top: 30px;
@@ -126,23 +147,38 @@
             }
         }
     }
+
     @media screen and (max-width: 800px) {
-        .full{
+        .full {
             flex-direction: column;
             height: 100%;
+
             .image-container {
                 height: 423px;
                 min-height: 423px;
                 width: 100%;
             }
+
             .text-under-image {
                 width: calc(100% - 70px);
                 height: unset;
+
+                .tui-head {
+                    max-width: 100%;
+                }
+
+                .bread {
+                    padding-bottom: 0;
+                    margin-bottom: 20px;
+                    max-height: 88px;
+                    overflow: hidden;
+                }
             }
         }
+
         .text-under-image {
             height: unset;
         }
-        
+
     }
 }

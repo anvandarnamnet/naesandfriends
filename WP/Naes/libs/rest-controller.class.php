@@ -50,10 +50,9 @@ class NAES_REST_Controller extends WP_REST_Controller {
         }
 
         if(!empty($params['author'])){
-            $args['tax_query'][] = array(
-                'taxonomy' => 'author',
-                'field' => 'term_id',
-                'terms' => $params['author']
+            $args['meta_query'][] = array(
+                'key' => 'author',
+                'value' => $params['author'],
             );
         }
 

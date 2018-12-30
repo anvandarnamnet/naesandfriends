@@ -6,14 +6,27 @@
 
             <?php
 
-            $post_objects = get_sub_field('post_object');
+            $args = array(
+                'post_type' => 'blog-post',
+                'posts_per_page' => 3,
+                'meta_query' => array(
+                    array(
+                        'key' => 'author',
+                        'value' => get_the_ID()
+                    )
+                )
+            );
+            $blog_query = new WP_Query($args);
 
-            if( $post_objects ): ?>
+            if( $blog_query ): ?>
                 <div class="grid">
-                <?php foreach( $post_objects as $post): 
-                    setup_postdata( $post ); 
-                    echo get_component("templates/components/post-grid-item"); 
-                endforeach; ?>
+                <?php
+                while($blog_query->have_posts()){
+                    $blog_query->the_post();
+                    echo get_component("templates/components/post-grid-item");         
+                }   
+                wp_reset_query();
+                ?>
                 </div>
                 <?php wp_reset_postdata();  ?>
             <?php endif; ?>         

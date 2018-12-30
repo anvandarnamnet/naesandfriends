@@ -50,6 +50,16 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <a href="<?php echo get_privacy_policy_url(); ?>">Såhär gör vi med dina kontaktuppgifter</a>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="gdpr" value="Godkänner" required>
+                                <span class="checkmark"></span>
+                                Jag godkänner
+                            </label>  
+                        </div>
+                    </div>  
+                    <div class="form-group">
                         <input type="hidden" name="page" value="<?php the_permalink(); ?>">
                         <input class="submit-button" type="submit" value="Skicka">
                     </div>

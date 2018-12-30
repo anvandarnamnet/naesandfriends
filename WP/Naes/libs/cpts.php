@@ -23,7 +23,7 @@ function custom_post_type() {
         'description'   => 'Blogginlägg',
         'public'        => true,
         'menu_position' => 4,
-        'supports'      => array( 'title', 'custom-fields'),
+        'supports'      => array( 'title', 'custom-fields', 'excerpt'),
         'has_archive'   => true,
         'rewrite' => array( 'slug' => 'blog' ),
       );

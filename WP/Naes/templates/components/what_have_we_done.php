@@ -11,15 +11,31 @@
 
                 if($repeater){
                     foreach($repeater as $expertise){
+
+                        $post_object = get_posts(array(
+                            'post_type' => 'blog-post',
+                            'posts_per_page' => 1,
+                            'oder' => 'DESC',
+                            'orderby' => 'date',
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'blog-cat',
+                                    'field' => 'term_id',
+                                    'terms' => $expertise['category']
+                                )
+                            )
+                        ))[0];
+
+
                         ?>
                         
                         <div class="three-photos">
-                            <a href="<?php echo $expertise['link'] ?>">
-                            <div class="image-container" style="background-image: url(<?php echo $expertise['bild'] ?>);"></div>
+                            <a href="<?php the_permalink($post_object->ID) ?>">
+                            <div class="image-container" style="background-image: url(<?php echo get_field('teaser_image', $post_object->ID) ?>);"></div>
                             <div class="text-under-image">
-                                <p class="tui-subject"><?php echo $expertise['posttype'] ?></p>
-                                <p class="tui-head"><?php echo $expertise['titel'] ?></p>
-                                <p class="tui-bread"><?php echo $expertise['text'] ?></p>    
+                                <?php /*<p class="tui-subject"><?php  ?></p> */ ?>
+                                <p class="tui-head"><?php echo $post_object->post_title ?></p>
+                                <p class="tui-bread"><?php echo get_the_excerpt($post_object->ID) ?></p>    
                             </div>
                             </a>
                     </div>

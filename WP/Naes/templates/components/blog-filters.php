@@ -21,7 +21,7 @@
                     </div>
         
                     <div class="select-box">
-                        <select >
+                        <select name="content-type">
                             <option value="">Read &amp listen</option>
                             <?php 
                                 $types = get_terms([
@@ -36,16 +36,16 @@
                         </select>      
                     </div>
                     <div class="select-box">
-                        <select>
+                        <select name="author">
                             <option value="">Author</option>
                             <?php 
-                                $authors = get_terms([
-                                    'taxonomy' => 'authors',
-                                    'hide_empty' => false
+                                $authors = get_posts([
+                                    'post_type' => "employee",
+                                    'post_per_page' => -1
                                 ]);
                             
                                 foreach($authors as $author){
-                                    echo "<option value='$author->term_id'>$author->name</option>";
+                                    echo "<option value='$author->ID'>$author->post_title</option>";
                                 }
                             ?>
                         </select>  

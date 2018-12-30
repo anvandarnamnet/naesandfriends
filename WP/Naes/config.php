@@ -38,7 +38,7 @@ $rest_controller = new NAES_REST_Controller();
 $rest_controller->hook_rest_server();
 
 function contact_messages($messages){
-  $messages['mail_to'] = "noah@getqte.se";
+  $messages['mail_to'] = get_option_field('contact_form_email');
   return $messages;
 }
 add_filter("qterest_contact_messages", "contact_messages");

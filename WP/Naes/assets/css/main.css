@@ -4621,7 +4621,8 @@ html {
       height: 100%;
       width: 100%;
       -o-object-fit: cover;
-      object-fit: cover; }
+      object-fit: cover;
+      max-height: 900px; }
   .pic-and-info .texts {
     width: calc(100% - 65px);
     margin-top: 180px;
@@ -4792,6 +4793,56 @@ html {
       .pic-and-info .contact-me .contact-form .form-group .submit-button:hover {
         opacity: 0.7;
         cursor: pointer; }
+    .pic-and-info .contact-me .contact-form .form-group a {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 20px; }
+    .pic-and-info .contact-me .contact-form .form-group .checkbox {
+      margin-top: 10px;
+      margin-bottom: 20px; }
+      .pic-and-info .contact-me .contact-form .form-group .checkbox label {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 20px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        .pic-and-info .contact-me .contact-form .form-group .checkbox label input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+        .pic-and-info .contact-me .contact-form .form-group .checkbox label .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: #f0f1f2;
+          border: 1px solid #E0E1E2; }
+        .pic-and-info .contact-me .contact-form .form-group .checkbox label:hover input ~ .checkmark {
+          background-color: #ccc; }
+        .pic-and-info .contact-me .contact-form .form-group .checkbox label .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none; }
+        .pic-and-info .contact-me .contact-form .form-group .checkbox label input:checked ~ .checkmark:after {
+          display: block; }
+        .pic-and-info .contact-me .contact-form .form-group .checkbox label .checkmark:after {
+          left: 9px;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          border: solid #3169ce;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
   .pic-and-info .yellow {
     height: 90px;
     width: 50%;
@@ -4914,10 +4965,12 @@ html {
       .pic-and-info .container .right {
         width: 100%;
         padding-top: 0px; }
+        .pic-and-info .container .right .contact-me {
+          top: 0px; }
     .pic-and-info .image {
       width: 100%;
       height: 310px;
-      margin-bottom: 100px; }
+      margin-bottom: 97px; }
       .pic-and-info .image img {
         height: 100%;
         width: 100%; }
@@ -4946,7 +4999,7 @@ html {
       height: auto;
       width: 100%;
       right: 0%;
-      top: 300px;
+      top: 310px;
       padding: 0;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -5311,6 +5364,54 @@ html {
         .map_contact_form .container .form .contact-form .form-group .submit-button:hover {
           opacity: 0.7;
           cursor: pointer; }
+      .map_contact_form .container .form .contact-form .form-group a {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .map_contact_form .container .form .contact-form .form-group .checkbox {
+        margin-top: 10px;
+        margin-bottom: 20px; }
+        .map_contact_form .container .form .contact-form .form-group .checkbox label {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+          .map_contact_form .container .form .contact-form .form-group .checkbox label input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0; }
+          .map_contact_form .container .form .contact-form .form-group .checkbox label .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #f0f1f2;
+            border: 1px solid #E0E1E2; }
+          .map_contact_form .container .form .contact-form .form-group .checkbox label:hover input ~ .checkmark {
+            background-color: #ccc; }
+          .map_contact_form .container .form .contact-form .form-group .checkbox label .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none; }
+          .map_contact_form .container .form .contact-form .form-group .checkbox label input:checked ~ .checkmark:after {
+            display: block; }
+          .map_contact_form .container .form .contact-form .form-group .checkbox label .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid #3169ce;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
 
 #testimonials {
   min-height: 530px;
@@ -5558,7 +5659,8 @@ html {
   position: relative;
   overflow: hidden;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-align: left; }
   .post-grid-item * {
     margin: 0; }
   .post-grid-item:not(.grid-full):hover {
@@ -5603,15 +5705,13 @@ html {
     .post-grid-item .text-under-image .tui-links {
       word-spacing: 6px; }
       .post-grid-item .text-under-image .tui-links a {
+        border: 1px solid transparent;
+        border-radius: 50px;
         text-decoration: none;
-        color: #3169ce;
-        font-size: 14px;
-        font-weight: 500;
-        padding: 6px 10px 3px 10px;
-        letter-spacing: 0px;
-        border: 2px solid #3169ce;
-        margin-bottom: 10px;
-        display: inline; }
+        padding: 1px 4px 1px 4px;
+        background-color: #C2D2ED;
+        color: #3E4855;
+        font-size: 14px; }
   .post-grid-item .full {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5652,8 +5752,7 @@ html {
           padding-top: 0; } }
       .post-grid-item .full .text-under-image .tui-head {
         font-size: 30px;
-        font-weight: 600;
-        max-width: 80%; }
+        font-weight: 600; }
       .post-grid-item .full .text-under-image .tui-date {
         opacity: 0.6;
         padding: 5px 0 20px 0;
@@ -5694,6 +5793,13 @@ html {
       .post-grid-item .full .text-under-image {
         width: calc(100% - 70px);
         height: unset; }
+        .post-grid-item .full .text-under-image .tui-head {
+          max-width: 100%; }
+        .post-grid-item .full .text-under-image .bread {
+          padding-bottom: 0;
+          margin-bottom: 20px;
+          max-height: 88px;
+          overflow: hidden; }
     .post-grid-item .text-under-image {
       height: unset; } }
 
