@@ -1,6 +1,7 @@
 <?php 
 
-$slides = get_sub_field('slides');
+//$slides = get_sub_field('slides');
+$slides = get_option_field('slides');
 
 ?>
 
