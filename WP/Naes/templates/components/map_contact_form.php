@@ -69,4 +69,4 @@ if (!empty($location)):
 
     </div>
 </div>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxTYEufX3g-GybCqAWq04EPDTSgarzHT8"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGL97AA0QG2WBDkf1FQ_a4FNvOYiEdIkM"></script>

@@ -46,7 +46,7 @@ add_filter("qterest_contact_messages", "contact_messages");
 
 function my_acf_google_map_api( $api ){
 	
-	$api['key'] = 'AIzaSyBxTYEufX3g-GybCqAWq04EPDTSgarzHT8';
+	$api['key'] = 'AIzaSyDGL97AA0QG2WBDkf1FQ_a4FNvOYiEdIkM';
 	
 	return $api;
 	
