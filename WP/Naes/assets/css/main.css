@@ -2074,7 +2074,7 @@ html {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(185px, 1fr));
+  grid-template-columns: repeat(6, minmax(174px, 1fr));
   grid-auto-rows: 426px;
   grid-gap: 6px;
   grid-auto-flow: row dense; }
@@ -2289,7 +2289,7 @@ html {
       -ms-flex: 3;
       flex: 3;
       background-color: #C2D2ED;
-      font-size: 30px;
+      font-size: 24px;
       color: #3E4855;
       margin: 0;
       font-weight: 700;
@@ -2507,7 +2507,8 @@ html {
       background-color: transparent;
       font-size: 23px;
       color: #3E4855;
-      margin-top: 12px; }
+      margin-top: 12px;
+      margin-bottom: 14px; }
     .blog-filters .filters .main-inner form {
       -webkit-box-flex: 4;
       -ms-flex: 4;
@@ -2517,7 +2518,8 @@ html {
       display: flex;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-bottom: 0; }
       .blog-filters .filters .main-inner form .selectors {
         -webkit-box-flex: 4.3;
         -ms-flex: 4.3;

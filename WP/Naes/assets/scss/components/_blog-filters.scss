@@ -22,11 +22,13 @@
                 font-size: 23px;
                 color: $gray-text;
                 margin-top: 12px;
+                margin-bottom: 14px;
             }
             form {
                 flex: 4;
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 0;
                 .selectors {
                     flex: 4.3;
                     height: 50px;
