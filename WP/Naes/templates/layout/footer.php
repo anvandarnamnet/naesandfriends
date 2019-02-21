@@ -34,6 +34,9 @@
                             <a href="<?php echo get_option_field('twitter_link'); ?>" class="social-media-links">
                                 <object data="<?= get_option_field('icon_twitter'); ?>" type="image/svg+xml"></object>
                             </a>
+                            <a href="<?php echo get_option_field('instagram_link'); ?>" class="social-media-links">
+                                <object data="<?= get_option_field('icon_instagram'); ?>" type="image/svg+xml"></object>
+                            </a>
                         </div>
                 </div>
     </div>

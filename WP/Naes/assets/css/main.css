@@ -2304,8 +2304,12 @@ html {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       margin: 0; }
-      .newsletter .small-bar-1 .content form input[type=text] {
+      .newsletter .small-bar-1 .content form .form-response {
+        width: 100%; }
+      .newsletter .small-bar-1 .content form input[type=email] {
         -webkit-box-flex: 2;
         -ms-flex: 2;
         flex: 2;
@@ -2317,16 +2321,16 @@ html {
         border-right: none;
         color: #3E4855;
         outline: none; }
-        .newsletter .small-bar-1 .content form input[type=text]::-webkit-input-placeholder {
+        .newsletter .small-bar-1 .content form input[type=email]::-webkit-input-placeholder {
           /* WebKit browsers */
           color: #3E4855; }
-        .newsletter .small-bar-1 .content form input[type=text]:-moz-placeholder {
+        .newsletter .small-bar-1 .content form input[type=email]:-moz-placeholder {
           /* Mozilla Firefox 4 to 18 */
           color: #3E4855; }
-        .newsletter .small-bar-1 .content form input[type=text]::-moz-placeholder {
+        .newsletter .small-bar-1 .content form input[type=email]::-moz-placeholder {
           /* Mozilla Firefox 19+ */
           color: #3E4855; }
-        .newsletter .small-bar-1 .content form input[type=text]:-ms-input-placeholder {
+        .newsletter .small-bar-1 .content form input[type=email]:-ms-input-placeholder {
           /* Internet Explorer 10+ */
           color: #3E4855; }
       .newsletter .small-bar-1 .content form input[type=submit] {
@@ -3825,8 +3829,9 @@ html {
         right: 0; } }
 
 .who_we_are.component {
-  padding-bottom: 0;
-  background: url(../../assets/images/2bakgrund.png);
+  padding-bottom: 0; }
+
+.who-we-are-background {
   background-position: center;
   background-size: cover; }
 
@@ -4117,22 +4122,25 @@ html {
   text-align: center;
   padding-top: 140px;
   padding-bottom: 100px; }
-  .partners.component .main #partners .three-images {
+  .partners.component .main #partners .partners-container {
     padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .partners.component .main #partners .three-images .three-photos {
+    .partners.component .main #partners .partners-container .single-partner {
       width: 31.5%;
       height: auto;
-      outline: 1px solid #E0E1E2; }
-      .partners.component .main #partners .three-images .three-photos:hover {
+      outline: 1px solid #E0E1E2;
+      margin-bottom: 2rem; }
+      .partners.component .main #partners .partners-container .single-partner:hover {
         cursor: pointer;
         outline: 3px solid #4ca852;
         -webkit-transition-duration: 0.1s;
@@ -4141,7 +4149,11 @@ html {
         -webkit-transition-timing-function: ease-out;
         -o-transition-timing-function: ease-out;
         transition-timing-function: ease-out; }
-      .partners.component .main #partners .three-images .three-photos .image-container {
+      .partners.component .main #partners .partners-container .single-partner.show-more {
+        display: none; }
+        .partners.component .main #partners .partners-container .single-partner.show-more.show {
+          display: block; }
+      .partners.component .main #partners .partners-container .single-partner .image-container {
         height: 210px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4156,32 +4168,74 @@ html {
         border-right: 1px solid #E0E1E2;
         border-top: 1px solid #E0E1E2;
         border-left: 1px solid #E0E1E2; }
-        .partners.component .main #partners .three-images .three-photos .image-container img {
+        .partners.component .main #partners .partners-container .single-partner .image-container img {
           height: 55%;
           width: auto; }
-      .partners.component .main #partners .three-images .three-photos .text-under-image {
+      .partners.component .main #partners .partners-container .single-partner .text-under-image {
         padding: 0 30px 44px 30px;
         border-right: 1px solid #E0E1E2;
         border-bottom: 1px solid #E0E1E2;
         border-left: 1px solid #E0E1E2;
         background-color: #FFF; }
-        .partners.component .main #partners .three-images .three-photos .text-under-image .tui-subject {
+        .partners.component .main #partners .partners-container .single-partner .text-under-image .tui-subject {
           text-transform: uppercase;
           padding-top: 20px;
           margin-top: 0;
           font-size: 15px;
           font-weight: 700; }
-        .partners.component .main #partners .three-images .three-photos .text-under-image .tui-bread {
+        .partners.component .main #partners .partners-container .single-partner .text-under-image .tui-bread {
           margin-top: 30px;
           opacity: 0.6;
           line-height: 30px;
           font-size: 17px;
           font-weight: 400; }
 
+.partners.component .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 50px;
+  width: 270px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #3169ce;
+  border-radius: 50px;
+  border: 2px solid #3169ce;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF; }
+  .partners.component .button::after {
+    content: '';
+    background-image: url(../images/down-arrow.png);
+    background-size: 17px 19px;
+    background-repeat: no-repeat;
+    height: 19px;
+    width: 17px;
+    margin-left: 20px;
+    -webkit-transition: all ease 0.8s;
+    -o-transition: all ease 0.8s;
+    transition: all ease 0.8s; }
+  .partners.component .button.active::after {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    margin-left: 20px;
+    margin-right: 0; }
+  .partners.component .button:hover {
+    opacity: 0.6;
+    cursor: pointer; }
+
 @media (max-width: 850px) {
   .partners.component .main #partners {
     padding-bottom: 80px; }
-    .partners.component .main #partners .three-images {
+    .partners.component .main #partners .partners-container {
       width: 100%;
       padding-top: 0px;
       padding-bottom: 0;
@@ -4200,18 +4254,18 @@ html {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
-      .partners.component .main #partners .three-images .three-photos {
+      .partners.component .main #partners .partners-container .single-partner {
         width: 100%;
         height: auto;
         margin-bottom: 20px; }
-        .partners.component .main #partners .three-images .three-photos .text-under-image {
+        .partners.component .main #partners .partners-container .single-partner .text-under-image {
           padding: 10px;
           height: 203px; }
-          .partners.component .main #partners .three-images .three-photos .text-under-image .tui-subject {
+          .partners.component .main #partners .partners-container .single-partner .text-under-image .tui-subject {
             padding-top: 20px;
             margin-top: 0;
             font-size: 20px; }
-          .partners.component .main #partners .three-images .three-photos .text-under-image .tui-bread {
+          .partners.component .main #partners .partners-container .single-partner .text-under-image .tui-bread {
             opacity: 0.5;
             font-size: 20px;
             font-weight: 500; } }
@@ -4220,11 +4274,11 @@ html {
   .partners.component .main #partners {
     padding-top: 80px;
     padding-bottom: 60px; }
-    .partners.component .main #partners .three-images {
+    .partners.component .main #partners .partners-container {
       width: 90%; }
-      .partners.component .main #partners .three-images .three-photos {
+      .partners.component .main #partners .partners-container .single-partner {
         width: 100%; }
-        .partners.component .main #partners .three-images .three-photos .text-under-image {
+        .partners.component .main #partners .partners-container .single-partner .text-under-image {
           height: auto; } }
 
 .skill-top {

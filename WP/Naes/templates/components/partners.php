@@ -3,7 +3,7 @@
 
         <section id="partners">
             <h2>Our partners</h2>
-            <div class="three-images">
+            <div id="partners-container" class="partners-container">
 
 
 
@@ -11,11 +11,14 @@
 
                     $repeater = get_sub_field('repeater');
 
+                    $count = 0;
+
                     if($repeater){
                         foreach($repeater as $partner){
+                            $count++;
                 ?>
 
-                    <div class="three-photos">
+                    <div class="single-partner <?php echo $count > 3 ? 'show-more': null;?>">
                             <div class="image-container">
                                 <img src="<?php echo $partner['bild'] ?>" alt="image">
                             </div>
@@ -35,6 +38,9 @@
 
 
             </div>
+            <?php if($count > 3): ?>
+                <button id="show-more-partners" class="button"><?php _e("Show more", 'naes') ?></button>
+            <?php endif; ?>
         </section>
     </div>
 </div>

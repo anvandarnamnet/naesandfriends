@@ -1,9 +1,10 @@
 <section class="small-bar-1">
-        <div class="content">
-            <p><?= get_sub_field('text'); ?></p>
-            <form action="">
-                    <input type="text" placeholder="Email address" onfocus="this.placeholder = ''" onfocusout="this.placeholder = 'Email address'">
-                    <input type="submit" value="Subscribe">
-            </form>
-        </div>
-    </section>
+    <div class="content">
+        <p><?=get_sub_field('text');?></p>
+        <form id="newsletter-form">
+                <div class="form-response"></div>
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</section>

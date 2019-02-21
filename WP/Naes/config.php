@@ -43,6 +43,14 @@ function contact_messages($messages){
 }
 add_filter("qterest_contact_messages", "contact_messages");
 
+function qterest_mailchimp_messages($messages){
+
+  $messages['success'] = "Thank you, please check your inbox to confirm your subscription!";
+
+  return $messages;
+}
+add_filter('qterest_mailchimp_messages', 'qterest_mailchimp_messages');
+
 
 function my_acf_google_map_api( $api ){
 	

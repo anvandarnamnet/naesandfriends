@@ -8,36 +8,35 @@
                 
                 <?php 
 
-                $repeater = get_sub_field('repeater');
+                $repeater = get_sub_field('chosen_experts');
 
                 if($repeater){
                     $count = 0;
-                    foreach($repeater as $experts){
+                    foreach($repeater as $post){
                         $count++;
+                        setup_postdata($post);
                         ?>
 
                         <div class="expert-box <?php echo $count > 3 ? "show-more" : null; ?>">
                             <div class="yellow">
-                                <p class="name"><?php echo $experts['namn'] ?></p>
-                                <p class="position"><?php echo $experts['titel'] ?></p>
+                                <p class="name"><?php the_title() ?></p>
+                                <p class="position"><?php the_field('position') ?></p>
                             </div>
-                            <img src="<?php echo $experts['bild'] ?>" alt="">
-                            <p class="description"><?php echo $experts['beskrivning'] ?></p>
+                            <img src="<?php the_field('image') ?>" alt="">
+                            <p class="description"><?php the_field('description') ?></p>
                             
                             
                             <?php 
 
-                            $link = $experts['knapp'];
+                            $link = get_field('more_link');
 
                             if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : 'self';
+                                $link_url = $link;
                                 ?>
                             
 
                                 <div class="meet">
-                                    <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                    <a href="<?php echo esc_url($link_url); ?>" target="_self"><?php _e('More') ?></a>
                                     <img src="<?php echo site_url('wp-content/themes/Naes/assets/images/right-arrow.png') ?>" alt="">
                                 </div> 
 
@@ -50,6 +49,7 @@
 
                         <?php
                     }
+                    wp_reset_postdata();
                 }
             ?>
 
